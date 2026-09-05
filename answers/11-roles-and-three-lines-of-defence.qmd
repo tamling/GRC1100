@@ -1,0 +1,29 @@
+<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+
+# Chapter 11 — sketch answers {.unnumbered}
+
+\(1\) First line: The web and operations team --- they run the checkout, operate
+the anti-DDoS and failover controls, and own the risk of the shop going down.
+Second line: The part-time security/compliance lead --- checks the protection is
+configured as the policy demands, tracks R2 in the register, and challenges the
+rating when facts change. Third line: The annual external reviewer ---
+independently confirms the controls exist and operate, for instance by asking
+for the failover test evidence. (2) Independence is what makes assurance
+believable: The third line must be able to report honestly on the very
+management that runs the first two lines, so it reports past them, to the
+board's audit committee. Reporting to the CISO would make it a self-assessment
+of the security function wearing an audit label --- structurally unable to be
+candid about its own boss, and therefore worth little. (3) R: The IT lead ---
+performs the restore into a test environment. A: The owner --- one name
+answering that the test happened and the data came back. C: The
+security/compliance lead --- consulted on scope and on what evidence to keep. I:
+The web team --- informed of the result, since their recovery times depend on
+it. (4) Responsible does the work and can be several people; accountable answers
+for the outcome and is one person. With two accountable names, each can assume
+the other is answering --- which is exactly the diffusion the scheme exists to
+prevent. (5) One person holds second-line oversight and first-line operation,
+and proposes to check their own work --- the three jobs collapsed into one, so
+the review has no independence. Smallest fix: Keep the lead on policy and
+oversight, put the monitoring's operation clearly with the first line, and buy
+the once-a-year check from outside --- an external reviewer engaged by the
+owner, per @tbl-fglines.

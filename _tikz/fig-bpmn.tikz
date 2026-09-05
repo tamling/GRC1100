@@ -1,0 +1,23 @@
+\begin{tikzpicture}[scale=1.45,transform shape,font=\tiny]
+    \draw[kink,line width=0.7pt] (0,0) circle (0.22);
+    \draw[kink,line width=0.5pt,rounded corners=2pt] (0.7,-0.33) rectangle (2.1,0.33);
+    \node[text=kink,align=center] at (1.4,0){Receive\\order};
+    \draw[kink,line width=0.5pt] (3.1,0.46) -- (3.78,0) -- (3.1,-0.46) -- (2.42,0) -- cycle;
+    \node[text=kink,align=center] at (3.1,0){In\\stock?};
+    \draw[kink,line width=0.5pt,rounded corners=2pt] (4.12,-0.33) rectangle (5.52,0.33);
+    \node[text=kink,align=center] at (4.82,0){Ship\\order};
+    \draw[kink,line width=1.5pt] (6.22,0) circle (0.22);
+    \draw[arr] (0.22,0)--(0.7,0); \draw[arr] (2.1,0)--(2.42,0);
+    \draw[arr] (3.78,0)--(4.12,0); \draw[arr] (5.52,0)--(6.0,0);
+    \node[text=kristiania] at (3.88,0.18){Yes};
+    \draw[kink,line width=0.5pt,rounded corners=2pt] (2.4,-1.45) rectangle (3.8,-0.83);
+    \node[text=kink,align=center] at (3.1,-1.14){Back-order\\item};
+    \draw[arr] (3.1,-0.46)--(3.1,-0.83);
+    \node[text=kristiania] at (3.34,-0.6){No};
+    \draw[arr] (3.8,-1.14) -- (6.22,-1.14) -- (6.22,-0.22);
+    \node[text=kgrey] at (0,0.5){start event};
+    \node[text=kgrey] at (1.4,0.56){task};
+    \node[text=kgrey] at (3.1,0.72){gateway};
+    \node[text=kgrey] at (4.82,0.56){task};
+    \node[text=kgrey] at (6.22,0.5){end event};
+  \end{tikzpicture}

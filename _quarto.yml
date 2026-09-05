@@ -1,0 +1,60 @@
+project:
+  type: book
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "appendix/*.qmd"
+    # Answer keys are source-only: answers/ is excluded from every render,
+    # so no sketch answer ever appears on the published site.
+    - "!answers/"
+
+# ── Annotations (Hypothesis) ─────────────────────────────────────────────
+# ON by default: every HTML page loads the Hypothesis client (see
+# includes/hypothesis.html) so students can annotate directly. Set to
+# false (and drop include-in-header below) to switch the layer off again;
+# pages read the flag as {{< meta annotations >}} to show/hide
+# annotation instructions.
+annotations: true
+
+book:
+  title: "GRC1100 — Course Script"
+  # One chapter per lecture; each chapter ends with a "Self-check" section
+  # whose sketch answers live in answers/ (source-only, never rendered).
+  chapters:
+    - index.qmd
+    - chapters/01-grc-and-governing-security.qmd
+    - chapters/02-understanding-the-business.qmd
+    - chapters/03-isms-and-iso-27001.qmd
+    - chapters/04-cyber-risk-and-information-assets.qmd
+    - chapters/05-digital-security-act-and-nis2.qmd
+    - chapters/06-frameworks-and-the-soa.qmd
+    - chapters/07-gdpr-and-privacy.qmd
+    - chapters/08-assessing-risk.qmd
+    - chapters/09-assessing-risk-to-people.qmd
+    - chapters/10-selecting-and-tailoring-controls.qmd
+    - chapters/11-roles-and-three-lines-of-defence.qmd
+    - chapters/12-preparedness-plan.qmd
+    - chapters/13-value-threat-vulnerability-control.qmd
+    - chapters/14-awareness-behaviour-security-culture.qmd
+    - chapters/15-policy-documentation-and-dora.qmd
+    - chapters/16-internal-and-external-audits.qmd
+    - chapters/17-risk-evaluation-process.qmd
+    - chapters/18-passwords-mfa-and-identity.qmd
+    - chapters/19-supplier-cloud-third-party-risk.qmd
+    - chapters/20-qualitative-quantitative-risk-analysis.qmd
+    - chapters/21-ai-risk-and-governance.qmd
+    - chapters/22-grc-end-to-end.qmd
+  appendices:
+    - appendix/reading-list.qmd
+    - appendix/abbreviations.qmd
+    - appendix/how-to-annotate.qmd
+
+format:
+  html:
+    # Light/dark theme pair: every page gets the dark-mode toggle.
+    theme:
+      light: [cosmo, theme-light.scss]
+      dark: [darkly, theme-dark.scss]
+    toc: true
+    number-sections: true
+    include-in-header: includes/hypothesis.html

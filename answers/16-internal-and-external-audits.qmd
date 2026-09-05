@@ -1,0 +1,27 @@
+<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+
+# Chapter 16 — sketch answers {.unnumbered}
+
+\(1\) He would be grading his own work --- the blind spots an audit exists to
+find are exactly the ones the builder cannot see, and his incentive is to find
+his pipeline sound. Independence beats familiarity: The IT lead or an external
+reviewer audits change management; the developer supplies evidence and answers.
+(2) Type I says the controls were suitably designed on one day last March --- a
+snapshot; it says nothing about whether they operated since, and eighteen months
+is a long exposure. Ask for the current Type II --- design plus operating
+effectiveness over the period: The film. (3) ToD: Inspect the backup
+configuration and the restore-test procedure --- is the control designed to meet
+the requirement? Evidence: Configuration export, the documented procedure. ToE:
+Sample the year's quarterly restore tests and the nightly job logs --- did
+backups run and were restores actually performed? Evidence: System-generated job
+logs, dated restore-test records. (4) (a) Major --- a real, present access risk
+(the orphaned accounts of Chapters 8 and 14), exploitable now. (b) Minor --- a
+document-control weakness (Chapter 15), no direct exposure but a failing
+discipline. (c) Major bordering critical --- if restores fail, R3's worst case
+has no floor; untested recovery is Chapter 12's paper barrier. (5) Action:
+Disable the four accounts today; add an HR-to-IT trigger so leaver day means
+account-disable day; owner: IT lead; deadline: One week for the accounts, one
+month for the trigger; status: Open. Still open next year it becomes a repeat
+finding --- graded harder because it proves the loop is broken: The organisation
+was told, agreed, and did not act, which converts a control gap into a
+governance finding.

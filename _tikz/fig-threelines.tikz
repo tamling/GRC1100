@@ -1,0 +1,17 @@
+\begin{tikzpicture}[font=\footnotesize]
+    \node[flowdark,minimum width=10.6cm,minimum height=0.85cm,align=center] (b) at (0,2.0)
+      {\textbf{Governing body / board} --- accountable for oversight};
+    \node[flowfill,minimum width=3.1cm,minimum height=1.5cm,align=center] (l1) at (-3.6,0)
+      {\textbf{First line}\\own \& manage\\the risk};
+    \node[flowfill,minimum width=3.1cm,minimum height=1.5cm,align=center] (l2) at (0,0)
+      {\textbf{Second line}\\oversee, advise\\\& monitor};
+    \node[flowfill,minimum width=3.1cm,minimum height=1.5cm,align=center] (l3) at (3.6,0)
+      {\textbf{Third line}\\independent\\assurance};
+    \node[flowfill,minimum width=2.5cm,minimum height=1.5cm,align=center,draw=black!40,fill=black!3] (ext) at (7.0,0)
+      {External audit\\\& regulators};
+    \draw[arr] (b.south -| l1) -- (l1.north);
+    \draw[arr] (b.south -| l2) -- (l2.north);
+    \draw[arr] (b.south -| l3) -- (l3.north);
+    \draw[dashed,kgrey,thick] (5.3,1.1) -- (5.3,-1.1)
+      node[below=1pt,font=\scriptsize,text=kgrey]{the organisation ends here};
+  \end{tikzpicture}

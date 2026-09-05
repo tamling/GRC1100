@@ -1,0 +1,35 @@
+# Reading list {#sec-reading-list .unnumbered}
+
+This table gathers, in one place, the reading named at the end of each chapter,
+so the whole plan can be seen at a glance. Page numbers are to the editions
+below; the per-chapter reading paragraphs give the same references with a little
+more context.
+
+**Core texts.** **Jøsang** --- A. Jøsang, *Cybersecurity: Technology and
+Governance* (Springer, 2025). **E&W** --- Edwards & Weaver, *The Cybersecurity
+Guide to Governance, Risk, and Compliance* (Wiley, 2024).
+
+  **Ch.**                    **Topic**                                               **Reading**
+  -------------------------- ------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------
+  1                          GRC, and what governing security means                  Jøsang Ch. 1 (pp. 1 ff.) and Ch. 18 (pp. 377 ff.); E&W Ch. 1 (pp. 1 ff.)
+  2                          Understanding the business                              E&W Ch. 2 (pp. 19 ff.); Jøsang Ch. 18 (pp. 377 ff.)
+  3                          The ISMS and ISO/IEC 27001                              Jøsang §18.5 (pp. 392--399); E&W Ch. 12 (pp. 209 ff.)
+  4                          Cyber risk and information assets                       Jøsang Ch. 1 (pp. 1 ff.) and Ch. 2 (pp. 25 ff.); E&W Ch. 2 (pp. 19 ff.)
+  5                          The Digital Security Act and NIS2                       Jøsang §17.4 (pp. 362--366), Ch. 19 (pp. 405 ff.); E&W Ch. 17 (pp. 299 ff.)
+  6                          Frameworks and the Statement of Applicability           E&W Ch. 11 (pp. 191 ff.), Ch. 12 (pp. 209 ff.), Ch. 13 (pp. 231 ff.); Jøsang §18.2 (pp. 383--388), §18.4 (p. 390), §18.5.4 (p. 398)
+  7                          GDPR and privacy                                        Jøsang §§10.5--10.6 (pp. 224--229); E&W Ch. 18 (pp. 315 ff.) and the GDPR section of Ch. 17 (p. 301)
+  8                          Assessing risk: From assets to the register             Jøsang Ch. 2 (pp. 25 ff.), §16.2 (pp. 340 ff.), §§19.4--19.5 (pp. 417 ff.); E&W Ch. 7 (pp. 109 ff.) and Ch. 10 (pp. 171 ff.)
+  9                          Assessing risk to people: DPIA, LIA and the EU AI Act   Jøsang Ch. 10 (pp. 215 ff., esp. §§10.5--10.6 pp. 224--229); E&W Ch. 18 (pp. 315 ff.)
+  10                         Selecting and tailoring controls                        Jøsang Ch. 19 (pp. 405 ff.); E&W Ch. 26 (pp. 463 ff.); ISO/IEC 27002:2022
+  11                         Roles and the three lines of defence                    Jøsang Ch. 18 (pp. 377 ff., esp. §18.1 pp. 377--383); E&W Ch. 5 (pp. 69 ff.), Ch. 6 (pp. 87 ff.), Ch. 19 (pp. 333 ff.)
+  12                         The preparedness plan                                   Jøsang Ch. 14 (pp. 301--320); E&W Ch. 30 (pp. 521 ff.)
+  13                         Value, threat, vulnerability and control                Jøsang §§1.4--1.8 (pp. 5--14), Ch. 19 (pp. 405 ff.), Ch. 16 (pp. 337 ff.); E&W Ch. 10 (pp. 171 ff.), Ch. 26 (pp. 463 ff.)
+  14                         Awareness, behaviour and security culture               Jøsang Ch. 13 (pp. 283 ff., esp. §13.3, §§13.4--13.6); E&W Ch. 3 (pp. 33 ff.)
+  15                         Policy, documentation and DORA                          E&W Ch. 12 (pp. 209 ff.), Ch. 19 (pp. 333 ff.); Jøsang Ch. 18 (pp. 377 ff.); DORA (Reg. (EU) 2022/2554)
+  16                         Internal and external audits                            E&W Ch. 19 (pp. 333 ff.), Ch. 22--24 (pp. 395 ff.); Jøsang §§14.7--14.8 (pp. 316--320), Ch. 18 (pp. 377 ff.); ISAE 3402
+  17                         The risk evaluation process                             Jøsang §19.6 (pp. 427 ff.); E&W Ch. 9 (pp. 151 ff.), Ch. 7 (pp. 109 ff.), Ch. 5--6 (pp. 69 ff., 87 ff.)
+  18                         Passwords, MFA and identity                             Jøsang Ch. 8 (pp. 165 ff.), Ch. 9 (pp. 191 ff.); NIST SP 800-63B
+  19                         Supplier, cloud and third-party risk                    E&W Ch. 7 (pp. 109 ff.), Ch. 27 (pp. 481 ff.); ISO/IEC 27001 A.5.19--23; NIS2 Art. 21; DORA Art. 28 ff.
+  20                         Qualitative and quantitative risk                       Jøsang §19.5 (pp. 424--426, within Ch. 19 pp. 405 ff.); E&W Ch. 10 (pp. 171 ff.), Ch. 7 (pp. 109 ff.), Ch. 9 (pp. 151 ff.)
+  21                         AI risk and governance                                  NIST AI RMF 1.0 (2023); ISO/IEC 42001:2023; EU AI Act (Reg. (EU) 2024/1689); OWASP Top 10 for LLM Applications; E&W and Jøsang as background
+  22                         Wrap-up and exam preparation                            Revision: Jøsang Ch. 1 (pp. 1 ff.); E&W Ch. 1 (pp. 1 ff.); the case-file artefacts

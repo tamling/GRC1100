@@ -1,0 +1,13 @@
+\begin{tikzpicture}[font=\scriptsize]
+    \draw[thick,kgrey,-{Stealth[length=2.6mm]}] (0,0) -- (13.2,0);
+    \foreach \x/\y/\lab/\txt in {
+      0.7/1/{1961}/{First computer\\passwords\\(MIT CTSS)},
+      3.1/2/{1988}/{Morris worm\\cracks weak\\passwords},
+      5.7/1/{2003}/{NIST (Burr):\\Complexity +\\90-day rotation},
+      8.6/2/{2017}/{SP\,800-63B:\\The reversal ---\\length, blocklists},
+      11.7/1/{2018--23}/{FIDO2 \&\\passkeys: Beyond\\passwords}}{
+      \draw[kristiania,thick] (\x,0) -- (\x,{0.30*\y});
+      \fill[kristiania] (\x,0) circle (0.075);
+      \node[above,align=center,font=\scriptsize] at (\x,{0.30*\y}) {\textbf{\lab}\\[1pt]\txt};
+    }
+  \end{tikzpicture}

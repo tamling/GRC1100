@@ -1,0 +1,10 @@
+\begin{tikzpicture}[font=\footnotesize,node distance=0.35cm]
+    \draw[draw=kristiania,fill=kristiania!10,rounded corners=3pt] (-0.4,-0.72) rectangle (13.05,1.42);
+    \node[text=kristiania,font=\scriptsize\bfseries,anchor=north west] at (-0.28,1.36) {Govern --- strategy, roles, policy (added in CSF 2.0, 2024)};
+    \node[flowfill,minimum width=2.35cm,minimum height=0.85cm,align=center] (a) at (0.95,0) {\textbf{Identify}};
+    \node[flowfill,minimum width=2.35cm,minimum height=0.85cm,align=center,right=of a] (b) {\textbf{Protect}};
+    \node[flowfill,minimum width=2.35cm,minimum height=0.85cm,align=center,right=of b] (c) {\textbf{Detect}};
+    \node[flowfill,minimum width=2.35cm,minimum height=0.85cm,align=center,right=of c] (d) {\textbf{Respond}};
+    \node[flowfill,minimum width=2.35cm,minimum height=0.85cm,align=center,right=of d] (e) {\textbf{Recover}};
+    \draw[arr] (a)--(b); \draw[arr] (b)--(c); \draw[arr] (c)--(d); \draw[arr] (d)--(e);
+  \end{tikzpicture}

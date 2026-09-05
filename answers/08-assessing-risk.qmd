@@ -1,0 +1,42 @@
+<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+
+# Chapter 8 — sketch answers {.unnumbered}
+
+\(1\) The criteria are the measuring instruments: Fixed in advance, they make
+every rating comparable and honest. Set afterwards, they invite bias --- the
+scale gets bent so the results look the way someone wants ("let's call that
+medium"). (2) The customer database and the order process are primary ---
+information and a business process. The cloud hosting and the developer are
+supporting --- infrastructure and a person the primary assets depend on; if
+either fails, the primary assets fail with them. (3) Spoofing: A fake checkout
+page harvesting logins. Tampering: Altering prices or order totals in transit.
+Repudiation: A customer denies an order and no audit log exists. Information
+disclosure: Payment details exposed in transit. Denial of service: The checkout
+flooded offline (R2). Elevation of privilege: A customer session reaching
+administrative functions. (4) "No backups" names a missing control --- a
+vulnerability --- but no source, event, asset or harm, so it cannot be rated.
+Rewritten: A ransomware operator encrypts the order and customer data,
+exploiting the absence of tested backups, so that FastGoods cannot restore and
+loses both sales and data --- prolonged outage and permanent data loss as the
+consequence. (5) From the process, step *pay*: An attacker floods the checkout,
+exploiting the absence of dedicated DDoS protection, so the shop cannot sell ---
+lost revenue; source: The order process, walked step by step. From a control,
+cloud backups read backwards: They exist against data loss; tested, they have
+never been restored, so the control is operating ineffectively and the risk
+stands --- a ransomware incident encrypts the order data, exploiting the
+untested restore, and FastGoods cannot recover: Prolonged outage; source: An
+existing control, read backwards and tested. (6) Recon: The attacker scans
+FastGoods' public systems and finds an exposed administrative interface
+(weakness: Unnecessary exposure). Delivery/exploit: A phishing mail to staff
+yields admin credentials (weaknesses: Phishable staff, no MFA on admin logins).
+Move: The attacker reaches the database with those rights (weakness: Excessive
+access rights, no segmentation). Act: The customer table is exported (weakness:
+No exfiltration monitoring, data unencrypted). (7) Why active? Nobody disabled
+it. Why? IT was not told of the departure. Why? No leaver process connects HR
+and IT. Root cause: A missing joiner/leaver process --- fixing it prevents the
+whole class of orphaned-access risks, not just this account. (8) Threat:
+Credential stuffing is constant, automated and profitable --- highly active.
+Exposure: The login is internet-facing. Controls: Password-only authentication
+--- weak barrier. Conclusion: "Likely." Internal evidence: Failed-login spikes
+in the authentication logs; external: Breach statistics and CTI reporting on
+credential-stuffing campaigns against retail.

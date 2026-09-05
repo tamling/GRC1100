@@ -1,0 +1,11 @@
+\begin{tikzpicture}[font=\footnotesize]
+    \draw[draw=kgrey,line width=0.3pt,fill=kristiania!22] (-2.1,1.7) -- (2.1,1.7) -- (2.9,0.85) -- (-2.9,0.85) -- cycle;
+    \draw[draw=kgrey,line width=0.3pt,fill=kristiania!14] (-2.9,0.85) -- (2.9,0.85) -- (3.7,0) -- (-3.7,0) -- cycle;
+    \draw[draw=kgrey,line width=0.3pt,fill=kristiania!8]  (-3.7,0) -- (3.7,0) -- (4.5,-0.85) -- (-4.5,-0.85) -- cycle;
+    \node[text=kink,align=center,font=\scriptsize] at (0,1.27) {\textbf{Strategic}\\business intelligence};
+    \node[text=kink] at (0,0.42) {\textbf{Management} --- ERP, CRM};
+    \node[text=kink] at (0,-0.43) {\textbf{Operational} --- transaction systems};
+    \node[text=kgrey,font=\scriptsize,align=left,anchor=west] at (4.8,1.27) {which markets\\to enter};
+    \node[text=kgrey,font=\scriptsize,align=left,anchor=west] at (4.8,0.42) {orders, stock,\\finance};
+    \node[text=kgrey,font=\scriptsize,align=left,anchor=west] at (4.8,-0.43) {webshop, payment,\\inventory database};
+  \end{tikzpicture}

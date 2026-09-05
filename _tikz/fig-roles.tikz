@@ -1,0 +1,7 @@
+\begin{tikzpicture}[font=\footnotesize,node distance=3.1cm]
+    \node[flowfill,minimum width=3.0cm,minimum height=1.0cm,align=center] (ds) {\textbf{Data subject}\\the person};
+    \node[flowdark,minimum width=3.0cm,minimum height=1.0cm,align=center,right=of ds] (c) {\textbf{Controller}\\decides why \& how};
+    \node[flowfill,minimum width=3.0cm,minimum height=1.0cm,align=center,right=of c] (p) {\textbf{Processor}\\acts on instructions};
+    \draw[arr] (ds)--(c) node[midway,above,font=\scriptsize]{data};
+    \draw[arr] (c)--(p) node[midway,above,font=\scriptsize]{instructs (Art.\,28)};
+  \end{tikzpicture}

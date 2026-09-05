@@ -1,0 +1,10 @@
+\begin{tikzpicture}[font=\footnotesize]
+    \node[flowfill,minimum width=2.6cm,minimum height=0.85cm,align=center] (s1) at (0,1.5) {\textbf{Stage 1}\\documentation};
+    \node[flowfill,minimum width=2.6cm,minimum height=0.85cm,align=center] (s2) at (3.4,0) {\textbf{Stage 2}\\implementation};
+    \node[flowdark,minimum width=2.6cm,minimum height=0.85cm,align=center] (ct) at (0,-1.5) {\textbf{Certified}\\three years};
+    \node[flowfill,minimum width=2.6cm,minimum height=0.85cm,align=center] (sv) at (-3.4,0) {\textbf{Surveillance}\\years 1 \& 2};
+    \draw[arr] (s1) to[bend left=16] (s2);
+    \draw[arr] (s2) to[bend left=16] (ct);
+    \draw[arr] (ct) to[bend left=16] (sv);
+    \draw[arr] (sv) to[bend left=16] (s1);
+  \end{tikzpicture}

@@ -1,0 +1,8 @@
+\begin{tikzpicture}[font=\footnotesize,node distance=0.35cm]
+    \node[flowfill,minimum width=2.35cm,minimum height=1.0cm,align=center] (a) {Browse\\catalogue};
+    \node[flowdark,minimum width=2.35cm,minimum height=1.0cm,align=center,right=of a] (b) {Log in\\\footnotesize(R1)};
+    \node[flowfill,minimum width=2.35cm,minimum height=1.0cm,align=center,right=of b] (c) {Add to\\basket};
+    \node[flowdark,minimum width=2.35cm,minimum height=1.0cm,align=center,right=of c] (d) {Pay\\\footnotesize(R2)};
+    \node[flowdark,minimum width=2.35cm,minimum height=1.0cm,align=center,right=of d] (e) {Store data\\\footnotesize(R3)};
+    \draw[arr] (a)--(b); \draw[arr] (b)--(c); \draw[arr] (c)--(d); \draw[arr] (d)--(e);
+  \end{tikzpicture}

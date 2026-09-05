@@ -1,0 +1,16 @@
+\begin{tikzpicture}[font=\footnotesize]
+    \foreach \ang/\lab/\txt/\sty in {
+      90/P/{Prepare}/flowfill,
+      18/D/{Detect \& triage}/flowfill,
+      -54/R/{Respond \& contain}/flowfill,
+      -126/C/{Recover}/flowfill,
+      162/L/{Learn}/flowdark}{
+      \node[\sty,minimum width=2.6cm,minimum height=0.78cm,align=center]
+        (\lab) at ({3.45*cos(\ang)},{1.65*sin(\ang)}) {\textbf{\txt}};
+    }
+    \draw[arr] (P) to[bend left=12] (D);
+    \draw[arr] (D) to[bend left=12] (R);
+    \draw[arr] (R) to[bend left=12] (C);
+    \draw[arr] (C) to[bend left=12] (L);
+    \draw[arr] (L) to[bend left=12] (P);
+  \end{tikzpicture}

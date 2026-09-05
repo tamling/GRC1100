@@ -1,0 +1,8 @@
+\begin{tikzpicture}[font=\footnotesize,node distance=0.35cm]
+    \node[flowfill,minimum width=2.35cm,minimum height=1.15cm,align=center] (a) {\textbf{1980}\\OECD privacy\\guidelines};
+    \node[flowfill,minimum width=2.35cm,minimum height=1.15cm,align=center,right=of a] (b) {\textbf{1995}\\EU Data Prot.\\Directive};
+    \node[flowfill,minimum width=2.35cm,minimum height=1.15cm,align=center,right=of b] (c) {\textbf{2016}\\GDPR\\adopted};
+    \node[flowfill,minimum width=2.35cm,minimum height=1.15cm,align=center,right=of c] (d) {\textbf{2018}\\in force\\(25 May)};
+    \node[flowdark,minimum width=2.35cm,minimum height=1.15cm,align=center,right=of d] (e) {\textbf{Today}\\big fines,\\Schrems II};
+    \draw[arr] (a)--(b); \draw[arr] (b)--(c); \draw[arr] (c)--(d); \draw[arr] (d)--(e);
+  \end{tikzpicture}

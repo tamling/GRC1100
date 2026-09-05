@@ -1,0 +1,11 @@
+\begin{tikzpicture}[font=\footnotesize,node distance=0.4cm]
+    \node[flowfill,minimum width=2.5cm,minimum height=0.95cm,align=center] (a) {Delivery\\(phishing)};
+    \node[flowfill,minimum width=2.5cm,minimum height=0.95cm,align=center,right=of a] (b) {Exploit\\(login)};
+    \node[flowfill,minimum width=2.5cm,minimum height=0.95cm,align=center,right=of b] (c) {Move /\\escalate};
+    \node[flowdark,minimum width=2.5cm,minimum height=0.95cm,align=center,right=of c] (d) {Act\\(steal data)};
+    \draw[arr] (a)--(b); \draw[arr] (b)--(c); \draw[arr] (c)--(d);
+    \node[below=0.14cm of a,font=\scriptsize,text=kristiania,align=center] {mail filter +\\training};
+    \node[below=0.14cm of b,font=\scriptsize,text=kristiania,align=center] {MFA};
+    \node[below=0.14cm of c,font=\scriptsize,text=kristiania,align=center] {least privilege +\\monitoring};
+    \node[below=0.14cm of d,font=\scriptsize,text=kristiania,align=center] {encryption};
+  \end{tikzpicture}

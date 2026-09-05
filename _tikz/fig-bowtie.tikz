@@ -1,0 +1,12 @@
+\begin{tikzpicture}[font=\scriptsize]
+    \node[flowdark,minimum width=2.3cm,minimum height=1.15cm,align=center] (top) at (0,0) {\textbf{Top event:}\\login as\\customer};
+    \node[flowfill,minimum width=2.4cm,align=center] (c1) at (-4.7,1.2) {Reused password};
+    \node[flowfill,minimum width=2.4cm,align=center] (c2) at (-4.7,0) {No MFA};
+    \node[flowfill,minimum width=2.4cm,align=center] (c3) at (-4.7,-1.2) {Phishable staff};
+    \node[flowfill,minimum width=2.4cm,align=center] (k1) at (4.7,0.85) {Data breach};
+    \node[flowfill,minimum width=2.4cm,align=center] (k2) at (4.7,-0.85) {GDPR fine};
+    \draw[arr] (c1)--(top); \draw[arr] (c2)--(top); \draw[arr] (c3)--(top);
+    \draw[arr] (top)--(k1); \draw[arr] (top)--(k2);
+    \node[font=\scriptsize,text=kristiania] at (-2.5,1.75) {preventive controls};
+    \node[font=\scriptsize,text=kristiania] at (2.5,1.6) {mitigating controls};
+  \end{tikzpicture}

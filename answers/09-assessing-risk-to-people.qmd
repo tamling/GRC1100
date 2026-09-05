@@ -1,0 +1,31 @@
+<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+
+# Chapter 9 — sketch answers {.unnumbered}
+
+\(1\) Company lens: Revenue upside with modest risks --- some churn if customers
+notice, a manageable register entry. People lens: Systematic evaluation at scale
+with real financial effects on individuals --- price discrimination --- meeting
+the scoring criterion and plausibly Art. 22 territory; screening says DPIA yes.
+The people lens raises the alarm, which is precisely the asymmetry the chapter
+opened with. (2) Survey: Ordinary feedback data, expected, low risk --- no DPIA,
+recorded. Warehouse cameras including staff areas: Systematic monitoring of
+employees --- vulnerable in the power relationship --- at least borderline, and
+under Datatilsynet's guidance a DPIA is the safe answer: Do it. Loyalty
+programme: Matching datasets plus location tracking at scale --- two criteria,
+DPIA yes. (3) Purpose: Marketing to existing customers is a real, lawful
+interest --- recital 47 mentions direct marketing. Necessity: Only purchase
+history and email are needed; no location or browsing data. Balancing: Existing
+customers reasonably expect relevant offers, so it passes --- strengthened by a
+clear, one-click opt-out honoured immediately, which is also what national
+marketing law expects. (4) Limited-to-minimal as a system --- staff decide, so
+no automated decision --- but the *fraud-suggestion* function scores customers,
+so the GDPR side (screening, possibly a DPIA) does the heavy lifting rather than
+the AI Act; the duty that applies regardless of tier is Article 4 AI literacy:
+The support staff must understand what the tool can and cannot tell them. A
+defensible stricter answer notes that if staff rubber-stamp the suggestions, the
+"human decision" is decoration and both Art. 22 and the high-risk logic move
+closer. (5) Datatilsynet or an affected customer challenges the marketing
+profiling, exploiting the missing DPIA --- a legal duty not performed --- so
+that FastGoods faces a processing ban and a fine under Art. 83, with the
+campaign stopped and trust damaged as the consequence: A compliance risk, owner
+the managing director, treatment "run the DPIA before the campaign launches".

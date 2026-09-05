@@ -1,0 +1,82 @@
+# List of abbreviations {#sec-abbreviations .unnumbered}
+
+| Abbreviation | Meaning |
+|:---|:---|
+| AI | Artificial intelligence |
+| AIMS | AI management system (ISO/IEC 42001) |
+| ALE | Annualised loss expectancy |
+| APT | Advanced persistent threat |
+| AUP | Acceptable use policy |
+| BCM | Business continuity management |
+| BEC | Business email compromise |
+| BI | Business intelligence |
+| BIA | Business impact analysis |
+| BMC | Business Model Canvas |
+| BPMN | Business Process Model and Notation |
+| CER | Critical Entities Resilience Directive (EU) |
+| CIA | Confidentiality, integrity, availability |
+| CIS | Center for Internet Security |
+| CISO | Chief information security officer |
+| COBIT | Control Objectives for Information and Related Technologies |
+| COSO | Committee of Sponsoring Organizations of the Treadway Commission |
+| CRM | Customer relationship management |
+| CSF | Cybersecurity Framework (NIST) |
+| CSIRT | Computer security incident response team |
+| CTI | Cyber threat intelligence |
+| CVE | Common Vulnerabilities and Exposures |
+| CVSS | Common Vulnerability Scoring System |
+| CWE | Common Weakness Enumeration |
+| DBIR | Data Breach Investigations Report (Verizon) |
+| DDoS | Distributed denial of service |
+| DORA | Digital Operational Resilience Act (EU) |
+| DPIA | Data protection impact assessment |
+| DPO | Data protection officer |
+| DSA | Digital Security Act (Norway, *digitalsikkerhetsloven*) |
+| DoS | Denial of service |
+| EEA | European Economic Area |
+| ENISA | European Union Agency for Cybersecurity |
+| ERP | Enterprise resource planning |
+| FAIR | Factor Analysis of Information Risk |
+| GDPR | General Data Protection Regulation |
+| GRC | Governance, risk and compliance |
+| HR | Human resources |
+| IAM | Identity and access management |
+| ICFR | Internal control over financial reporting |
+| ICT | Information and communications technology |
+| IEC | International Electrotechnical Commission |
+| IIA | Institute of Internal Auditors |
+| ISA | International Standard on Auditing |
+| ISACA | Information Systems Audit and Control Association |
+| ISAE | International Standard on Assurance Engagements |
+| ISMS | Information security management system |
+| ISO | International Organization for Standardization |
+| IT | Information technology |
+| ITAC | IT application controls |
+| ITGC | IT general controls |
+| KPI | Key performance indicator |
+| KRI | Key risk indicator |
+| LIA | Legitimate-interests assessment |
+| LLM | Large language model |
+| MDR | Managed detection and response |
+| MFA | Multi-factor authentication |
+| MSS | Managed security services |
+| MTD | Maximum tolerable downtime |
+| NIS2 | (EU) Network and Information Security Directive, 2nd version |
+| NSM | Nasjonal sikkerhetsmyndighet (Norwegian National Security Authority) |
+| OCEG | Open Compliance and Ethics Group |
+| OECD | Organisation for Economic Co-operation and Development |
+| PCI DSS | Payment Card Industry Data Security Standard |
+| PDCA | Plan–do–check–act |
+| RACI | Responsible, accountable, consulted, informed |
+| RPO | Recovery point objective |
+| RTO | Recovery time objective |
+| RaaS | Ransomware as a service |
+| SIEM | Security information and event management |
+| SLA | Service level agreement |
+| SOC | Security operations centre |
+| SOX | Sarbanes–Oxley Act (US, 2002) |
+| STRIDE | Spoofing, tampering, repudiation, information disclosure, DoS, elevation of privilege |
+| SoA | Statement of Applicability |
+| TLPT | Threat-led penetration testing (DORA) |
+| TPS | Transaction processing system |
+| XDR | Extended detection and response |

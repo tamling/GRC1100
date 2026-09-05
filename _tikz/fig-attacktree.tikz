@@ -1,0 +1,9 @@
+\begin{tikzpicture}[font=\footnotesize]
+    \node[flowdark,minimum width=3.6cm,minimum height=1.0cm,align=center] (r) at (0,1.35) {\textbf{Goal:} Take over a\\customer account};
+    \node[flowfill,minimum width=3.5cm,minimum height=1.0cm,align=center] (a) at (-4.5,-0.55) {Credential stuffing\\(reused passwords)};
+    \node[flowfill,minimum width=3.5cm,minimum height=1.0cm,align=center] (b) at (0,-0.55) {Phishing the\\customer};
+    \node[flowfill,minimum width=3.5cm,minimum height=1.0cm,align=center] (m) at (4.5,-0.55) {Abuse account\\recovery / reset};
+    \draw[arr] (r.south) -- (a.north);
+    \draw[arr] (r.south) -- (b.north);
+    \draw[arr] (r.south) -- (m.north);
+  \end{tikzpicture}

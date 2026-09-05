@@ -1,0 +1,10 @@
+\begin{tikzpicture}[font=\footnotesize]
+    \foreach \ang/\lab/\sty in {90/{Understand}/flowfill, 18/{Assess}/flowfill, -54/{Treat}/flowfill, -126/{Check}/flowfill, 162/{Improve}/flowdark}{
+      \node[\sty,minimum width=2.1cm,minimum height=0.72cm,align=center] (\lab) at ({2.9*cos(\ang)},{1.5*sin(\ang)}) {\textbf{\lab}};
+    }
+    \draw[arr] (Understand) to[bend left=12] (Assess);
+    \draw[arr] (Assess) to[bend left=12] (Treat);
+    \draw[arr] (Treat) to[bend left=12] (Check);
+    \draw[arr] (Check) to[bend left=12] (Improve);
+    \draw[arr] (Improve) to[bend left=12] (Understand);
+  \end{tikzpicture}

@@ -1,0 +1,26 @@
+<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+
+# Chapter 10 — sketch answers {.unnumbered}
+
+\(1\) Reduce: Add MFA to close R1 --- the usual case. Accept: A rare, minor risk
+such as brief downtime of the internal wiki --- below the line, documented.
+Transfer: Cyber-insurance against part of R3's financial loss --- hard to reduce
+to zero. Avoid: Not storing card numbers at all, leaving them with the payment
+provider --- the risky activity stops. (2) MFA lowers likelihood --- the attack
+no longer succeeds with a password alone. Encrypted backups lower impact ---
+stolen or destroyed data is recoverable and unreadable. Scrubbing lowers
+likelihood of a successful flood reaching the checkout. The response plan lowers
+impact --- the breach still happens, but shorter and smaller. (3) Application
+controls run *on* the systems GITC govern: If access and change management are
+weak, anyone could alter the code or the data behind the automated check, so its
+output proves nothing --- hence GITC first. Concrete: Developers with direct
+write access to the production database undermine every automated calculation in
+the application above it. (4) Bank: A 24/7 SOC with a SIEM and named analysts.
+FastGoods: Provider alerting on, anomaly notifications to the two technical
+staff, a fifteen-minute weekly dashboard review. Both must pass the same purpose
+test: An incident is detected in time to act --- alerts to an unread mailbox
+fail it. (5) The internal audit of Clause 9 (PDCA Check) finds the three admin
+accounts; the finding is a nonconformity, and corrective action (Clause 10, Act)
+enforces MFA on them and adds the check to onboarding; the register's R1 row
+updates its residual, and the SoA row for A.8.5 keeps its justification --- the
+same loop as Chapter 3's @exm-pdcaloop, now closed with evidence.

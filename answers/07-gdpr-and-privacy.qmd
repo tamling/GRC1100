@@ -1,0 +1,27 @@
+<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+
+# Chapter 7 — sketch answers {.unnumbered}
+
+\(1\) The IP address is personal data --- an online identifier that can single
+someone out. The order history linked to an email is personal data ---
+identifiable through the identifier. Fully anonymised statistics fall outside
+the GDPR --- provided no one can be re-identified. The health note is
+special-category data (Art. 9), needing a stronger basis and tighter handling.
+(2) Security answers only whether the data is safe, and the GDPR also asks
+whether it may be processed at all. The database had no lawful basis under
+Article 6, was never disclosed to the customers (failing transparency), and
+exceeded any stated purpose (failing purpose limitation and minimisation).
+Encrypting unlawful data does not make it lawful. (3) Controller: FastGoods,
+which decides why and how. Processors: The cloud host and the payment provider
+(the courier likewise, for delivery data). Data subjects: The customers. Article
+28 requires a written data processing agreement binding each processor to
+FastGoods' documented instructions. (4) Authority notification by Saturday 10:00
+--- 72 hours are hours, weekend included. Customers are told if the breach is
+likely to result in a high risk to them (fraud or phishing exposure from leaked
+contact and order data would qualify). Documentation is required for all
+breaches (Art. 33(5)) so the not-reportable judgement can be defended in a later
+inspection. (5) A database breach is a personal-data breach under the GDPR (72h
+to Datatilsynet, Art. 34 to customers if high risk) and, for an in-scope entity,
+a significant incident under a NIS-style regime (24--72--one month). The
+preparedness plan of Lecture 12 --- contacts, templates, decision-makers fixed
+in advance --- is what makes both clocks achievable.

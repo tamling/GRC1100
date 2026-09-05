@@ -1,0 +1,8 @@
+\begin{tikzpicture}[font=\scriptsize,node distance=0.32cm]
+    \node[flowfill,minimum width=2.15cm,minimum height=1.0cm,align=center] (a) {\textbf{2019}\\OECD AI\\Principles};
+    \node[flowfill,minimum width=2.15cm,minimum height=1.0cm,align=center,right=of a] (b) {\textbf{2021}\\EU AI Act\\proposed};
+    \node[flowfill,minimum width=2.15cm,minimum height=1.0cm,align=center,right=of b] (c) {\textbf{2023}\\NIST AI RMF;\\ISO/IEC 42001};
+    \node[flowfill,minimum width=2.15cm,minimum height=1.0cm,align=center,right=of c] (d) {\textbf{2024}\\AI Act\\in force};
+    \node[flowdark,minimum width=2.15cm,minimum height=1.0cm,align=center,right=of d] (e) {\textbf{2025--27}\\Phased\\application};
+    \draw[arr] (a)--(b); \draw[arr] (b)--(c); \draw[arr] (c)--(d); \draw[arr] (d)--(e);
+  \end{tikzpicture}

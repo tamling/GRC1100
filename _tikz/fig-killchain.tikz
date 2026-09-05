@@ -1,0 +1,8 @@
+\begin{tikzpicture}[font=\footnotesize,node distance=0.35cm]
+    \node[flowfill,minimum width=2.35cm,minimum height=1.0cm,align=center] (a) {Recon};
+    \node[flowfill,minimum width=2.35cm,minimum height=1.0cm,align=center,right=of a] (b) {Delivery\\(phishing)};
+    \node[flowfill,minimum width=2.35cm,minimum height=1.0cm,align=center,right=of b] (c) {Exploit\\(steal login)};
+    \node[flowfill,minimum width=2.35cm,minimum height=1.0cm,align=center,right=of c] (d) {Move /\\escalate};
+    \node[flowdark,minimum width=2.35cm,minimum height=1.0cm,align=center,right=of d] (e) {Act\\(steal data)};
+    \draw[arr] (a)--(b); \draw[arr] (b)--(c); \draw[arr] (c)--(d); \draw[arr] (d)--(e);
+  \end{tikzpicture}

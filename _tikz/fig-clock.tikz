@@ -1,0 +1,6 @@
+\begin{tikzpicture}[font=\footnotesize,node distance=0.45cm]
+    \node[flowfill,minimum width=3.3cm,minimum height=1.05cm,align=center] (a) {Early warning\\\textbf{within 24 hours}};
+    \node[flowfill,minimum width=3.3cm,minimum height=1.05cm,align=center,right=of a] (b) {Notification\\\textbf{within 72 hours}};
+    \node[flowdark,minimum width=3.3cm,minimum height=1.05cm,align=center,right=of b] (c) {Final report\\\textbf{within one month}};
+    \draw[arr] (a)--(b); \draw[arr] (b)--(c);
+  \end{tikzpicture}

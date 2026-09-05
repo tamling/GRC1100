@@ -1,0 +1,11 @@
+\begin{tikzpicture}[scale=1.3,transform shape,font=\tiny,every node/.style={anchor=north west,align=left,text=kink,text width=2.16cm,inner sep=0pt}]
+    \draw[cbox] (0,2.82) rectangle (2.3,0.78);   \node at (0.06,2.78){\textcolor{kristiania}{\bfseries Key partners}\\Cloud host\\Payment provider\\Couriers};
+    \draw[cbox] (2.3,2.82) rectangle (4.6,1.8);   \node at (2.36,2.78){\textcolor{kristiania}{\bfseries Key activities}\\Run the webshop\\Fulfil orders};
+    \draw[cbox] (2.3,1.8) rectangle (4.6,0.78);   \node at (2.36,1.76){\textcolor{kristiania}{\bfseries Key resources}\\Website, customer DB\\Payment system};
+    \draw[cbox] (4.6,2.82) rectangle (6.9,0.78);  \node at (4.66,2.78){\textcolor{kristiania}{\bfseries Value}\\\textcolor{kristiania}{\bfseries proposition}\\Convenient online\\shopping, fast\\delivery};
+    \draw[cbox] (6.9,2.82) rectangle (9.2,1.8);   \node at (6.96,2.78){\textcolor{kristiania}{\bfseries Relationships}\\Self-service,\\support};
+    \draw[cbox] (6.9,1.8) rectangle (9.2,0.78);   \node at (6.96,1.76){\textcolor{kristiania}{\bfseries Channels}\\Webshop (browser/app)};
+    \draw[cbox] (9.2,2.82) rectangle (11.5,0.78); \node at (9.26,2.78){\textcolor{kristiania}{\bfseries Customers}\\Online consumers\\buying goods};
+    \draw[cbox] (0,0.78) rectangle (5.75,0);      \node[text width=5.6cm] at (0.06,0.74){\textcolor{kristiania}{\bfseries Cost structure}\\Hosting, staff, logistics, fees};
+    \draw[cbox] (5.75,0.78) rectangle (11.5,0);   \node[text width=5.6cm] at (5.81,0.74){\textcolor{kristiania}{\bfseries Revenue streams}\\Sales through the checkout};
+  \end{tikzpicture}

@@ -1,0 +1,27 @@
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage[T1]{fontenc}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing}
+% Course colours (lecture-deck palette, same as the LaTeX script)
+\definecolor{kristiania}{HTML}{C61932}
+\definecolor{kink}{HTML}{1A1A1A}
+\definecolor{kgrey}{HTML}{595959}
+\definecolor{caseblue}{HTML}{2B5797}
+\definecolor{riskLow}{HTML}{43A047}
+\definecolor{riskMod}{HTML}{C99900}
+\definecolor{riskHigh}{HTML}{FB8C00}
+\definecolor{riskCrit}{HTML}{E53935}
+% TikZ styles shared with the decks
+\tikzset{
+  flowfill/.style={draw=black!55,fill=black!8,rounded corners=2pt,inner sep=4pt},
+  flowdark/.style={draw=kristiania,fill=kristiania,text=white,rounded corners=2pt,inner sep=4pt},
+  arr/.style={-{Stealth[length=2.4mm]},semithick,black!70},
+  cbox/.style={draw=black!45,line width=0.3pt}
+}
+% FastGoods wordmark (as on the Lecture 1 slides)
+\newcommand{\fgmark}[1][1]{\begin{tikzpicture}[scale=#1,baseline=-0.6ex]
+  \filldraw[kristiania,rounded corners=1.2pt] (0,0) rectangle (0.46,0.42);
+  \draw[white,line width=1pt] (0.14,0.42) arc (180:0:0.09);
+  \node[white,font=\scriptsize\bfseries] at (0.23,0.17) {F};
+\end{tikzpicture}}
+\newcommand{\fglogo}{{\fgmark}\,{\bfseries\textcolor{kink}{Fast}\textcolor{kristiania}{Goods}}}
+\begin{document}

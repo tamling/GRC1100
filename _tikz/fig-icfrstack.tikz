@@ -1,0 +1,7 @@
+\begin{tikzpicture}[font=\footnotesize,node distance=0.28cm]
+    \node[flowdark,minimum width=8.6cm,minimum height=0.8cm,align=center] (fin) {Financial / business controls (ICFR)};
+    \node[flowfill,minimum width=8.6cm,minimum height=0.8cm,align=center,below=of fin] (app) {IT application controls (ITAC)};
+    \node[flowfill,minimum width=8.6cm,minimum height=0.8cm,align=center,below=of app] (git) {General IT controls (GITC / ITGC)};
+    \draw[arr,kristiania] ($(git.west)+(-0.35,0)$) -- ($(fin.west)+(-0.35,0)$);
+    \node[font=\scriptsize,text=kristiania,rotate=90,anchor=south] at ($(app.west)+(-0.62,0)$) {supports};
+  \end{tikzpicture}

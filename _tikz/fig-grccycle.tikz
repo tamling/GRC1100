@@ -1,0 +1,14 @@
+\begin{tikzpicture}[font=\footnotesize]
+    \def\ea{3.9} \def\eb{2.1}
+    \node[flowfill,minimum width=2.5cm,minimum height=0.95cm,align=center] (u) at (90:{\ea} and {\eb}) {\textbf{Understand}\\\& govern};
+    \node[flowfill,minimum width=2.5cm,minimum height=0.95cm,align=center] (a) at (18:{\ea} and {\eb}) {\textbf{Assess}\\the risk};
+    \node[flowfill,minimum width=2.5cm,minimum height=0.95cm,align=center] (t) at (-54:{\ea} and {\eb}) {\textbf{Treat}\\\& prepare};
+    \node[flowfill,minimum width=2.5cm,minimum height=0.95cm,align=center] (c) at (-126:{\ea} and {\eb}) {\textbf{Check}\\\& report};
+    \node[flowdark,minimum width=2.5cm,minimum height=0.95cm,align=center] (i) at (162:{\ea} and {\eb}) {\textbf{Improve}};
+    \draw[arr] (u) to[bend left=16] (a);
+    \draw[arr] (a) to[bend left=16] (t);
+    \draw[arr] (t) to[bend left=16] (c);
+    \draw[arr] (c) to[bend left=16] (i);
+    \draw[arr] (i) to[bend left=16] (u);
+    \node[font=\scriptsize,text=kgrey,align=center,text width=3.4cm] at (0,0) {and again --- the cycle never finishes};
+  \end{tikzpicture}

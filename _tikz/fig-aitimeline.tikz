@@ -1,0 +1,8 @@
+\begin{tikzpicture}[font=\scriptsize,node distance=0.32cm]
+    \node[flowfill,minimum width=2.15cm,minimum height=1.0cm,align=center] (a) {\textbf{1950--56}\\Turing's question;\\AI named (Dartmouth)};
+    \node[flowfill,minimum width=2.15cm,minimum height=1.0cm,align=center,right=of a] (b) {\textbf{1970s--80s}\\Expert systems;\\two AI winters};
+    \node[flowfill,minimum width=2.15cm,minimum height=1.0cm,align=center,right=of b] (c) {\textbf{2012}\\Deep-learning\\breakthrough};
+    \node[flowfill,minimum width=2.15cm,minimum height=1.0cm,align=center,right=of c] (d) {\textbf{2017}\\Transformer\\architecture};
+    \node[flowdark,minimum width=2.15cm,minimum height=1.0cm,align=center,right=of d] (e) {\textbf{2022}\\ChatGPT ---\\AI for everyone};
+    \draw[arr] (a)--(b); \draw[arr] (b)--(c); \draw[arr] (c)--(d); \draw[arr] (d)--(e);
+  \end{tikzpicture}

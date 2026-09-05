@@ -1,0 +1,6 @@
+\begin{tikzpicture}[font=\footnotesize,node distance=0.45cm]
+    \node[flowfill,minimum width=3.6cm,minimum height=1.05cm,align=center] (a) {\textbf{Breach discovered}\\the clock starts};
+    \node[flowdark,minimum width=3.6cm,minimum height=1.05cm,align=center,right=of a] (b) {\textbf{Authority within 72h}\\Art.\,33};
+    \node[flowfill,minimum width=3.6cm,minimum height=1.05cm,align=center,right=of b] (c) {\textbf{Individuals if high risk}\\Art.\,34};
+    \draw[arr] (a)--(b); \draw[arr] (b)--(c);
+  \end{tikzpicture}

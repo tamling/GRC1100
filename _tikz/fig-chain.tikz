@@ -1,0 +1,7 @@
+\begin{tikzpicture}[font=\footnotesize,node distance=0.55cm]
+    \node[flowfill,minimum width=2.7cm,minimum height=1.0cm,align=center] (t) {\textbf{Threat}\\a hacker};
+    \node[flowfill,minimum width=2.7cm,minimum height=1.0cm,align=center,right=of t] (v) {\textbf{Vulnerability}\\no MFA};
+    \node[flowfill,minimum width=2.7cm,minimum height=1.0cm,align=center,right=of v] (r) {\textbf{Risk}\\takeover (R1)};
+    \node[flowdark,minimum width=2.7cm,minimum height=1.0cm,align=center,right=of r] (c) {\textbf{Control}\\require MFA};
+    \draw[arr] (t)--(v); \draw[arr] (v)--(r); \draw[arr] (r)--(c);
+  \end{tikzpicture}

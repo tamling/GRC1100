@@ -1,0 +1,28 @@
+<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+
+# Chapter 20 — sketch answers {.unnumbered}
+
+\(1\) (a) Qualitative --- screening many risks fast is the workhorse's job;
+numbers on forty fresh risks would be forty guesses. (b) Quantitative --- the
+decision is money against money, so an expected-loss comparison (with ranges) is
+the persuasive form. (c) Qualitative --- a newcomer needs the clear picture: The
+matrix, the top risks, the trend; precision would obscure. (2) Before:
+$1 \times 30\text{k} =$ EUR 30k/yr. After: $0.2 \times 30\text{k} =$ EUR 6k/yr.
+Benefit: EUR 24k/yr against EUR 8k cost --- clear yes. Honest version: Outages
+"roughly once a year, EUR 20--50k each" give EUR 20--50k/yr falling to about
+EUR 4--10k/yr; the protection pays for itself across the whole range, which is
+what makes the decision robust rather than precise. (3) Where do $P$ and $V$
+come from --- which incidents, whose data? What range sits behind the point
+estimate --- and why are there six significant figures? What would change the
+number --- which assumptions is it most sensitive to? Expected instead:
+"Expected annual loss is roughly EUR 250--450k, driven mainly by the assumed
+breach frequency; assumptions attached." (4) Levels 5$\to$`<!-- -->`{=html}1:
+EUR 1 M, 100k, 10k, 1k, 100. R3 at EUR 400k sits between levels 4 and 5 on money
+--- rated impact 5 on this scale (nearest band; on a 10 M scale it was a 4),
+which itself demonstrates that levels are scale-relative and must be read with
+their table. (5) Example: R1 (post-MFA) level 2 likelihood, level 3--4 impact
+$\to$ every 20 years, EUR 10--100k $\to$ expected loss well under EUR 5k/yr; R2
+level 3--4 likelihood, level 3 impact $\to$ EUR 15--50k/yr; R3 level 2--3
+likelihood, level 4--5 impact $\to$ EUR 20--200k/yr. New conclusion: The
+register can be *summed* --- total expected loss on the order of EUR 50--250k a
+year --- a security budget anchor no set of colour-coded levels could provide.

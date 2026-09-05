@@ -1,0 +1,13 @@
+\begin{tikzpicture}[font=\tiny]
+    % x = (year-2003)*0.62
+    \draw[arr,black!80] (0,0) -- (15.3,0);
+    \foreach \x in {0.62,8.06,8.68,9.92,11.78,13.02,13.64}
+      \draw[black!80] (\x,-0.09) -- (\x,0.09);
+    \node[above,align=center] at (0.62,0.16) {\textbf{2004}\\ENISA\\founded};
+    \node[below,align=center] at (8.06,-0.16) {\textbf{2016}\\NIS1\\directive};
+    \node[above,align=center] at (8.68,0.16) {\textbf{2017}\\WannaCry\\NotPetya};
+    \node[below,align=center] at (9.92,-0.16) {\textbf{2019}\\EU Cyber-\\security Act};
+    \node[above,align=center] at (11.78,0.16) {\textbf{2022}\\NIS2\\adopted};
+    \node[below,align=center] at (13.02,-0.16) {\textbf{2024}\\EU transposition\\deadline};
+    \node[above,align=center,text=kristiania,xshift=2.5mm,yshift=4.6mm] at (13.64,0.16) {\textbf{2025}\\\textbf{NO Digital}\\\textbf{Security Act}};
+  \end{tikzpicture}

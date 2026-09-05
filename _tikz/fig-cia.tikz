@@ -1,0 +1,10 @@
+\begin{tikzpicture}[font=\small]
+    \draw[kristiania,very thick] (0,1.25) -- (-2.1,-1.05) -- (2.1,-1.05) -- cycle;
+    \node[kristiania] at (0,2.0) {\textbf{Confidentiality}};
+    \node[kgrey,font=\footnotesize] at (0,1.6) {only the right eyes};
+    \node[kristiania] at (-2.75,-1.32) {\textbf{Integrity}};
+    \node[kgrey,font=\footnotesize] at (-2.75,-1.72) {accurate, unaltered};
+    \node[kristiania] at (2.75,-1.32) {\textbf{Availability}};
+    \node[kgrey,font=\footnotesize] at (2.75,-1.72) {there when needed};
+    \node[kink,font=\footnotesize\itshape] at (0,-0.35) {information};
+  \end{tikzpicture}

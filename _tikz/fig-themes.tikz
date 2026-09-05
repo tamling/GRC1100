@@ -1,0 +1,16 @@
+\begin{tikzpicture}[font=\scriptsize]
+    \fill[kristiania!25] (0,0) rectangle (4.66,0.8);
+    \fill[kristiania!45] (4.66,0) rectangle (5.67,0.8);
+    \fill[kristiania!65] (5.67,0) rectangle (7.43,0.8);
+    \fill[kristiania!85] (7.43,0) rectangle (11.71,0.8);
+    \draw[white,line width=1pt] (4.66,0) -- (4.66,0.8) (5.67,0) -- (5.67,0.8) (7.43,0) -- (7.43,0.8);
+    \draw[black!50] (0,0) rectangle (11.71,0.8);
+    \node[text=kink] at (2.33,0.4) {\textbf{37}};
+    \node[text=kink] at (5.16,0.4) {\textbf{8}};
+    \node[text=kink] at (6.55,0.4) {\textbf{14}};
+    \node[white] at (9.57,0.4) {\textbf{34}};
+    \node[below,align=center] at (2.33,-0.06) {Organisational};
+    \node[below,align=center] at (5.16,-0.06) {People};
+    \node[below,align=center] at (6.55,-0.06) {Physical};
+    \node[below,align=center] at (9.57,-0.06) {Technological};
+  \end{tikzpicture}

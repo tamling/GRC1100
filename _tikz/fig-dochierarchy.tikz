@@ -1,0 +1,8 @@
+\begin{tikzpicture}[font=\footnotesize,node distance=0.22cm]
+    \node[flowdark,minimum width=5.6cm,minimum height=0.85cm,align=center] (p) {\textbf{Policy} --- What \& why (mandatory)};
+    \node[flowfill,minimum width=7.2cm,minimum height=0.85cm,align=center,below=of p] (s) {\textbf{Standard} --- Specific mandatory rules};
+    \node[flowfill,minimum width=8.8cm,minimum height=0.85cm,align=center,below=of s] (pr) {\textbf{Procedure} --- Step-by-step how};
+    \node[flowfill,minimum width=10.4cm,minimum height=0.85cm,align=center,below=of pr,fill=kgrey!14] (g) {Guideline --- Recommended, not mandatory};
+    \draw[arr] ($(g.west)+(-0.7,2.9)$) -- ($(g.west)+(-0.7,-0.15)$)
+      node[midway,left,font=\scriptsize,align=center,rotate=90,yshift=2mm]{high-level $\rightarrow$ detailed};
+  \end{tikzpicture}

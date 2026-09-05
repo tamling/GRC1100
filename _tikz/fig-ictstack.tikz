@@ -1,0 +1,12 @@
+\begin{tikzpicture}[font=\footnotesize]
+    \draw[draw=kgrey,line width=0.3pt,fill=kristiania!20] (-4.1,2.34) rectangle (4.1,3.12);
+    \draw[draw=kgrey,line width=0.3pt,fill=kristiania!14] (-4.1,1.56) rectangle (4.1,2.34);
+    \draw[draw=kgrey,line width=0.3pt,fill=kristiania!9]  (-4.1,0.78) rectangle (4.1,1.56);
+    \draw[draw=kgrey,line width=0.3pt,fill=kristiania!5]  (-4.1,0)    rectangle (4.1,0.78);
+    \node[text=kink] at (0,2.73) {\textbf{Business processes} (Chapter 2)};
+    \node[text=kink] at (0,1.95) {\textbf{Applications} --- the webshop};
+    \node[text=kink] at (0,1.17) {\textbf{Data, systems \& networks}};
+    \node[text=kink] at (0,0.39) {\textbf{Infrastructure} --- increasingly cloud};
+    \draw[arr,kristiania] (4.55,0.2) -- (4.55,2.9);
+    \node[text=kristiania,rotate=90,anchor=south,font=\scriptsize] at (4.85,1.55) {a failure ripples upward};
+  \end{tikzpicture}

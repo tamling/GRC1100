@@ -1,0 +1,9 @@
+\begin{tikzpicture}[font=\footnotesize]
+    \node[flowfill,minimum width=2.7cm,minimum height=1.05cm,align=center] (t) at (-4.2,0) {\textbf{Threat}\\(actor)};
+    \node[flowfill,minimum width=2.7cm,minimum height=1.05cm,align=center] (v) at (0,0) {\textbf{Vulnerability}};
+    \node[flowdark,minimum width=2.7cm,minimum height=1.05cm,align=center] (a) at (4.2,0) {\textbf{Value}\\(asset)};
+    \node[flowfill,minimum width=2.7cm,minimum height=1.05cm,align=center,draw=kristiania] (c) at (0,-2.0) {\textbf{Control}};
+    \draw[arr] (t) -- (v) node[midway,above,font=\scriptsize]{exploits};
+    \draw[arr] (v) -- (a) node[midway,above,font=\scriptsize]{harms};
+    \draw[arr,kristiania,semithick] (c) -- (v) node[midway,right,font=\scriptsize]{removes};
+  \end{tikzpicture}

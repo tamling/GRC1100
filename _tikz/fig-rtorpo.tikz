@@ -1,0 +1,15 @@
+\begin{tikzpicture}[font=\footnotesize]
+    \draw[thick,-{Stealth[length=2.6mm]}] (-5.4,0)--(5.8,0) node[below=2pt]{\scriptsize time};
+    \node[circle,fill=kristiania,inner sep=2.4pt] (inc) at (0,0) {};
+    \node[below=3pt of inc,font=\scriptsize,align=center] {incident};
+    \node[below,font=\scriptsize,align=center] at (-3.4,-0.12) {last\\backup};
+    \node[below,font=\scriptsize,align=center] at (3.4,-0.12) {service\\restored};
+    \draw[black!60] (-3.4,-0.09)--(-3.4,0.09);
+    \draw[black!60] (3.4,-0.09)--(3.4,0.09);
+    \draw[decorate,decoration={brace,amplitude=5pt},kristiania,thick]
+      (-3.35,0.5)--(-0.05,0.5) node[midway,above=6pt,align=center]{\textbf{RPO}\\data you may lose};
+    \draw[decorate,decoration={brace,amplitude=5pt},kristiania,thick]
+      (0.05,0.5)--(3.35,0.5) node[midway,above=6pt,align=center]{\textbf{RTO}\\downtime you accept};
+    \draw[decorate,decoration={brace,amplitude=5pt,mirror},kgrey,thick]
+      (0.05,-0.95)--(5.1,-0.95) node[midway,below=6pt,align=center]{\textbf{MTD}\\the ceiling the RTO must stay inside};
+  \end{tikzpicture}

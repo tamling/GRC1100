@@ -1,0 +1,10 @@
+\begin{tikzpicture}[font=\small]
+    \draw[kristiania,thick,fill=kristiania!12,fill opacity=0.55] (0,0.46) circle (1.28);
+    \draw[kristiania,thick,fill=kristiania!12,fill opacity=0.55] (-1.15,-1.1) circle (1.28);
+    \draw[kristiania,thick,fill=kristiania!12,fill opacity=0.55] (1.15,-1.1) circle (1.28);
+    \filldraw[fill=kristiania,draw=kristiania,very thick] (0,-0.55) circle (0.64);
+    \node[kink] at (0,1.98) {\textbf{Governance}};
+    \node[kink] at (-2.35,-1.42) {\textbf{Risk}};
+    \node[kink] at (2.35,-1.42) {\textbf{Compliance}};
+    \node[white] at (0,-0.55) {\textbf{GRC}};
+  \end{tikzpicture}

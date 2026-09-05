@@ -1,0 +1,15 @@
+\begin{tikzpicture}[font=\scriptsize,scale=0.92]
+    \fill[riskLow] (0,0) rectangle (1,1); \fill[riskLow] (1,0) rectangle (2,1); \fill[riskLow] (2,0) rectangle (3,1); \fill[riskMod] (3,0) rectangle (4,1); \fill[riskMod] (4,0) rectangle (5,1);
+    \fill[riskLow] (0,1) rectangle (1,2); \fill[riskLow] (1,1) rectangle (2,2); \fill[riskMod] (2,1) rectangle (3,2); \fill[riskMod] (3,1) rectangle (4,2); \fill[riskHigh] (4,1) rectangle (5,2);
+    \fill[riskLow] (0,2) rectangle (1,3); \fill[riskMod] (1,2) rectangle (2,3); \fill[riskMod] (2,2) rectangle (3,3); \fill[riskHigh] (3,2) rectangle (4,3); \fill[riskHigh] (4,2) rectangle (5,3);
+    \fill[riskMod] (0,3) rectangle (1,4); \fill[riskMod] (1,3) rectangle (2,4); \fill[riskHigh] (2,3) rectangle (3,4); \fill[riskHigh] (3,3) rectangle (4,4); \fill[riskCrit] (4,3) rectangle (5,4);
+    \fill[riskMod] (0,4) rectangle (1,5); \fill[riskHigh] (1,4) rectangle (2,5); \fill[riskHigh] (2,4) rectangle (3,5); \fill[riskCrit] (3,4) rectangle (4,5); \fill[riskCrit] (4,4) rectangle (5,5);
+    \draw[white,line width=1.1pt] (0,0) grid (5,5);
+    \node[font=\scriptsize\bfseries,white] at (3.5,3.5) {R1};
+    \node[font=\scriptsize\bfseries,white] at (2.5,4.5) {R3};
+    \node[font=\scriptsize\bfseries,white] at (2.5,3.5) {R2};
+    \node[below,font=\scriptsize] at (0.5,-0.05){Rare}; \node[below,font=\scriptsize] at (2.5,-0.05){Possible}; \node[below,font=\scriptsize] at (4.5,-0.05){Certain};
+    \node[below,font=\footnotesize] at (2.5,-0.55){Likelihood $\rightarrow$};
+    \node[rotate=90,above,font=\scriptsize] at (-0.05,0.5){Insignif.}; \node[rotate=90,above,font=\scriptsize] at (-0.05,2.5){Significant}; \node[rotate=90,above,font=\scriptsize] at (-0.05,4.5){Disastrous};
+    \node[rotate=90,above,font=\footnotesize] at (-0.6,2.5){Consequence $\rightarrow$};
+  \end{tikzpicture}

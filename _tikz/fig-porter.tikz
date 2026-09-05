@@ -1,0 +1,17 @@
+\begin{tikzpicture}[font=\scriptsize]
+    \tikzset{sb/.style={draw=kgrey,line width=0.3pt,fill=kristiania!8},
+             pb/.style={draw=kgrey,line width=0.3pt,fill=kristiania!16}}
+    \draw[sb] (0,2.22) rectangle (9.3,2.56);  \node[anchor=west,text=kink] at (0.12,2.39){Firm infrastructure};
+    \draw[sb] (0,1.88) rectangle (9.3,2.22);  \node[anchor=west,text=kink] at (0.12,2.05){Human resource management};
+    \draw[sb] (0,1.54) rectangle (9.3,1.88);  \node[anchor=west,text=kink] at (0.12,1.71){Technology development};
+    \draw[sb] (0,1.2) rectangle (9.3,1.54);   \node[anchor=west,text=kink] at (0.12,1.37){Procurement};
+    \draw[pb] (0,0) rectangle (1.86,1.2);     \node[text=kink,align=center] at (0.93,0.6){Inbound\\logistics};
+    \draw[pb] (1.86,0) rectangle (3.72,1.2);   \node[text=kink,align=center] at (2.79,0.6){Operations};
+    \draw[pb] (3.72,0) rectangle (5.58,1.2);   \node[text=kink,align=center] at (4.65,0.6){Outbound\\logistics};
+    \draw[pb] (5.58,0) rectangle (7.44,1.2);   \node[text=kink,align=center] at (6.51,0.6){Marketing\\\& sales};
+    \draw[pb] (7.44,0) rectangle (9.3,1.2);    \node[text=kink,align=center] at (8.37,0.6){Service};
+    \draw[pb] (9.3,0) -- (10.5,1.28) -- (9.3,2.56) -- cycle;
+    \node[text=kink,rotate=-90] at (9.9,1.28){Margin};
+    \node[text=kristiania,rotate=90,anchor=south,font=\scriptsize\bfseries] at (-0.12,1.88){Support};
+    \node[text=kristiania,anchor=north,font=\scriptsize\bfseries] at (4.65,-0.08){Primary activities};
+  \end{tikzpicture}

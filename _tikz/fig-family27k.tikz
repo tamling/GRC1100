@@ -1,0 +1,10 @@
+\begin{tikzpicture}[font=\scriptsize]
+    \node[flowdark,minimum width=3.3cm,minimum height=1.2cm,align=center] (c) at (0,0) {\textbf{ISO/IEC 27001}\\ISMS requirements\\(certifiable)};
+    \node[flowfill,minimum width=2.7cm,minimum height=0.9cm,align=center] (a) at (0,2.0) {27000\\vocabulary};
+    \node[flowfill,minimum width=2.7cm,minimum height=0.9cm,align=center] (b) at (4.6,1.1) {27002\\the controls (L7)};
+    \node[flowfill,minimum width=2.7cm,minimum height=0.9cm,align=center] (d) at (4.6,-1.1) {27005\\risk (L8)};
+    \node[flowfill,minimum width=2.7cm,minimum height=0.9cm,align=center] (e) at (0,-2.0) {27035\\incidents (L12)};
+    \node[flowfill,minimum width=2.7cm,minimum height=0.9cm,align=center] (f) at (-4.6,-1.1) {27017 / 27018\\cloud (L20)};
+    \node[flowfill,minimum width=2.7cm,minimum height=0.9cm,align=center] (g) at (-4.6,1.1) {27701\\privacy (L6)};
+    \foreach \n in {a,b,d,e,f,g} \draw[black!45] (c) -- (\n);
+  \end{tikzpicture}

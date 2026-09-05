@@ -1,0 +1,30 @@
+<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+
+# Chapter 17 — sketch answers {.unnumbered}
+
+\(1\) R1 and R3 touch customer data: Any residual at high is above the line ---
+must be treated, and acceptance of their (low) residuals belongs to management
+or the board, not a team lead. R2 is availability: One hour per quarter is the
+drawn line, so a residual meaning rare, short outages could be accepted --- by
+management, since it touches the stated appetite; a marketing-site defacement
+risk at medium is the operations lead's to sign. (2) Missing: The residual
+level, the explicit decision wording, the accepter's name and role (with
+authority matching R2's size), the date, and the review trigger. Repaired: R2
+residual --- DDoS outage after basic filtering; level: Medium (possible $\times$
+major); decision: Accept; accepted by: Managing director, 20 Oct 2026; review
+trigger: Any outage over 30 minutes, or 12 months. (3) Protection is *reduce*
+(lowers likelihood and duration); insurance is *transfer* (moves the financial
+loss, not the outage or the customers' experience); doing nothing is acceptance
+--- above the appetite, so not available. Recommend reduce: The appetite is
+stated in downtime, and only protection buys downtime; the residual is a
+determined attack exceeding the scrubbing capacity --- rarer, shorter, and now
+insurable as a second layer if wanted. (4) Summary: Database-breach risk is high
+(possible $\times$ disastrous); encryption at rest cuts the impact of R3
+decisively --- approve EUR 7k. Decision needed: Approve EUR 7k for database
+encryption; owner IT lead; live in four weeks; residual to be re-evaluated and
+formally accepted on completion. (5) KPI: Share of customer-data stores
+encrypted with current keys --- a fall triggers an implementation review. KRI 1
+(review trigger): Privileged accounts with direct database access --- crossing
+the agreed ceiling reopens the acceptance. KRI 2: Unpatched criticals on
+database-adjacent systems --- a rise means the exposure is growing ahead of
+incidents, so patching is pulled forward.

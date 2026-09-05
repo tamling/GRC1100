@@ -1,0 +1,7 @@
+\begin{tikzpicture}[font=\footnotesize,node distance=0.55cm]
+    \node[flowfill,minimum width=2.9cm,minimum height=1.15cm,align=center] (p) {$P$ --- once every\\two years\\$= 0.5$/yr};
+    \node[font=\Large,right=of p] (x) {$\times$};
+    \node[flowfill,minimum width=2.9cm,minimum height=1.15cm,align=center,right=of x] (v) {$V$ --- loss if it\\happens\\$=$ EUR\,1\,M};
+    \node[font=\Large,right=of v] (eq) {$=$};
+    \node[flowdark,minimum width=2.9cm,minimum height=1.15cm,align=center,right=of eq] (r) {$R$ --- expected loss\\EUR\,500k\\per year};
+  \end{tikzpicture}

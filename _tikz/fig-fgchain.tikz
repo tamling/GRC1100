@@ -1,0 +1,8 @@
+\begin{tikzpicture}[font=\footnotesize,node distance=0.35cm]
+    \node[flowfill,minimum width=2.35cm,minimum height=1.0cm,align=center] (a) {Source\\goods};
+    \node[flowfill,minimum width=2.35cm,minimum height=1.0cm,align=center,right=of a] (b) {List in\\webshop};
+    \node[flowdark,minimum width=2.35cm,minimum height=1.0cm,align=center,right=of b] (c) {\textbf{Checkout}\\\& payment};
+    \node[flowfill,minimum width=2.35cm,minimum height=1.0cm,align=center,right=of c] (d) {Pack \&\\deliver};
+    \node[flowfill,minimum width=2.35cm,minimum height=1.0cm,align=center,right=of d] (e) {After-sales\\support};
+    \draw[arr] (a)--(b); \draw[arr] (b)--(c); \draw[arr] (c)--(d); \draw[arr] (d)--(e);
+  \end{tikzpicture}

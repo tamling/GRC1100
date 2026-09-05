@@ -1,0 +1,15 @@
+\begin{tikzpicture}[font=\footnotesize]
+    \draw[thick,kgrey,-{Stealth[length=2.8mm]}] (-0.4,0) -- (13.2,0);
+    \foreach \x/\y/\lab/\txt in {
+      0.4/1/{1970}/{Hesse: First data\\protection act},
+      2.7/-1/{1980}/{OECD guidelines;\\Datatilsynet opens},
+      5.0/1/{1995}/{EU Directive\\95/46/EC},
+      7.4/-1/{2016/18}/{GDPR: The DPIA\\becomes a duty},
+      9.8/1/{2024}/{EU AI Act\\(Reg.\ 2024/1689)},
+      12.2/-1/{2025--27}/{AI Act applies\\in stages}}{
+      \draw[kristiania,thick] (\x,0) -- (\x,{0.34*\y});
+      \fill[kristiania] (\x,0) circle (0.075);
+      \node[align=center,font=\scriptsize,anchor={\ifdim \y pt > 0pt south\else north\fi}]
+        at (\x,{0.40*\y}) {\textbf{\lab}\\\txt};
+    }
+  \end{tikzpicture}

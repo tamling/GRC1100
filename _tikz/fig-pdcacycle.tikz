@@ -1,0 +1,10 @@
+\begin{tikzpicture}[font=\footnotesize]
+    \node[flowfill,minimum width=2.4cm,minimum height=0.85cm,align=center] (P) at (0,1.5) {\textbf{Plan}\\set objectives};
+    \node[flowfill,minimum width=2.4cm,minimum height=0.85cm,align=center] (D) at (3.1,0) {\textbf{Do}\\implement};
+    \node[flowfill,minimum width=2.4cm,minimum height=0.85cm,align=center] (C) at (0,-1.5) {\textbf{Check}\\monitor \& audit};
+    \node[flowdark,minimum width=2.4cm,minimum height=0.85cm,align=center] (A) at (-3.1,0) {\textbf{Act}\\improve};
+    \draw[arr] (P) to[bend left=16] (D);
+    \draw[arr] (D) to[bend left=16] (C);
+    \draw[arr] (C) to[bend left=16] (A);
+    \draw[arr] (A) to[bend left=16] (P);
+  \end{tikzpicture}

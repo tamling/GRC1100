@@ -1,0 +1,11 @@
+\begin{tikzpicture}[font=\footnotesize]
+    \node[flowfill,minimum width=3.0cm,minimum height=1.5cm,align=center] (n1) at (0,0)
+      {\textbf{Value}\\[2pt]Customer database\\(C/I high)};
+    \node[flowfill,minimum width=3.0cm,minimum height=1.5cm,align=center] (n2) at (3.7,0)
+      {\textbf{Threat}\\[2pt]Credential theft;\\insider};
+    \node[flowfill,minimum width=3.0cm,minimum height=1.5cm,align=center] (n3) at (7.4,0)
+      {\textbf{Vulnerability}\\[2pt]No MFA;\\broad access};
+    \node[flowdark,minimum width=3.0cm,minimum height=1.5cm,align=center] (n4) at (11.1,0)
+      {\textbf{Control}\\[2pt]MFA; least priv.;\\encryption};
+    \draw[arr] (n1)--(n2); \draw[arr] (n2)--(n3); \draw[arr] (n3)--(n4);
+  \end{tikzpicture}

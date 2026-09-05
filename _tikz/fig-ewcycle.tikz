@@ -1,0 +1,10 @@
+\begin{tikzpicture}[font=\footnotesize]
+    \node[flowfill,minimum width=2.6cm,minimum height=0.85cm,align=center] (a) at (0,1.5) {\textbf{1. Identify}\\risks};
+    \node[flowfill,minimum width=2.6cm,minimum height=0.85cm,align=center] (b) at (3.4,0) {\textbf{2. Assess}\\\& analyse};
+    \node[flowfill,minimum width=2.6cm,minimum height=0.85cm,align=center] (c) at (0,-1.5) {\textbf{3. Mitigate}\\\& control};
+    \node[flowdark,minimum width=2.6cm,minimum height=0.85cm,align=center] (d) at (-3.4,0) {\textbf{4. Monitor}\\\& improve};
+    \draw[arr] (a) to[bend left=16] (b);
+    \draw[arr] (b) to[bend left=16] (c);
+    \draw[arr] (c) to[bend left=16] (d);
+    \draw[arr] (d) to[bend left=16] (a);
+  \end{tikzpicture}

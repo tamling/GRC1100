@@ -1,0 +1,7 @@
+\begin{tikzpicture}[font=\footnotesize,node distance=0.45cm]
+    \node[flowfill,minimum width=2.7cm,minimum height=1.0cm,align=center] (t) {\textbf{Threat}\\acts};
+    \node[flowfill,minimum width=2.7cm,minimum height=1.0cm,align=center,right=of t] (v) {exploits a\\\textbf{vulnerability}};
+    \node[flowfill,minimum width=2.7cm,minimum height=1.0cm,align=center,right=of v] (i) {causes an\\\textbf{incident}};
+    \node[flowdark,minimum width=2.7cm,minimum height=1.0cm,align=center,right=of i] (m) {leading to\\\textbf{impact}};
+    \draw[arr] (t)--(v); \draw[arr] (v)--(i); \draw[arr] (i)--(m);
+  \end{tikzpicture}

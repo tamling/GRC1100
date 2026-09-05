@@ -1,0 +1,10 @@
+\begin{tikzpicture}[font=\scriptsize]
+    \draw[black!60,line width=0.8pt] (0,0) -- (12.4,0);
+    \draw[kristiania,line width=2.6pt] (4.1,0) -- (10.3,0);
+    \foreach \x in {0.2,4.1,10.3} \draw[black!70] (\x,-0.12) -- (\x,0.12);
+    \node[below,align=center] at (0.2,-0.18) {flaw exists\\(undisclosed)};
+    \node[below,align=center] at (4.1,-0.18) {disclosure +\\patch released};
+    \node[below,align=center] at (10.3,-0.18) {patch\\installed};
+    \node[above,align=center,text=kgrey] at (1.9,0.22) {zero-day\\territory};
+    \node[above,align=center,text=kristiania] at (7.2,0.22) {\textbf{the exposure window} ---\\where most exploitation happens};
+  \end{tikzpicture}

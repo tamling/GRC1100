@@ -1,0 +1,376 @@
+# Supplier, cloud and third-party risk {#sec-19-supplier-cloud-third-party-risk}
+
+Chapter 18 governed FastGoods' own riskiest control end to end; Block V closes
+with the risk no internal control reaches, because it lives outside the walls.
+The moment an organisation uses a supplier or the cloud, part of its security
+sits in someone else's hands --- and FastGoods crossed that moment long ago: The
+shop runs on a cloud host, card data flows through a payment processor,
+marketing mail through an email provider, and the code itself rests on
+open-source libraries. This chapter maps the risk that comes with dependence:
+What third-party and supply-chain risk is and why accountability never transfers
+with the work, the supplier lifecycle of due diligence, tiering and onboarding,
+the cloud's shared-responsibility split and the misconfigurations on the
+customer's side of it, the contract and the assurance reports that substitute
+for controls you cannot configure, and the ongoing oversight --- concentration,
+fourth parties, exit plans, the supplier register --- that keeps a checked
+supplier a managed one.
+
+## Risk from outside {#sec-19-risk-from-outside}
+
+Modern systems are assembled from suppliers, so an organisation's security is
+only as strong as its chain --- suppliers hold your data, run your systems, or
+connect into your network, and their weakness becomes your incident. Two related
+ideas need keeping apart.
+
+::: {#def-thirdparty}
+## Third-party and supply-chain risk
+
+*Third-party risk* is the risk arising from a supplier you use directly ---
+their access, their security, their failures. *Supply-chain risk* is the risk
+arriving through the chain behind them --- your suppliers' suppliers, the
+components inside the software, the platform under the platform. A third party
+is anyone you rely on; the supply chain is the whole network behind the service,
+and both now belong in any serious risk assessment.
+:::
+
+The governing principle of the whole chapter comes first, because everything
+else follows from it: *Accountability stays with you*. Work can be delegated;
+responsibility for the outcome cannot. The GDPR makes the point statutory ---
+FastGoods remains the controller even when a processor causes the breach
+(Chapter 7), so "our provider lost the data" is not a defence to Datatilsynet or
+to a customer for an R3 incident --- and regulators and customers apply the same
+logic beyond privacy: You chose the supplier, you answer for the choice.
+
+The threat side has escalated in a way the history makes vivid. Attackers
+discovered that breaching one trusted supplier reaches thousands of its
+customers at once --- why attack a company when you can attack its software
+vendor and inherit them all? The pattern's milestones: Target (2013), breached
+through a heating-and-ventilation contractor's network access; NotPetya (2017),
+delivered through a poisoned update of Ukrainian accounting software and causing
+billions in collateral damage worldwide; SolarWinds (2020), the definitive case
+below; Log4Shell (2021), one flaw in one ubiquitous open-source library becoming
+everyone's emergency at once; MOVEit (2023), a single file-transfer product's
+vulnerability exploited to extract data from hundreds of organisations that had
+merely bought a tool. Trusted suppliers are high-value targets precisely because
+they are trusted --- and the practical consequence is that the attack surface
+now reaches beyond the walls: Every integration, API key and third-party script
+on the checkout page is a potential way in, many dependencies stay invisible
+until something breaks, and a surprising number of breaches start at a supplier
+the organisation had half-forgotten. Chapter 4's rule returns with new scope:
+You cannot protect what you have not mapped --- and the map now includes other
+people's companies.
+
+::: {.callout-note}
+## Real-world case: SolarWinds (2020): The update as the attack
+
+Attackers --- attributed to Russia's foreign-intelligence service ---
+compromised the software *build system* of SolarWinds, whose Orion platform
+monitors networks for tens of thousands of customers, and hid a backdoor
+(SUNBURST) inside a routine, digitally signed update. Roughly 18,000
+organisations installed it in good faith; among the carefully hand-picked
+follow-on victims were US federal agencies and major technology firms, and the
+campaign ran for months before a security company found it in its own network.
+The case defined supply-chain risk for a generation: The victims' own controls
+were largely irrelevant, because the poison arrived through the most trusted
+channel they had --- the signed vendor update, the one thing patch discipline
+says to install. The defences it argues for are this chapter's programme: Know
+your suppliers and what they can reach, demand security and transparency of
+their build pipelines, monitor as if trust were conditional --- and hold an exit
+plan, because the supplier you cannot leave is the supplier whose risk you have
+fully adopted.
+:::
+
+## The supplier lifecycle {#sec-19-the-supplier-lifecycle}
+
+Supplier risk takes four recognisable forms, and each maps to a control later in
+the chapter: *They are breached* --- your data is stolen from their systems;
+*they lose availability* --- their outage takes your service down; *they misuse
+access* --- excess access is abused or leaked; *they fail or exit* --- the
+service stops and you must move fast. Managing them is a lifecycle: Check before
+you trust, set expectations in writing, and keep watching.
+
+*Due diligence* is the check before trust, and it scales with what is at stake.
+Ask for evidence --- certifications, assurance reports, security policies ---
+and match the depth of the check to the sensitivity of the data and access
+involved: The payment processor handling card data warrants PCI DSS compliance
+and an ISAE 3402 or SOC 2 report read before signing; a low-risk tool needs a
+basic check and no more. Record the decision, and any risks accepted with it ---
+Chapter 17's register does not stop at the company boundary. Because scrutiny is
+finite, *tiering* rations it (@tbl-suppliertiers): Grade suppliers by
+the risk they carry, and let the tier set the depth of diligence, the strength
+of the contract, and the frequency of review. Onboarding then completes the
+entry: The contract signed with the clauses of
+@sec-19-contracts-and-assurance, access granted at Chapter 18's least
+privilege --- a supplier account is an identity like any other --- and a row
+created in the supplier register that @sec-19-managing-it-over-time
+maintains.
+
+::: {#tbl-suppliertiers}
+  **Tier**    **Criteria**                       **FastGoods example**
+  ----------- ---------------------------------- -------------------------------
+  Critical    Sensitive data or a core service   Cloud host, payment processor
+  Important   Some access or data                Email / marketing provider
+  Low         No sensitive access                Office stationery supplier
+
+  : Tiering suppliers by risk: The tier sets how deep the diligence goes, how
+  strong the contract must be, and how often the relationship is reviewed.
+:::
+
+## The cloud, and who secures what {#sec-19-the-cloud-and-who-secures-what}
+
+Using the cloud means running on someone else's infrastructure with the security
+work divided --- not removed --- and the division is where organisations get
+caught out.
+
+::: {#def-sharedresp}
+## The shared responsibility model
+
+In cloud services, the provider secures what it runs --- the physical data
+centres, the network, the virtualisation layer --- and the customer secures what
+it controls: Its data, its access, its configuration, and (depending on the
+service type) its applications and operating systems. The split shifts with the
+service model --- IaaS (rented infrastructure), PaaS (rented platform), SaaS
+(rented software) --- but one layer never moves: Your data, and who can access
+it, are always yours.
+:::
+
+The model reads best as a table (@tbl-sharedresp, after Edwards &
+Weaver, Ch. 27), and FastGoods' own case makes it concrete: The shop runs on
+rented infrastructure (IaaS), so the provider keeps the data centres, network
+and hypervisor --- and FastGoods keeps the customer data and its encryption
+(R3), who can log in and with what MFA (R1), and the shop application and its
+patching. The running risks sit squarely on FastGoods' side of the line, which
+is the point: The cloud is not more or less secure than on-premise --- it is
+*differently* secured, and the danger is assuming the provider handles things
+that are still yours.
+
+::: {#tbl-sharedresp}
+  **Layer**            **IaaS**   **PaaS**   **SaaS**
+  -------------------- ---------- ---------- ----------
+  Data & access        You        You        You
+  Application          You        You        Provider
+  OS / runtime         You        Provider   Provider
+  Physical / network   Provider   Provider   Provider
+
+  : The shared responsibility model (after Edwards & Weaver, Ch. 27). The split
+  moves with the service type; the top row never does.
+:::
+
+Two consequences follow, and both are breach statistics. First,
+*misconfiguration* --- not clever exploitation --- causes most cloud breaches:
+Storage buckets left open to the internet, over-broad permissions, default
+credentials, all on the customer's side of the line. A FastGoods bucket
+accidentally set public is R3 realised by a checkbox; the Capital One breach of
+2019 --- over a hundred million records via a misconfigured access role --- is
+the same pattern at scale. Second, the cloud does not do two things people
+assume it does: It does not secure *your* configuration and access, and it does
+not necessarily back up your data the way you need --- providers guarantee their
+infrastructure's uptime, not the recoverability of your records, and resilience
+features are often shared or optional. Read what is actually guaranteed; ISO
+27001 makes secure use of cloud services an explicit control (A.5.23) for
+exactly this reason. Assuming "the cloud handles it" is how an R3 loss becomes
+unrecoverable --- Chapter 12's untested-backup lesson, outsourced.
+
+## Contracts and assurance {#sec-19-contracts-and-assurance}
+
+For an internal system you deploy a control; for a supplier you write a clause
+--- you cannot configure their systems, so the contract is the primary control,
+and weak terms mean weak control. A handful of clauses turn a commercial
+contract into a security instrument (@tbl-contractclauses), and one of
+them is time-critical in a way Chapter 12 explains: Your own reporting clocks
+--- NIS2's 24 hours, the GDPR's 72 --- start running on *your* awareness, so a
+supplier who tells you late makes you late; the breach-notification clause is
+what connects their incident to your plan. For personal data, much of the table
+is not optional: GDPR Article 28 requires the data-processing agreement in
+writing (Chapter 7's controller--processor machinery).
+
+::: {#tbl-contractclauses}
+  **Clause**              **What it secures**
+  ----------------------- --------------------------------------------------------------------------------------
+  Security requirements   The supplier must meet a defined standard
+  Breach notification     They must tell you fast (e.g. within 24 hours) --- your clocks start with their call
+  Right to audit          You may audit, or receive an assurance report
+  Sub-processors          Limits on passing your data down the chain
+  Service levels (SLA)    Agreed availability and response times
+  Data processing (DPA)   Required by GDPR Art. 28 for personal data
+
+  : The contract as a control: The clauses that make a supplier's security
+  enforceable rather than assumed.
+:::
+
+The standards side is compact, because ISO 27001's 2022 revision gathered the
+supplier discipline into five adjacent controls --- effectively this lecture in
+Annex A form: A.5.19 (information security in supplier relationships), A.5.20
+(security within supplier agreements), A.5.21 (managing the ICT supply chain),
+A.5.22 (monitoring and reviewing supplier services), and A.5.23 (cloud
+services); ISO/IEC 27036 gives the deeper supplier-relationship guidance behind
+them. And where auditing a hyperscale provider yourself is impossible,
+*assurance reports* substitute: An independent auditor tests the supplier's
+controls and you read the result --- ISAE 3402 and SOC 2 being the common
+frameworks, in the Type I and Type II flavours Chapter 16 defined. FastGoods
+does not audit its cloud host; it reads the host's Type II --- an opinion that
+the controls operated all year, the film rather than the snapshot, exactly the
+report Chapter 16 taught it to ask for --- and for cloud providers specifically,
+the Cloud Security Alliance's control matrix and STAR registry play a similar
+role. The regulators, finally, have made all of this duty rather than practice:
+NIS2 names supply-chain security among Article 21's required measures, and DORA
+goes further for finance --- the register of information, tested exit
+strategies, and direct oversight of critical ICT providers that Chapter 15
+mapped.
+
+## Managing it over time {#sec-19-managing-it-over-time}
+
+A supplier checked once is not a supplier managed, because suppliers change ---
+owners, architectures, subcontractors --- and the clean report read at
+onboarding says nothing about their security today. Ongoing oversight runs on
+the ISMS's own rhythm (Chapter 3): Re-assess critical suppliers on a schedule,
+watch for incidents, ownership changes and new sub-processors, and re-read
+assurance reports each year as they are reissued. Two subtler exposures live in
+the aggregate view. *Concentration risk*: Too much depending on one provider, so
+its outage takes much of you down at once --- CrowdStrike's July 2024, from
+Chapter 15, is the canonical morning. *Fourth-party risk*: Your suppliers'
+suppliers --- risk you cannot see directly, and the place concentration hides:
+If the cloud host, the email service and the analytics tool all run on the same
+underlying platform, three contracts share one failure. And because suppliers do
+fail, every critical dependency needs a tested exit or fallback --- Chapter 12's
+preparedness applied to third parties: Know how you would move off or do without
+each critical supplier, keep the data portable and your access to it
+contractually guaranteed, and pre-arrange the fallback that keeps the checkout
+(R2) selling if the payment provider goes dark. An exit plan is not pessimism;
+it is residual-risk thinking pointed outward.
+
+The artefact that holds it all is one page (@tbl-fgsuppliers): Every
+supplier, its service, its tier, its assurance, and the standing action --- the
+register that turns this chapter from a lecture into a routine.
+
+::: {#tbl-fgsuppliers}
+  **Supplier**        **Service**       **Tier**    **Assurance**   **Action**
+  ------------------- ----------------- ----------- --------------- ---------------
+  Cloud host          Runs the shop     Critical    SOC 2 Type II   Review yearly
+  Payment processor   Card data         Critical    PCI DSS         Review yearly
+  Email provider      Marketing mail    Important   Self-attested   Spot-check
+  Stationery          Office supplies   Low         None needed     None
+
+  : The FastGoods supplier register: Tier drives assurance, assurance drives the
+  action --- and the empty cells are as deliberate as the filled ones.
+:::
+
+::: {.callout-tip}
+## Finding the risk: In the supplier register
+
+Read the register backwards, the way every register in this course gets read.
+Suppliers missing from it entirely --- the analytics script marketing added, the
+free SaaS tool a team adopted --- are unmanaged access wearing no row at all;
+shadow suppliers are found by walking the invoices and the browser's network
+tab, not the contracts folder. Then the rows themselves: A critical-tier
+supplier with self-attested assurance is a contradiction in terms; an assurance
+report more than a year old is Chapter 16's snapshot problem, aged; a contract
+without a breach-notification clause is a reporting clock you cannot start; and
+three rows resolving to one underlying platform is concentration risk filed
+under three names. Each finding converts straight into Chapter 8's register ---
+source, event, consequence, with the supplier as the source.
+:::
+
+::: {#exm-studentcloud}
+## The student's third parties
+
+The dependence is already yours: The thesis lives in a cloud drive, the
+references in a citation service, the code on a hosting platform --- free tiers
+all, guaranteeing little. Run the chapter on them. Shared responsibility: The
+provider keeps the service up; the account security (Chapter 18's MFA) and the
+decision to export are yours. Concentration: If the "backup" is the same
+account's sync folder, original and copy share one takeover --- Chapter 8's
+thesis risk, rediscovered as fourth-party thinking. Exit: Can you export
+everything, today, in a usable format? Try it once --- the download that fails
+in the test is Chapter 12's untested backup with a vendor's logo on it. Twenty
+minutes, three suppliers, one register row each: The lecture, at personal scale.
+:::
+
+##### Reading for this chapter.
+
+Edwards & Weaver, Chapter 7 (risk management, with the supply-chain attack
+surface, pp. 109 ff.) and Chapter 27 (cloud security and the shared
+responsibility model, pp. 481 ff.). Standards and law: ISO/IEC 27001:2022,
+A.5.19--A.5.23 (the supplier controls) with ISO/IEC 27036 behind them; NIS2,
+Article 21 (supply-chain security as a required measure); DORA, Articles
+28 ff. (ICT third-party risk, the register of information, oversight of critical
+providers). Both books are available in the library and on the Canvas course
+page.
+
+## Summary {#sec-19-summary}
+
+Dependence is the modern default, and its rule is absolute: Accountability stays
+with you --- GDPR's controller logic generalised --- while the work moves out.
+Third-party risk is the supplier you chose; supply-chain risk is the chain
+behind them (@def-thirdparty), and the attack pattern from Target
+through NotPetya, SolarWinds, Log4Shell and MOVEit shows why trusted channels
+are the target of choice: One compromise, thousands of victims, with the signed
+update as the weapon. Suppliers are managed as a lifecycle --- due diligence
+scaled to sensitivity, tiering that rations scrutiny
+(@tbl-suppliertiers), onboarding with least-privilege access and a
+register row. The cloud splits security rather than removing it
+(@def-sharedresp): The provider keeps its infrastructure, the customer
+always keeps data and access, and the breach statistics live on the customer's
+side --- misconfiguration first --- while two assumptions ("they secure it",
+"they back it up") stay false until the contract says otherwise (A.5.23). Where
+you cannot configure, you contract (@tbl-contractclauses) --- breach
+notification feeding your own clocks, audit rights, sub-processor limits, the
+Article 28 DPA --- and where you cannot audit, you read assurance: The ISAE 3402
+/ SOC 2 Type II, Chapter 16's film, with A.5.19--A.5.23, NIS2 Article 21 and
+DORA's third-party pillar making the discipline law. Over time, oversight runs
+on the ISMS rhythm: Re-assessment, reissued reports, concentration and
+fourth-party awareness, a tested exit per critical dependency, and the one-page
+supplier register (@tbl-fgsuppliers) holding it together.
+
+Block V is complete: Audited, evaluated, one risk governed end to end, and the
+outside dependencies brought under the same discipline. Block VI raises the
+ceiling --- starting with the question every executive eventually asks: Can we
+put numbers on this? Qualitative and quantitative risk, Lecture 20.
+
+## Self-check {#sec-19-self-check}
+
+Try these before the next lecture.
+
+::: {#exr-19-draw-the-line}
+## Draw the line
+
+FastGoods moves the shop from IaaS to a hosted webshop platform (SaaS). Using
+@tbl-sharedresp, list what moves to the provider's side, what stays on
+FastGoods' --- and name the one risk of R1--R3 whose ownership does not change
+at all.
+:::
+
+::: {#exr-19-tier-and-check}
+## Tier and check
+
+A new AI-chatbot service wants read access to order history to answer customer
+queries. Assign its tier, list the due-diligence evidence you would demand
+before onboarding, and name the two contract clauses that are non-negotiable.
+:::
+
+::: {#exr-19-race-the-clock}
+## Race the clock
+
+FastGoods' email provider suffers a breach on Friday 18:00 and notifies
+FastGoods on Monday 09:00; customer data was exposed. Explain what this delay
+does to FastGoods' GDPR position (Chapter 7's clock), and write the contract
+clause that would have prevented the problem.
+:::
+
+::: {#exr-19-find-the-concentration}
+## Find the concentration
+
+FastGoods' register shows: Cloud host (platform X), email provider (runs on
+platform X), analytics tool (runs on platform X), payment processor (own
+infrastructure). Name the exposure, the incident from this course that
+illustrates it, and one measure that reduces it without leaving platform X
+entirely.
+:::
+
+::: {#exr-19-test-the-exit}
+## Test the exit
+
+Write the three-line exit test for the payment processor: What FastGoods must be
+able to do, the evidence it works, and the R2 consequence if the test has never
+been run.
+:::

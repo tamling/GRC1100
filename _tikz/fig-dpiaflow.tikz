@@ -1,0 +1,8 @@
+\begin{tikzpicture}[font=\footnotesize,node distance=0.32cm]
+    \node[flowfill,minimum width=2.5cm,minimum height=1.05cm,align=center] (a) {Describe the\\processing};
+    \node[flowfill,minimum width=2.5cm,minimum height=1.05cm,align=center,right=of a] (b) {Necessity \&\\proportionality};
+    \node[flowfill,minimum width=2.5cm,minimum height=1.05cm,align=center,right=of b] (c) {Risks to the\\individuals};
+    \node[flowfill,minimum width=2.5cm,minimum height=1.05cm,align=center,right=of c] (d) {Safeguards\\designed in};
+    \node[flowdark,minimum width=2.6cm,minimum height=1.05cm,align=center,right=of d] (e) {Residual high?\\Consult authority\\(Art.\,36)};
+    \draw[arr] (a)--(b); \draw[arr] (b)--(c); \draw[arr] (c)--(d); \draw[arr] (d)--(e);
+  \end{tikzpicture}

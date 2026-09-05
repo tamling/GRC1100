@@ -1,0 +1,8 @@
+\begin{tikzpicture}[font=\footnotesize]
+    \node[flowfill,minimum width=4.4cm,minimum height=0.82cm,align=center] (p1) at (-3.6,1.95) {\textbf{Business process}\\walk the steps};
+    \node[flowfill,minimum width=4.4cm,minimum height=0.82cm,align=center] (p2) at (-3.6,0.65) {\textbf{System / IT process}\\access, change, operations};
+    \node[flowfill,minimum width=4.4cm,minimum height=0.82cm,align=center] (p3) at (-3.6,-0.65) {\textbf{Existing control}\\read backwards; test it};
+    \node[flowfill,minimum width=4.4cm,minimum height=0.82cm,align=center] (p4) at (-3.6,-1.95) {\textbf{Audit finding}\\a risk already written down};
+    \node[flowdark,minimum width=4.3cm,minimum height=1.7cm,align=center] (q) at (3.3,0) {\textbf{What can go wrong here?}\\$\downarrow$\\the risk statement\\(Definition~\ref{def:riskstatement})};
+    \foreach \n in {p1,p2,p3,p4} \draw[arr] (\n.east) -- (q.west);
+  \end{tikzpicture}

@@ -1,0 +1,18 @@
+\begin{tikzpicture}[font=\tiny]
+    % axis: x = (year-1986)*0.36
+    \draw[arr,black!80] (0,0) -- (14.7,0);
+    \foreach \x in {0.72,2.16,5.76,6.84,7.56,9.72,11.52,11.88,12.96,14.04}
+      \draw[black!80] (\x,-0.09) -- (\x,0.09);
+    % labels above
+    \node[above,align=center] at (0.72,0.16) {\textbf{1988}\\Morris Worm};
+    \node[above,align=center,xshift=-2.5mm] at (5.76,0.16) {\textbf{2001--02}\\Enron, WorldCom\\SOX};
+    \node[above,align=center,xshift=3mm,yshift=4.6mm] at (7.56,0.16) {\textbf{ca.\ 2007}\\``GRC'' (OCEG)};
+    \node[above,align=center,xshift=-1.5mm] at (11.52,0.16) {\textbf{2018}\\GDPR\\applies};
+    \node[above,align=center,xshift=2.5mm,yshift=4.6mm] at (12.96,0.16) {\textbf{2022}\\NIS2 \& DORA adopted};
+    % labels below
+    \node[below,align=center] at (2.16,-0.16) {\textbf{1992}\\Cadbury \& COSO};
+    \node[below,align=center] at (6.84,-0.16) {\textbf{2005}\\ISO/IEC 27001};
+    \node[below,align=center] at (9.72,-0.16) {\textbf{2010s}\\breaches \&\\ransomware};
+    \node[below,align=center,xshift=-1mm] at (11.88,-0.16) {\textbf{2019}\\Norsk\\Hydro};
+    \node[below,align=center,xshift=1mm] at (14.04,-0.16) {\textbf{2025}\\DORA applies;\\DSA (Norway)};
+  \end{tikzpicture}

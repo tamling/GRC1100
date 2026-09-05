@@ -1,0 +1,32 @@
+<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+
+# Chapter 1 — sketch answers {.unnumbered}
+
+\(1\) Governance: The system by which the organisation is directed and
+controlled --- the FastGoods owner declaring customer-data protection a priority
+and being answerable for it. Risk management: Identifying, assessing and
+treating what could go wrong --- FastGoods ranking R3 above a website typo and
+choosing a treatment. Compliance: Meeting binding and adopted norms ---
+FastGoods honouring the GDPR because it holds personal data. (2) Governance: The
+leadership's decisions on manual operation, communication and refusing the
+ransom. Risk management: The backups, the insurance (a transfer of risk) and the
+manual fallback (a reduction of impact), all arranged in advance. Compliance:
+The stock-exchange notice and notification of authorities. None is a technical
+control, because each is a decision or an obligation, not a mechanism. (3)
+Asset: The customer database and the personal data in it. Threat: An attacker
+seeking data to sell or misuse. Vulnerability: A weakness that exposes the
+database --- for instance an unpatched component or excessive access rights.
+Risk: A breach --- moderate likelihood, very high impact (customers harmed,
+trust lost, GDPR duties triggered). Control: Reduce exposure, e.g. patching,
+least-privilege access and encryption of the stored data. (4) GDPR: Binding ---
+a regulation that applies because personal data is held. ISO 27001
+certification: Adopted --- chosen, then committing. PCI DSS: Adopted through the
+payment contract --- but contractually enforceable, so binding in effect.
+Password policy: Adopted --- self-imposed, yet staff must follow it. Compliance
+sets a floor defined for everyone in the same situation; being safe requires
+controls matched to FastGoods' actual risks, and a box ticked on paper (an
+unrestored backup, say) protects nothing. (5) Preventive: Traffic filtering or a
+DDoS-protection service in front of the checkout. Detective: Monitoring and
+alerting on abnormal traffic and checkout availability. Corrective: A recovery
+procedure that restores the checkout, e.g. via the provider's mitigation and
+standby capacity. All three defend availability.

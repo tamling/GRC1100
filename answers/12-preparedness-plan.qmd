@@ -1,0 +1,35 @@
+<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+
+# Chapter 12 — sketch answers {.unnumbered}
+
+\(1\) Defensible values: RTO four hours, RPO four hours --- customers tolerate a
+slow reply far better than a failed checkout, so the mailbox ranks below
+@tbl-rtorpo's top rows; the cap is the point at which unanswered order
+and complaint mail starts costing sales and escalations --- roughly a working
+day --- so the RTO must sit well inside that. (2) Prepare: The breach playbook
+exists, the database restore is tested, and Datatilsynet's notification form and
+address are ready. Detect and triage: An exfiltration alert fires and the
+on-call responder confirms customer records are affected, invoking the plan.
+Respond and contain: Database credentials are revoked and the affected segment
+isolated, with logs and images preserved for forensics. Recover: The database is
+restored from backup inside its four-hour RTO, once the access path is closed
+and the attacker's absence is confirmed. Learn: The 5-Whys review finds the root
+cause, and controls, plan and register are updated --- with the 72-hour
+notification running in parallel from detection. (3) The nightly job shows the
+control is well designed and that backups are written; operating effectiveness
+for recovery means the data can be read back into a working service within the
+RTO and RPO, which only a restore demonstrates. The drill's unique evidence is a
+dated, successful restore with its measured duration --- exactly what
+@tbl-implplan's verification column, and an auditor, require. (4) GDPR
+Article 33: Notification to Datatilsynet within 72 hours of awareness --- the
+clock runs through the weekend --- owned by management/legal, prepared with the
+incident lead. Digital Security Act/NIS2, if the incident is significant for the
+service: Early warning within 24 hours, then the staged reports of Chapter 5 ---
+same owner, with the communications role executing both notifications. (5)
+Scenario: "Monday 09:00, ransomware has encrypted the order database and a
+ransom note sets a 48-hour deadline." Participants: Incident lead, one technical
+responder, communications, the owner as management/legal, and the security lead
+as facilitator. Three revealing questions: Who declares this an incident and
+invokes the plan --- against which threshold? What exactly do we restore from,
+how old is it, and who has actually done a restore? Who notifies Datatilsynet
+and the customers, saying what, by when?
