@@ -26,13 +26,15 @@
 | CVE | Common Vulnerabilities and Exposures |
 | CVSS | Common Vulnerability Scoring System |
 | CWE | Common Weakness Enumeration |
-| DBIR | Data Breach Investigations Report (Verizon) |
 | DDoS | Distributed denial of service |
+| DFD | Data-flow diagram |
 | DORA | Digital Operational Resilience Act (EU) |
+| DoS | Denial of service |
 | DPIA | Data protection impact assessment |
 | DPO | Data protection officer |
 | DSA | Digital Security Act (Norway, *digitalsikkerhetsloven*) |
-| DoS | Denial of service |
+| EA | Enterprise architecture |
+| EAM | Enterprise architecture management |
 | EEA | European Economic Area |
 | ENISA | European Union Agency for Cybersecurity |
 | ERP | Enterprise resource planning |
@@ -65,18 +67,23 @@
 | NSM | Nasjonal sikkerhetsmyndighet (Norwegian National Security Authority) |
 | OCEG | Open Compliance and Ethics Group |
 | OECD | Organisation for Economic Co-operation and Development |
-| PCI DSS | Payment Card Industry Data Security Standard |
 | PDCA | Plan–do–check–act |
+| PSP | Payment service provider |
+| RaaS | Ransomware as a service |
 | RACI | Responsible, accountable, consulted, informed |
 | RPO | Recovery point objective |
 | RTO | Recovery time objective |
-| RaaS | Ransomware as a service |
+| SABSA | Sherwood Applied Business Security Architecture |
+| SDL | Security Development Lifecycle (Microsoft) |
 | SIEM | Security information and event management |
 | SLA | Service level agreement |
+| SoA | Statement of Applicability |
+| SoaML | Service-oriented architecture Modeling Language (OMG) |
 | SOC | Security operations centre |
 | SOX | Sarbanes–Oxley Act (US, 2002) |
 | STRIDE | Spoofing, tampering, repudiation, information disclosure, DoS, elevation of privilege |
-| SoA | Statement of Applicability |
+| TB | Trust boundary (on a data-flow diagram) |
 | TLPT | Threat-led penetration testing (DORA) |
+| TOGAF | The Open Group Architecture Framework |
 | TPS | Transaction processing system |
 | XDR | Extended detection and response |

@@ -39,4 +39,24 @@ Credential stuffing is constant, automated and profitable --- highly active.
 Exposure: The login is internet-facing. Controls: Password-only authentication
 --- weak barrier. Conclusion: "Likely." Internal evidence: Failed-login spikes
 in the authentication logs; external: Breach statistics and CTI reporting on
-credential-stuffing campaigns against retail.
+credential-stuffing campaigns against retail. (9) New external entity "analytics
+provider" outside the circle; one arrow from FastGoods.com to it, labelled "page
+views, session and device data" --- and, if the widget sets identifiers,
+personal data, so the arrow is purple. The flow admits tampering, disclosure and
+denial; the survivor is disclosure: The analytics provider, or anyone reading
+its script, receives customer behaviour and identifiers FastGoods never
+assessed, exploiting an unreviewed third-party script on the shop page, exposing
+personal data --- a GDPR breach and, given the Magecart pattern of Chapter 7, a
+route to card data. Work follows in Chapter 9 (a new recipient in the Article 30
+record; a DPIA screening question) and Chapter 19 (a new supplier to tier and
+contract). (10) Asset register: Order database --- owner Ops, I high, A high.
+DFD: D2 Order DB, data tier behind TB2, written by the checkout, read and
+written by the back office. Risk register: R2's consequence flows through it (no
+orders written while the checkout is down); a tampering candidate from the
+per-element pass. Article 30 record: Order history --- names, addresses,
+purchases --- purpose contract performance, basis Art. 6(1)(b), retention per
+the bookkeeping rules. SoA: 8.13 backups, 8.15 logging, 8.3 access restriction,
+justified by R2 and the tampering candidate. EA repository: Data object "order"
+realised by an artifact on the same node as D1. Lost with two names: The chain
+--- the auditor cannot show that the backup evidenced in the SoA is the store
+the register rates, so the control cannot be tied to the risk.

@@ -153,16 +153,17 @@ governable: The British standard BS 7799 (1995) matured into ISO/IEC 27001
 (2005), which made security a certifiable management system --- Lecture 3's
 subject. On the corporate side, organisations drowning in post-SOX control work
 realised that governing, managing risk and proving compliance in isolation was
-both wasteful and unsafe. Around 2007 the analyst Michael Rasmussen and the
-industry body OCEG gave the joined-up alternative its name: GRC. From there the
-pattern repeats in ever shorter waves. The mega-breaches and ransomware of the
-2010s --- WannaCry and NotPetya in 2017 above all --- pushed security to the top
-table; the GDPR (applicable from 2018) made the security of personal data a
-legal duty with real sanctions; Norsk Hydro (2019) showed Norway what a mature
-response looks like; and NIS2 and DORA (both adopted 2022) extended binding
-duties across critical sectors and finance, with DORA applying from January 2025
-and Norway's own Digital Security Act in force since 1 October 2025 --- Lecture
-5 takes that story in detail.
+both wasteful and unsafe. The analyst Michael Rasmussen coined the name for the
+joined-up alternative --- GRC --- at Forrester in 2002, and the industry body
+OCEG, founded the same year, codified it in its GRC Capability Model (2007).
+From there the pattern repeats in ever shorter waves. The mega-breaches and
+ransomware of the 2010s --- WannaCry and NotPetya in 2017 above all --- pushed
+security to the top table; the GDPR (applicable from 2018) made the security of
+personal data a legal duty with real sanctions; Norsk Hydro (2019) showed Norway
+what a mature response looks like; and NIS2 and DORA (both adopted 2022)
+extended binding duties across critical sectors and finance, with DORA applying
+from January 2025 and Norway's own Digital Security Act in force since 1 October
+2025 --- Lecture 5 takes that story in detail.
 
 ![Four decades in one line. A technical strand (Morris Worm, breaches, ransomware) and a corporate strand (Cadbury and COSO, the Enron-era scandals, SOX) converge in the mid-2000s, where the joined-up working method acquires the name GRC --- and regulation has arrived in waves ever since.](figures/fig-timeline.svg){#fig-timeline}
 

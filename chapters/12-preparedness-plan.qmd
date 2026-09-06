@@ -138,6 +138,16 @@ target without funding it is the continuity version of an unowned risk.
   follow the BIA and drive the recovery spend.
 :::
 
+##### Dependencies from the diagram.
+
+What a critical service needs in order to run is read off Chapter 8's Level 1
+diagram (@fig-fglevel1) rather than remembered: The checkout needs the
+payment provider on the far side of TB1, the order database behind TB2 and the
+cloud host under all of it, so part of its availability is inherited from
+companies FastGoods does not run. The continuity plan lists those dependencies
+per service, and Chapter 19 makes each of them a supplier with a recovery
+obligation in the contract.
+
 ## The response plan and its phases {#sec-12-the-response-plan-and-its-phases}
 
 When the incident comes, a good plan moves the team through clear phases instead

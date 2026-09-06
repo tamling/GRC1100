@@ -12,13 +12,14 @@ whether it may be processed at all. The database had no lawful basis under
 Article 6, was never disclosed to the customers (failing transparency), and
 exceeded any stated purpose (failing purpose limitation and minimisation).
 Encrypting unlawful data does not make it lawful. (3) Controller: FastGoods,
-which decides why and how. Processors: The cloud host and the payment provider
-(the courier likewise, for delivery data). Data subjects: The customers. Article
-28 requires a written data processing agreement binding each processor to
-FastGoods' documented instructions. (4) Authority notification by Saturday 10:00
---- 72 hours are hours, weekend included. Customers are told if the breach is
-likely to result in a high risk to them (fraud or phishing exposure from leaked
-contact and order data would qualify). Documentation is required for all
+which decides why and how. Processors: The cloud host and the courier (for
+delivery data). Independent controller: The payment provider, which sets its own
+purposes and means for the card transaction. Data subjects: The customers.
+Article 28 requires a written data processing agreement binding each processor
+to FastGoods' documented instructions. (4) Authority notification by Saturday
+10:00 --- 72 hours are hours, weekend included. Customers are told if the breach
+is likely to result in a high risk to them (fraud or phishing exposure from
+leaked contact and order data would qualify). Documentation is required for all
 breaches (Art. 33(5)) so the not-reportable judgement can be defended in a later
 inspection. (5) A database breach is a personal-data breach under the GDPR (72h
 to Datatilsynet, Art. 34 to customers if high risk) and, for an in-scope entity,

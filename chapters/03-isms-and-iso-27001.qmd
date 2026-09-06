@@ -127,8 +127,8 @@ go round again. Each loop leaves the system a little better than before.
 :::
 
 The loop is older than information security: It is the improvement cycle Walter
-Shewhart devised in the 1920s and W. Edwards Deming popularised after 1950, and
-ISO management standards borrow it directly, which is why an ISMS keeps adapting
+Shewhart set out in 1939 and W. Edwards Deming popularised after 1950, and ISO
+management standards borrow it directly, which is why an ISMS keeps adapting
 instead of freezing (Jøsang, §18.5.3, p. 397). Its four phases carry
 recognisable work (@fig-pdcacycle). *Plan* is where scope, policy and
 objectives are set, risk is assessed and controls are chosen --- the material of

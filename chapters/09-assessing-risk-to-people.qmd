@@ -118,6 +118,21 @@ anyway" is not among the controller's options. In practice the consultation duty
 is rare, because safeguards usually bring the residual down; its real effect is
 the discipline it casts backwards over block four.
 
+##### The description as a diagram.
+
+Element (a) of Article 35(7) --- the systematic description of the processing
+--- is easiest to produce as a picture, and the picture already exists: The
+context diagram of Chapter 8 with the personal-data flows marked and the GDPR
+role of every party written on it (@fig-fgcontextprivacy). One diagram
+answers what is processed, where it goes and who receives it. Four purple flows
+carry personal data out of FastGoods: To two processors (the carrier and the
+newsletter tool, Article 28), to one independent controller (the payment
+provider) and to one recipient (Skatteetaten). Each is a row in the Article 30
+record and a paragraph in the DPIA's description --- reused, not redrawn, from
+the security assessment of the previous chapter.
+
+![The systematic description drawn: Chapter 8's context diagram with the personal-data flows (purple) and the GDPR role of every party --- data subject, controller, processors under Article 28, an independent controller and a recipient.](figures/fig-fgcontextprivacy.svg){#fig-fgcontextprivacy}
+
 ## The legitimate-interests assessment {#sec-09-the-legitimate-interests-assessment}
 
 Chapter 7 left a promise open. Among the six lawful bases, FastGoods' fraud

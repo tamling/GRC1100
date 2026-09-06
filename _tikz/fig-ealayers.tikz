@@ -1,0 +1,22 @@
+\begin{tikzpicture}[font=\scriptsize]
+    \foreach \i/\lay/\what/\view/\grc in {%
+      0/{Strategy \&\\governance}/{Board, objectives, risk appetite: ``sell online, 24/7''}/{Business Model Canvas (Ch.\,1); risk appetite (Ch.\,17)}/{ISO 27001 Cl.\,5--6; the board report (Ch.\,17)},
+      1/{Business}/{Processes and roles: Order to cash, customer service}/{BPMN; the BIA (Ch.\,2, 12)}/{Policies (Ch.\,15); three lines (Ch.\,11); organisational controls},
+      2/{Application \&\\services}/{Webshop, payment service, shipping API}/{SoaML service contracts}/{Supplier contracts (Ch.\,19); access control 8.3--8.5},
+      3/{Technology \&\\data}/{Web tier, data tier, D1 and D2, cloud host}/{DFD (Section~\ref{sec:dfd}); network diagram}/{Technological controls 8.x; GDPR Art.\,32; PCI DSS},
+      4/{People \&\\devices}/{The admin, the customer, the laptop, the phone}/{Roles, personas; no diagram}/{People controls 6.x; awareness (Ch.\,14); MFA (Ch.\,18)}}{
+      \pgfmathsetmacro{\y}{2.62-\i*0.64}
+      \fill[kristiania!8] (2.85,\y-0.29) rectangle (13.3,\y+0.29);
+      \draw[kristiania!50,thin] (2.85,\y-0.29) rectangle (13.3,\y+0.29);
+      \node[anchor=east,align=right,font=\scriptsize\bfseries,text=kristiania] at (2.75,\y) {\lay};
+      \node[anchor=west,align=left,text width=3.4cm,font=\tiny] at (2.95,\y) {\what};
+      \node[anchor=west,align=left,text width=3.0cm,font=\tiny] at (6.55,\y) {\textcolor{kblue}{\textbf{View:}} \view};
+      \node[anchor=west,align=left,text width=3.45cm,font=\tiny] at (9.75,\y) {\textcolor{kteal}{\textbf{GRC:}} \grc};
+    }
+    \draw[kgrey,thin] (6.45,-0.05) -- (6.45,2.95);
+    \draw[kgrey,thin] (9.65,-0.05) -- (9.65,2.95);
+    \draw[decorate,decoration={brace,amplitude=3pt},kgrey] (0.32,2.91) -- (0.32,2.35) node[midway,left=2pt,font=\tiny,text=kgrey,rotate=90,anchor=south] {Governance};
+    \draw[decorate,decoration={brace,amplitude=3pt},kgrey] (0.32,2.27) -- (0.32,0.43) node[midway,left=2pt,font=\tiny,text=kgrey,rotate=90,anchor=south] {Management};
+    \draw[decorate,decoration={brace,amplitude=3pt},kgrey] (0.32,0.35) -- (0.32,-0.27) node[midway,left=2pt,font=\tiny,text=kgrey,rotate=90,anchor=south] {Operations};
+    \node[font=\tiny,text=kgrey,anchor=south] at (0.2,2.98) {J\o sang \S18.1};
+  \end{tikzpicture}

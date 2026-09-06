@@ -184,6 +184,26 @@ case belongs to. For a company the size of FastGoods, none of this means hiring
 an audit department; it means being clear who checks what, that the checker did
 not build it, and that the checking is written down.
 
+##### The walkthrough.
+
+Before testing any control, the auditor walks one transaction through the system
+to understand the process and the controls on its path --- ISA 315 calls it
+understanding the flow of transactions, and in practice it is a "test of one"
+with the process owner at the screen. Chapter 8's Level 1 diagram is the map and
+one order is the transaction (@fig-fglevelaudit). Six stops: (1) Login
+--- is MFA enforced on the credentials crossing TB1? (2) The basket and address
+into the checkout --- TLS, input validation? (3) The payment request and result
+--- is the result verified, and do card details really bypass FastGoods (PCI DSS
+SAQ A)? (4) The order record into D2 --- complete, logged, backed up? (5) The
+back office reads the order --- who may, and is it logged? (6) Name and address
+to the carrier --- contract, data-processing agreement, minimum data? Each stop
+yields one control to test and one piece of evidence to request. PCI DSS
+Requirement 1.2.4 demands that the diagram exists and is current; the ISAE 3402
+report from the cloud host or the payment provider describes the controls on
+their side of TB1. Same picture, third use.
+
+![The audit walkthrough: One order followed through the system in six stops on Chapter 8's diagram. Every stop is a control to test and a piece of evidence to request.](figures/fig-fglevelaudit.svg){#fig-fglevelaudit}
+
 ## Internal and external {#sec-16-internal-and-external}
 
 Two kinds of audit serve two purposes, and mature organisations run both

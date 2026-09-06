@@ -177,23 +177,25 @@ subject* is the person the data is about, holder of the rights above (Jøsang,
 §10.6, pp. 225--227).
 :::
 
-![The GDPR roles. FastGoods is controller for its customer data; the cloud host and payment provider are processors --- and Datatilsynet supervises the whole arrangement.](figures/fig-roles.svg){#fig-roles}
+![The GDPR roles. FastGoods is controller for its customer data; the cloud host is a processor, the payment provider an independent controller --- and Datatilsynet supervises the whole arrangement.](figures/fig-roles.svg){#fig-roles}
 
 For FastGoods the mapping is immediate: The shop is controller for its customer
-data; the cloud host and the payment provider are processors --- so a breach at
-a provider is still FastGoods' duty to manage and report, and the Article 28
-contracts weigh as much as the technical defences. Two supporting roles and one
-register complete the structure. Some organisations must appoint a Data
-Protection Officer (Art. 37--39) --- mandatory for public authorities and for
-large-scale monitoring or special-category processing --- an independent expert
-who advises, monitors compliance and fronts the authority, reporting to top
-management and sitting squarely in the second line (Lecture 11); a small shop
-like FastGoods usually needs only a named contact, not a full DPO. Every
-controller, though, must keep records of processing (Art. 30): What data, for
-what purpose, on what basis, shared with whom, kept how long --- the privacy
-counterpart of the asset register and the SoA, and the first thing a supervisory
-authority asks to see in an inspection. You cannot protect or govern data you
-have not mapped.
+data; the cloud host is a processor, while the payment provider --- deciding its
+own means for the card transaction, under PCI DSS and its own fraud rules --- is
+an independent controller rather than a processor, named in the Article 30
+record as a recipient; so a breach at a provider is still FastGoods' duty to
+manage and report, and the Article 28 contracts weigh as much as the technical
+defences. Two supporting roles and one register complete the structure. Some
+organisations must appoint a Data Protection Officer (Art. 37--39) --- mandatory
+for public authorities and for large-scale monitoring or special-category
+processing --- an independent expert who advises, monitors compliance and fronts
+the authority, reporting to top management and sitting squarely in the second
+line (Lecture 11); a small shop like FastGoods usually needs only a named
+contact, not a full DPO. Every controller, though, must keep records of
+processing (Art. 30): What data, for what purpose, on what basis, shared with
+whom, kept how long --- the privacy counterpart of the asset register and the
+SoA, and the first thing a supervisory authority asks to see in an inspection.
+You cannot protect or govern data you have not mapped.
 
 ::: {#exm-art30row}
 ## One row of FastGoods' processing record
@@ -201,11 +203,12 @@ have not mapped.
 A record of processing need not be grand; one honest row does real work.
 *Processing:* Order fulfilment. *Data:* Name, address, email, order history.
 *Purpose:* Deliver purchases and handle returns. *Lawful basis:* Contract
-(Art. 6(1)(b)). *Shared with:* The payment provider and the courier (processors
-under Art. 28 contracts). *Retention:* Transaction records five years, following
-Norwegian bookkeeping rules; marketing data only while consent stands. Six
-fields, and FastGoods can answer the inspector's first question --- and its own,
-next time someone proposes "let's just keep everything".
+(Art. 6(1)(b)). *Shared with:* The courier and the cloud host (processors under
+Art. 28 contracts); the payment provider (an independent controller, as
+recipient). *Retention:* Transaction records five years, following Norwegian
+bookkeeping rules; marketing data only while consent stands. Six fields, and
+FastGoods can answer the inspector's first question --- and its own, next time
+someone proposes "let's just keep everything".
 :::
 
 When data leaves the region, one more safeguard applies: Transfers outside the
@@ -374,16 +377,17 @@ principles --- accountability above all, since compliance must be demonstrable
 --- and rest on one of six lawful bases, chosen before processing and recorded,
 with consent only one option and the only revocable one. The regulation assigns
 roles (@def-ctrlproc): FastGoods as controller, its cloud host and
-payment provider as processors under Article 28 contracts, a DPO where the
-processing demands one, and the Article 30 record as the register an inspector
-opens first. High-risk processing takes a DPIA (@def-dpia) before it
-begins; Article 32 makes security of personal data a legal duty met naturally by
-an ISMS; Article 33 runs a 72-hour clock --- hours, not working days --- with
-Article 34 notice to individuals when their risk is high; Article 25 asks for
-privacy designed in and switched on by default; and British Airways (2018) shows
-what the regime costs when the checkout itself is the weakness. Security asks
-whether the data is safe; privacy asks whether you should have it at all --- and
-the GDPR insists on both answers.
+payment provider as an independent controller and its cloud host and courier as
+processors under Article 28 contracts, a DPO where the processing demands one,
+and the Article 30 record as the register an inspector opens first. High-risk
+processing takes a DPIA (@def-dpia) before it begins; Article 32 makes
+security of personal data a legal duty met naturally by an ISMS; Article 33 runs
+a 72-hour clock --- hours, not working days --- with Article 34 notice to
+individuals when their risk is high; Article 25 asks for privacy designed in and
+switched on by default; and British Airways (2018) shows what the regime costs
+when the checkout itself is the weakness. Security asks whether the data is
+safe; privacy asks whether you should have it at all --- and the GDPR insists on
+both answers.
 
 That completes the binding law --- and with it, Block II closes with a clean
 architecture: The ISMS is the engine (Lecture 3), the assets are its subject
@@ -417,8 +421,9 @@ the missing element from Article 6.
 ::: {#exr-07-roles-at-fastgoods}
 ## Roles at FastGoods
 
-Name the controller, two processors and the data subjects in FastGoods' order
-processing, and state what Article 28 requires between the parties.
+Name the controller, two processors, one independent controller and the data
+subjects in FastGoods' order processing, and state what Article 28 requires
+between the parties.
 :::
 
 ::: {#exr-07-the-clock-precisely}

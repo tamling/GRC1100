@@ -60,10 +60,10 @@ The controls come from the catalogues of Chapter 6 --- ISO/IEC 27002's 93
 controls in four themes behind Annex A, NIST SP 800-53 for depth, the CIS
 Controls for prioritised pragmatism, COBIT for the governance layer --- and the
 reasons are the same as there: Completeness, and a shared language with
-auditors. One refinement from the catalogue matters for selection: The
-functional classification. Chapter 1 gave the working three --- preventive,
-detective, corrective --- and ISO 27002:2022 tags every control with exactly
-this attribute; the fuller professional set adds *deterrent* (discourage the
+auditors. One refinement from the catalogue bears on selection: The functional
+classification. Chapter 1 gave the working three --- preventive, detective,
+corrective --- and ISO 27002:2022 tags every control with exactly this
+attribute; the fuller professional set adds *deterrent* (discourage the
 attempt), *compensating* (a stand-in where the ideal control is not feasible)
 and *recovery* (restore after harm). The compensating idea earns its keep in
 audits: Where a small shop cannot segregate duties across enough people, a
@@ -91,6 +91,21 @@ sides, and the combination is what makes the residual risk in
 @sec-10-tailoring-cost-and-residual-risk genuinely low rather than
 hopefully low.
 :::
+
+##### Controls placed on the diagram.
+
+Tailoring ends with a location. A control acts at one place in the system, and
+Chapter 8's Level 1 diagram shows where (@fig-fglevelcontrols): R1 is
+treated on the credentials flow crossing TB1 (MFA, 8.5); R2 at the checkout's
+edge (DDoS protection and a web application firewall, 8.20, 8.6); R3 at the
+store and on both paths into it (encryption 8.24, least privilege 8.3, logging
+8.15, backups 8.13 --- and named admin accounts with MFA and logging, 8.2 and
+8.15, on the staff path into the back office that the diagram revealed). The
+carrier gets a contract and a data-processing agreement, not a firewall
+(5.19--5.20). A control drawn on the picture has an owner and a test point: The
+SoA row and the audit evidence of Chapter 16 follow from its location.
+
+![The selected controls placed where they act (numbers: ISO/IEC 27002:2022). A control has a location, an owner and a test point.](figures/fig-fglevelcontrols.svg){#fig-fglevelcontrols}
 
 ## The audit view: GITC and application controls {#sec-10-the-audit-view-gitc-and-application}
 

@@ -19,23 +19,24 @@ never chose (@tbl-sixblocks). The integrated idea has its own history,
 which Chapter 1 opened and which reads differently now that the course is behind
 you: Governance, risk management and compliance existed for decades as separate
 functions; the corporate scandals of 2001--2002 --- Enron, WorldCom --- and the
-Sarbanes--Oxley Act (2002) forced integrated control and reporting; and around
-2007 the analyst Michael Rasmussen and the industry body OCEG popularised "GRC"
-as the name for running the three as one discipline --- because silos leave gaps
-and duplicate work, which is exactly what the course has practised avoiding.
-Seen whole, the three words finally interlock: Governance sets direction and
-accountability (the ISMS, policy, roles); risk management decides what to do
-about threats (the register, the controls); compliance keeps the whole within
-the law (NIS2, the GDPR, DORA) --- do only one and you have a gap. And the
-deepest structure is the loop (@fig-grccycle): Understand and govern,
-assess, treat and prepare, check and report, improve --- and round again. It is
-Chapter 3's PDCA, drawn at the scale of the whole course, and it is why security
-is never finished: The cycle simply turns as the business and the threats
-change. If one thread ran through everything, it is this: Nearly every decision
-came back to *risk* --- risk decided scope, controls, priorities and spending
---- and *proportionality* followed: Effort matched to the size of the risk. That
-pair is why a small shop and a large bank can both do GRC well: Not by doing the
-same things, but by sizing the same judgement to their own situation.
+Sarbanes--Oxley Act (2002) forced integrated control and reporting; and the
+analyst Michael Rasmussen (2002) and the industry body OCEG (GRC Capability
+Model, 2007) established "GRC" as the name for running the three as one
+discipline --- because silos leave gaps and duplicate work, which is exactly
+what the course has practised avoiding. Seen whole, the three words finally
+interlock: Governance sets direction and accountability (the ISMS, policy,
+roles); risk management decides what to do about threats (the register, the
+controls); compliance keeps the whole within the law (NIS2, the GDPR, DORA) ---
+do only one and you have a gap. And the deepest structure is the loop
+(@fig-grccycle): Understand and govern, assess, treat and prepare, check
+and report, improve --- and round again. It is Chapter 3's PDCA, drawn at the
+scale of the whole course, and it is why security is never finished: The cycle
+simply turns as the business and the threats change. If one thread ran through
+everything, it is this: Nearly every decision came back to *risk* --- risk
+decided scope, controls, priorities and spending --- and *proportionality*
+followed: Effort matched to the size of the risk. That pair is why a small shop
+and a large bank can both do GRC well: Not by doing the same things, but by
+sizing the same judgement to their own situation.
 
 ::: {#tbl-sixblocks}
   **Block**                                 **The question it answered**
@@ -74,7 +75,7 @@ it.
 ::: {#tbl-fgcycle}
   **Stage**        **What FastGoods did**                                                     **Chapters**
   ---------------- -------------------------------------------------------------------------- ----------------
-  Understand       Mapped the business, the assets, the customer data                         2, 4
+  Understand       Mapped the business, the assets, the customer data, the data flows         2, 4, 8
   Govern           Built the ISMS, the policies, the SoA                                      3, 5--7
   Assess           Rated R1--R3 in the register; DPIA on the customer database                8--9, 13
   Treat            MFA (R1), DDoS protection (R2), encryption (R3)                            10
@@ -239,7 +240,7 @@ GRC is one cycle, not six topics: Understand and govern, assess, treat and
 prepare, check and report, improve --- Chapter 3's PDCA at course scale, born as
 an integrated idea from the post-Enron reform years and practised here on one
 small shop. FastGoods showed the cycle working --- three risks tracked from
-first sight to watched acceptance, R1 the full journey --- and Maersk showed it
+first sight to watched acceptance, R1 the full path --- and Maersk showed it
 stress-tested, surviving NotPetya by the stages that held. Good work answers
 *why is this here?* in one sentence per artefact; the traps --- tick-boxes,
 theatre, over-control, shelf-ware, and compliance mistaken for security --- all

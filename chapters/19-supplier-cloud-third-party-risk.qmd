@@ -116,6 +116,20 @@ maintains.
   strong the contract must be, and how often the relationship is reviewed.
 :::
 
+##### Every external entity is a supplier.
+
+The context diagram of Chapter 8 doubles as the supplier map
+(@fig-fgcontextthird): Every box outside the circle is a third party
+FastGoods depends on, and the cloud host sits under everything without appearing
+on any arrow --- the supplier a diagram would otherwise hide. Tiered by what a
+failure would do: Two critical suppliers (the payment provider and the cloud
+host, without which the checkout stops), two important ones (the carrier and the
+newsletter tool); the tax authority and the customer are not suppliers. This is
+the supplier register of this chapter drawn before it is written --- and, for a
+financial entity, the register of information that DORA's Article 28 requires.
+
+![Every external entity as a supplier: Chapter 8's context diagram with supplier tiers, and the cloud host --- under everything, on no arrow --- made visible.](figures/fig-fgcontextthird.svg){#fig-fgcontextthird}
+
 ## The cloud, and who secures what {#sec-19-the-cloud-and-who-secures-what}
 
 Using the cloud means running on someone else's infrastructure with the security

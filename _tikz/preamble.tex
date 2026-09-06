@@ -1,6 +1,7 @@
 \documentclass[tikz,border=5pt]{standalone}
 \usepackage[T1]{fontenc}
-\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,shapes.geometric}
+\usepackage{etoolbox}
 % Course colours (lecture-deck palette, same as the LaTeX script)
 \definecolor{kristiania}{HTML}{C61932}
 \definecolor{kink}{HTML}{1A1A1A}
@@ -24,4 +25,211 @@
   \node[white,font=\scriptsize\bfseries] at (0.23,0.17) {F};
 \end{tikzpicture}}
 \newcommand{\fglogo}{{\fgmark}\,{\bfseries\textcolor{kink}{Fast}\textcolor{kristiania}{Goods}}}
+% Shared DFD/BPMN/SoaML macros (v2.4, ported from the lecture theme)
+\providecolor{ink}{HTML}{1A1A1A}
+\providecolor{kpurple}{HTML}{7551A1}
+\providecolor{kteal}{HTML}{45ABA5}
+\providecolor{kblue}{HTML}{4B5F98}
+\providecolor{kgold}{HTML}{FFCB05}
+
+\tikzset{
+  dfdent/.style={draw=ink,thick,fill=gray!14,minimum height=0.9cm,minimum width=1.85cm,
+                 align=center,font=\scriptsize,inner sep=3pt},
+  dfdproc/.style={draw=kristiania,thick,circle,fill=kristiania!12,minimum size=1.42cm,
+                  align=center,font=\scriptsize,inner sep=1pt},
+  dfdstore/.style={fill=white,minimum height=0.82cm,minimum width=2.2cm,align=center,
+                   font=\scriptsize,inner sep=3pt,
+                   append after command={\pgfextra{\draw[ink,thick]
+                     (\tikzlastnode.north west)--(\tikzlastnode.north east)
+                     (\tikzlastnode.south west)--(\tikzlastnode.south east);}}},
+  dfdflow/.style={-{Stealth[length=2mm]},thick,ink!75},
+  dfdflowbi/.style={{Stealth[length=2mm]}-{Stealth[length=2mm]},thick,ink!75},
+  dfdpd/.style={kpurple,line width=1.6pt},          % flow carrying personal data
+  dfdlbl/.style={font=\tiny,fill=white,inner sep=1.2pt,align=center,text=ink},
+  dfdtb/.style={dashed,thick,kristiania},
+  dfdtblbl/.style={font=\tiny\bfseries,text=kristiania,fill=white,inner sep=1pt},
+  dfdzone/.style={font=\tiny,text=kgrey,align=center},
+  rbadge/.style={circle,fill=riskCrit,text=white,font=\tiny\bfseries,inner sep=1.6pt,minimum size=0.44cm},
+  cchip/.style={draw=kteal,fill=kteal!14,rounded corners=2pt,font=\tiny,inner sep=2pt,align=center,text=ink},
+  ptag/.style={draw=kpurple,fill=kpurple!12,rounded corners=2pt,font=\tiny,inner sep=1.8pt,align=center,text=ink},
+  stag/.style={draw=kblue,fill=kblue!12,rounded corners=2pt,font=\tiny,inner sep=1.8pt,align=center,text=ink},
+  abadge/.style={circle,draw=kblue,fill=kblue!12,text=ink,font=\tiny\bfseries,inner sep=1.2pt,minimum size=0.4cm}
+}
+
+\newcommand{\FastGoodsContextDFD}[1][plain]{%
+  \begin{tikzpicture}[font=\scriptsize]
+    \ifstrequal{#1}{privacy}{\tikzset{pdflow/.style={dfdpd}}}{\tikzset{pdflow/.style={}}}
+    % the system = the ISMS scope
+    \node[dfdproc,minimum size=2.0cm,fill=kristiania!14,font=\scriptsize\bfseries] (fg) at (6.9,1.85) {0\\[1pt]FastGoods.com\\webshop\\[1pt]{\tiny\normalfont = ISMS scope (L3)}};
+    % external entities
+    \node[dfdent,minimum height=0.8cm] (cust) at (1.35,3.1) {Customer\\(browser / app)};
+    \node[dfdent,minimum height=0.8cm] (staff) at (1.35,0.5) {Staff\\(admin, warehouse)};
+    \node[dfdent,minimum height=0.8cm] (psp) at (12.45,3.1) {Payment service\\provider (PSP)};
+    \node[dfdent,minimum height=0.8cm] (carrier) at (12.45,1.85) {Shipping\\carrier};
+    \node[dfdent,minimum height=0.8cm] (news) at (12.45,0.5) {E-mail / newsletter\\SaaS};
+    \node[dfdent,minimum height=0.65cm] (tax) at (6.9,3.55) {Skatteetaten (Altinn)};
+    % flows
+    \draw[dfdflowbi,pdflow] (cust.east) -- (fg.150) node[dfdlbl,pos=0.5,sloped] {orders, credentials, addresses\\$\leftrightarrow$ confirmations, tracking};
+    \draw[dfdflowbi] (staff.east) -- (fg.210) node[dfdlbl,pos=0.5,sloped] {admin actions, reports};
+    \draw[dfdflowbi,pdflow] (fg.30) -- (psp.west) node[dfdlbl,pos=0.5,sloped] {payment requests\\$\leftrightarrow$ authorisation results};
+    \draw[dfdflow,pdflow] (fg.east) -- (carrier.west) node[dfdlbl,pos=0.5,above=1pt] {name, address, parcel data};
+    \draw[dfdflow,pdflow] (fg.330) -- (news.west) node[dfdlbl,pos=0.5,sloped] {customer e-mail list};
+    \draw[dfdflow] (fg.north) -- (tax.south) node[dfdlbl,pos=0.5,right=1pt] {VAT return, SAF-T file};
+    % --- privacy mode: GDPR roles ------------------------------------
+    \ifstrequal{#1}{privacy}{%
+      \node[ptag,anchor=south] at ([yshift=1pt]cust.north) {data subject};
+      \node[ptag,anchor=north] at (6.9,0.83) {controller (Art.\,4(7))};
+      \node[ptag,anchor=south] at ([yshift=1pt]psp.north) {independent controller};
+      \node[ptag,anchor=north] at ([yshift=-1pt]carrier.south) {processor (Art.\,28)};
+      \node[ptag,anchor=north] at ([yshift=-1pt]news.south) {processor (Art.\,28)};
+      \node[ptag,anchor=west] at ([xshift=2pt]tax.east) {recipient (Art.\,4(9))};
+      \node[dfdzone,anchor=north west,align=left] at (2.35,3.9) {\textcolor{kpurple}{\rule[0.3ex]{0.5cm}{1.6pt}}\; carries personal data\\= a row in the Art.\,30 record};
+    }{}
+    % --- third-party mode: supplier tiers ----------------------------
+    \ifstrequal{#1}{thirdparty}{%
+      \node[stag,anchor=south] at ([yshift=1pt]psp.north) {Tier: Critical};
+      \node[stag,anchor=north] at ([yshift=-1pt]carrier.south) {Tier: Important};
+      \node[stag,anchor=north] at ([yshift=-1pt]news.south) {Tier: Important};
+      \node[stag,anchor=west] at ([xshift=2pt]tax.east) {authority --- not a supplier};
+      \node[stag,anchor=south] at ([yshift=1pt]staff.north) {not a supplier};
+      \node[stag,anchor=south] at ([yshift=1pt]cust.north) {not a supplier};
+      \node[dfdent,draw=kblue,dashed,fill=kblue!8,anchor=north,minimum width=3.4cm,minimum height=0.65cm] (host) at (6.9,0.75) {Cloud hosting provider (IaaS)\\under everything --- on no arrow};
+      \node[stag,anchor=west] at ([xshift=2pt]host.east) {Tier: Critical};
+    }{}
+  \end{tikzpicture}%
+}
+
+\newcommand{\FastGoodsLevelOneDFD}[1][plain]{%
+  \begin{tikzpicture}[font=\scriptsize]
+    \ifstrequal{#1}{privacy}{\tikzset{pdflow/.style={dfdpd}}}{\tikzset{pdflow/.style={}}}
+    % trust boundaries: the FastGoods scope box (TB1) and the internal tier split (TB2)
+    \draw[dfdtb] (2.55,-0.15) rectangle (11.35,3.68);
+    \draw[dfdtb] (6.9,-0.15) -- (6.9,3.68);
+    \node[dfdtblbl,anchor=south] at (2.55,-0.13) {TB1};
+    \node[dfdtblbl,anchor=south] at (6.9,-0.13) {TB2};
+    \node[dfdzone,anchor=south east] at (2.45,-0.13) {outside};
+    \node[dfdzone,anchor=south] at (4.7,-0.13) {web tier (DMZ)};
+    \node[dfdzone,anchor=south east] at (11.3,-0.13) {data tier (internal)};
+    % external entities
+    \node[dfdent,minimum height=0.75cm] (cust) at (1.25,3.0) {Customer};
+    \node[dfdent,minimum height=0.75cm] (psp) at (1.25,1.78) {Payment\\provider (PSP)};
+    \node[dfdent,minimum height=0.75cm] (staff) at (1.25,0.5) {Staff\\(admin, warehouse)};
+    \node[dfdent,minimum height=0.75cm] (carrier) at (12.65,0.5) {Shipping\\carrier};
+    % processes
+    \node[dfdproc,minimum size=1.1cm] (p1) at (4.7,3.0) {1\\Login \&\\account};
+    \node[dfdproc,minimum size=1.1cm] (p2) at (4.7,1.78) {2\\Checkout};
+    \node[dfdproc,minimum size=1.1cm] (p3) at (8.2,0.5) {3\\Back\\office};
+    % data stores
+    \node[dfdstore,minimum height=0.6cm] (d1) at (8.2,3.0) {D1 Customer DB\\(accounts, addresses)};
+    \node[dfdstore,minimum height=0.6cm] (d2) at (8.2,1.78) {D2 Order DB};
+    % flows
+    \draw[dfdflowbi,pdflow] (cust.east) -- (p1.west) node[dfdlbl,pos=0.5,above=1pt] {credentials, profile};
+    \draw[dfdflow,pdflow] (cust.south east) -- (p2.135) node[dfdlbl,pos=0.36,sloped] {basket, address};
+    \draw[dfdflow] (cust.south) -- (psp.north) node[dfdlbl,pos=0.5,right=1pt] {card details};
+    \draw[dfdflowbi] (psp.east) -- (p2.west) node[dfdlbl,pos=0.5,below=1pt] {payment request,\\result};
+    \draw[dfdflow] (staff.east) -- (p3.west) node[dfdlbl,pos=0.22,above=1pt] {admin actions};
+    \draw[dfdflowbi,pdflow] (p1.east) -- (d1.west) node[dfdlbl,pos=0.5,above=1pt] {verify login,\\update profile};
+    \draw[dfdflow,pdflow] (p2.east) -- (d2.west) node[dfdlbl,pos=0.5,above=1pt] {order record};
+    \draw[dfdflowbi] (p3.north) -- (d2.south) node[dfdlbl,pos=0.5,right=2pt] {orders to ship};
+    \draw[dfdflowbi,pdflow] (p3.30) -- (10.15,0.775) -- (10.15,3.0) -- (d1.east);
+    \node[dfdlbl,rotate=90] at (10.15,1.9) {customer records (read / edit)};
+    \draw[dfdflow,pdflow] (p3.east) -- (carrier.west) node[dfdlbl,pos=0.7,above=1pt] {name, address,\\parcel};
+    % --- mode overlays ----------------------------------------------
+    \ifstrequal{#1}{risks}{%
+      \node[rbadge] at (3.35,3.47) {R1};
+      \node[rbadge] at (5.45,1.22) {R2};
+      \node[rbadge] at (9.55,3.42) {R3};
+      \node[dfdzone,anchor=north east,align=left] at (13.85,3.68) {\textcolor{riskCrit}{\textbf{R1}} spoofing at login (no MFA)\\\textcolor{riskCrit}{\textbf{R2}} denial of service at checkout\\\textcolor{riskCrit}{\textbf{R3}} disclosure from customer DB};
+    }{}
+    \ifstrequal{#1}{privacy}{%
+      \node[ptag] at (8.2,2.39) {personal data at rest (D1, D2)};
+      \node[ptag,anchor=north] at ([yshift=-1pt]carrier.south) {processor (Art.\,28)};
+      \node[ptag,anchor=north] at ([yshift=-1pt]psp.south) {independent controller};
+      \node[ptag,anchor=south] at ([yshift=1pt]cust.north) {data subject};
+      \node[dfdzone,anchor=north east,align=left] at (13.85,3.68) {\textcolor{kpurple}{\rule[0.3ex]{0.5cm}{1.6pt}}\; carries personal data\\(Art.\,30 record; Art.\,35(7)(a))};
+    }{}
+    \ifstrequal{#1}{controls}{%
+      \node[cchip] at (2.75,3.5) {MFA (8.5)};
+      \node[cchip] at (3.4,1.1) {DDoS protection,\\WAF (8.20, 8.6)};
+      \node[cchip] at (8.4,2.39) {encryption (8.24), least privilege (8.3)\\logging (8.15), backups (8.13)};
+      \node[cchip] at (5.9,0.85) {named admin accounts,\\MFA, logging (8.2, 8.15)};
+      \node[cchip,anchor=south] at (12.65,0.92) {contract + DPA\\(5.19--5.20)};
+      \node[dfdzone,anchor=north east,align=left] at (13.85,3.68) {\textcolor{kteal}{\rule[0.3ex]{0.5cm}{1.6pt}}\; control placed where it acts\\(numbers: ISO/IEC 27002:2022)};
+    }{}
+    \ifstrequal{#1}{audit}{%
+      \node[abadge] at (2.35,3.0) {1};
+      \node[abadge] at (3.92,2.27) {2};
+      \node[abadge] at (2.75,1.78) {3};
+      \node[abadge] at (5.6,1.78) {4};
+      \node[abadge] at (7.85,1.29) {5};
+      \node[abadge] at (9.55,0.5) {6};
+      \node[dfdzone,anchor=north east,align=left] at (13.85,3.68) {\textcolor{kblue}{\textbf{1--6}}\; one order followed through\\the system --- the walkthrough};
+    }{}
+  \end{tikzpicture}%
+}
+
+\tikzset{
+  bpool/.style={draw=ink,thin},
+  btask/.style={draw=ink,thin,rounded corners=2pt,fill=white,minimum height=0.46cm,minimum width=1.25cm,align=center,font=\tiny,inner sep=2pt},
+  bseq/.style={-{Stealth[length=1.6mm]},thin,ink},
+  bmsg/.style={-{Stealth[length=1.6mm,open]},thin,dashed,kristiania},
+  bgate/.style={draw=ink,thin,diamond,fill=white,minimum size=0.5cm,inner sep=0pt,font=\tiny},
+  spart/.style={draw=kblue,thick,fill=kblue!10,minimum height=0.7cm,minimum width=1.75cm,align=center,font=\tiny,inner sep=2pt},
+  scontract/.style={draw=kblue,dashed,thick,ellipse,fill=white,minimum height=0.75cm,minimum width=1.6cm,align=center,font=\tiny,inner sep=0.5pt},
+  srole/.style={font=\tiny,text=kgrey,fill=white,inner sep=1pt}
+}
+\newcommand{\FastGoodsBPMN}{%
+  \begin{tikzpicture}[font=\tiny]
+    % pools (BPMN 2.0 collaboration): three participants, message flows between them
+    \foreach \y/\lab in {2.32/Customer,1.16/FastGoods.com,0/PSP}{
+      \draw[bpool] (0,\y) rectangle (6.7,\y+1.1);
+      \draw[bpool] (0.4,\y) -- (0.4,\y+1.1);
+      \node[rotate=90,font=\tiny\bfseries,text=ink] at (0.2,\y+0.55) {\lab};
+    }
+    % customer pool
+    \draw[ink,thin] (0.95,2.87) circle (0.14);
+    \node[btask] (po) at (2.05,2.87) {Place order};
+    \node[btask,minimum width=1.3cm] (rc) at (5.35,2.87) {Receive\\confirmation};
+    \draw[ink,line width=1.2pt] (6.4,2.87) circle (0.14);
+    \draw[bseq] (1.09,2.87) -- (po.west);
+    \draw[bseq] (rc.east) -- (6.26,2.87);
+    % FastGoods pool
+    \node[btask,minimum width=1.45cm] (to) at (2.05,1.71) {Take order,\\request payment};
+    \draw[ink,thin] (3.3,1.71) circle (0.13);
+    \draw[ink,thin] (3.3,1.71) circle (0.095);
+    \node[bgate,minimum size=0.44cm] (gw) at (4.05,1.71) {$\times$};
+    \node[font=\tiny,text=ink,anchor=south] at (4.05,1.96) {paid?};
+    \node[btask,minimum width=1.3cm] (cs) at (5.35,1.71) {Confirm \& ship};
+    \draw[ink,line width=1.2pt] (6.4,1.71) circle (0.14);
+    \draw[ink,line width=1.2pt] (4.05,1.29) circle (0.1);
+    \draw[bseq] (to.east) -- (3.17,1.71);
+    \draw[bseq] (3.43,1.71) -- (gw.west);
+    \draw[bseq] (gw.east) -- (cs.west) node[pos=0.3,above=-1pt,font=\tiny,text=kristiania] {yes};
+    \draw[bseq] (gw.south) -- (4.05,1.39) node[pos=0.5,right=-1pt,font=\tiny,text=kristiania] {no};
+    \draw[bseq] (cs.east) -- (6.26,1.71);
+    % PSP pool
+    \node[btask,minimum width=1.45cm] (ap) at (3.3,0.55) {Authorise\\payment};
+    % message flows (dashed) = the crossings the DFD draws over TB1
+    \draw[bmsg] (po.south) -- (to.north) node[pos=0.5,right=1pt,text=kristiania,fill=white,inner sep=1pt] {order, address};
+    \draw[bmsg] (cs.north) -- (rc.south) node[pos=0.5,right=1pt,text=kristiania,fill=white,inner sep=1pt] {confirmation};
+    \draw[bmsg] ([xshift=0.25cm]to.south) -- ([xshift=-0.5cm]ap.north) node[pos=0.5,left=1pt,text=kristiania,fill=white,inner sep=1pt] {payment request};
+    \draw[bmsg] (3.3,0.78) -- (3.3,1.58) node[pos=0.5,right=1pt,text=kristiania,fill=white,inner sep=1pt] {result};
+  \end{tikzpicture}%
+}
+\newcommand{\FastGoodsSoaML}{%
+  \begin{tikzpicture}[font=\tiny]
+    \draw[kblue!60,thin,dashed,rounded corners=4pt] (0,0) rectangle (6.9,3.42);
+    \node[anchor=north west,font=\tiny,text=kblue] at (0.05,3.4) {\guillemotleft ServicesArchitecture\guillemotright\ Order to cash};
+    \node[spart,minimum width=1.7cm] (fg) at (1.05,1.71) {\guillemotleft Participant\guillemotright\\FastGoods.com};
+    \node[spart,minimum width=1.55cm] (psp) at (6.05,2.6) {\guillemotleft Participant\guillemotright\\PSP};
+    \node[spart,minimum width=1.55cm] (car) at (6.05,0.82) {\guillemotleft Participant\guillemotright\\Shipping carrier};
+    \node[scontract] (pay) at (3.25,2.6) {\guillemotleft ServiceContract\guillemotright\\Payment\\authorisation};
+    \node[scontract] (book) at (3.25,0.82) {\guillemotleft ServiceContract\guillemotright\\Parcel\\booking};
+    \draw[kblue,thin] (fg.north) |- (pay.west) node[srole,pos=0.75,above=1pt] {consumer};
+    \draw[kblue,thin] (pay.east) -- (psp.west) node[srole,fill=none,pos=0.42,above=2pt] {provider};
+    \draw[kblue,thin] (fg.south) |- (book.west) node[srole,pos=0.75,below=1pt] {consumer};
+    \draw[kblue,thin] (book.east) -- (car.west) node[srole,fill=none,pos=0.42,below=2pt] {provider};
+    \node[srole,align=center,anchor=south] at (3.3,0.03) {a contract = interface + obligations (L19)};
+  \end{tikzpicture}%
+}
 \begin{document}
