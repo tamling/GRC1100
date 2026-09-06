@@ -481,7 +481,10 @@ Place each function on its line of defence.
    "t": "Internal audit reviewing the ISMS",
    "b": "l3"
   }
- ]
+ ],
+ "explain": "The first line owns and manages risk, the second sets frameworks and monitors, the third assures independently.",
+ "ref": "sec-11-the-three-lines-of-defence",
+ "reflabel": "The three lines of defence"
 }
 </script>
 </div>
@@ -522,7 +525,10 @@ Select the duties that sit with the board and top management.
    "t": "Review individual log entries",
    "ok": false
   }
- ]
+ ],
+ "explain": "The board sets appetite and tone and carries accountability - it governs security, it does not operate it.",
+ "ref": "sec-11-the-board-and-the-tone-from",
+ "reflabel": "The board and the tone from the top"
 }
 </script>
 </div>
@@ -573,7 +579,10 @@ Match each duty to the role that carries it.
    "t": "Sets the appetite and carries accountability",
    "b": "board"
   }
- ]
+ ],
+ "explain": "Ownership is the point: Every risk and every control has a named role, from the system owner to the board.",
+ "ref": "sec-11-roles-in-practice",
+ "reflabel": "Roles in practice"
 }
 </script>
 </div>
@@ -624,7 +633,10 @@ Match each description to its RACI letter.
    "t": "Is kept up to date on progress",
    "b": "i"
   }
- ]
+ ],
+ "explain": "RACI keeps decisions clean: Many can be responsible, consulted or informed - exactly one name is accountable.",
+ "ref": "sec-11-roles-in-practice",
+ "reflabel": "Roles in practice"
 }
 </script>
 </div>
@@ -661,7 +673,10 @@ Select what keeps the three-lines model honest.
    "t": "The second line administers the servers",
    "ok": false
   }
- ]
+ ],
+ "explain": "The model works only while the lines stay distinct: Audit independent, second line advising rather than operating.",
+ "ref": "sec-11-making-the-model-work",
+ "reflabel": "Making the model work"
 }
 </script>
 </div>

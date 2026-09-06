@@ -380,7 +380,10 @@ Match each description to the attack.
    "t": "Confident output with no basis in fact",
    "b": "halluc"
   }
- ]
+ ],
+ "explain": "The AI itself is attack surface: Its inputs, its training data, its parameters and its outputs each fail differently.",
+ "ref": "sec-21-new-attacks-targeting-the-ai-itself",
+ "reflabel": "New attacks"
 }
 </script>
 </div>
@@ -423,7 +426,10 @@ Sort the uses of AI in the security contest.
    "t": "Triage of alerts in the SOC",
    "b": "def"
   }
- ]
+ ],
+ "explain": "The same capability serves both sides; what changes is governance - the defender's use is accountable, logged and reviewed.",
+ "ref": "sec-21-ai-on-both-sides",
+ "reflabel": "AI on both sides"
 }
 </script>
 </div>
@@ -444,7 +450,10 @@ Order the milestones of AI's history.
   "The Dartmouth workshop names the field (1956)",
   "The AI winters",
   "Generative AI in front of everyone (2022)"
- ]
+ ],
+ "explain": "The field is old and its hype is cyclical; what is new since 2022 is generative AI in everyone's hands.",
+ "ref": "sec-21-what-ai-is-and-where-it",
+ "reflabel": "What AI is"
 }
 </script>
 </div>
@@ -487,7 +496,10 @@ Sort the situations.
    "t": "Human review before AI output leaves the house",
    "b": "gov"
   }
- ]
+ ],
+ "explain": "Shadow AI is use without governance; the cure is not a ban but an approved, logged, reviewed path.",
+ "ref": "sec-21-risks-from-your-own-ai",
+ "reflabel": "Risks from your own AI"
 }
 </script>
 </div>
@@ -528,7 +540,10 @@ Select the governance instruments this chapter names.
    "t": "The AI Act replaces the GDPR",
    "ok": false
   }
- ]
+ ],
+ "explain": "AI governance plugs into the ISMS: The RMF and 42001 give the method, the AI Act the law, the policy the house rules.",
+ "ref": "sec-21-governing-ai",
+ "reflabel": "Governing AI"
 }
 </script>
 </div>

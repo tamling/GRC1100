@@ -473,7 +473,10 @@ Match each phishing lure to the trigger it pulls.
    "t": "\"Here is a free gift card - just log in\"",
    "b": "recip"
   }
- ]
+ ],
+ "explain": "Social engineering pulls documented levers - authority, urgency, social proof, reciprocity - and recognising the pull is the defence.",
+ "ref": "sec-14-the-human-factor",
+ "reflabel": "The human factor"
 }
 </script>
 </div>
@@ -516,7 +519,10 @@ Sort the insider incidents.
    "t": "An employee sells access to a ransomware crew",
    "b": "mal"
   }
- ]
+ ],
+ "explain": "Intent separates the two: The malicious insider abuses access on purpose; the negligent one takes shortcuts or slips.",
+ "ref": "sec-14-the-human-factor",
+ "reflabel": "The human factor"
 }
 </script>
 </div>
@@ -557,7 +563,10 @@ Select what the chapter says actually changes behaviour.
    "t": "Punishing everyone who clicks",
    "ok": false
   }
- ]
+ ],
+ "explain": "Behaviour changes through short, relevant, repeated practice with feedback in a no-blame culture - not through annual PDFs.",
+ "ref": "sec-14-messages-that-stick-and-nudges-that",
+ "reflabel": "Messages that stick"
 }
 </script>
 </div>
@@ -603,7 +612,10 @@ Place each observation on its layer of culture.
    "t": "\"Of course we never share logins\"",
    "b": "ass"
   }
- ]
+ ],
+ "explain": "Posters change the top layer only; culture is read from what people actually assume and do.",
+ "ref": "sec-14-security-culture",
+ "reflabel": "Security culture"
 }
 </script>
 </div>
@@ -624,7 +636,10 @@ Order the behaviour the programme trains.
   "Do not click; verify through a known channel",
   "Report it, even after a mistake",
   "No blame - the lesson is shared"
- ]
+ ],
+ "explain": "The trained sequence ends in reporting without blame - because the report you punish is the report you never get again.",
+ "ref": "sec-14-from-awareness-to-behaviour",
+ "reflabel": "From awareness to behaviour"
 }
 </script>
 </div>

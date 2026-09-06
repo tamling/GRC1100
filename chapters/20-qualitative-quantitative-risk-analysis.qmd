@@ -511,7 +511,10 @@ Sort the properties.
    "t": "Vulnerable to subjective bias",
    "b": "qual"
   }
- ]
+ ],
+ "explain": "Levels are fast and comparable but subjective; numbers support arithmetic but invite false precision - each fails differently.",
+ "ref": "sec-20-two-ways-to-measure",
+ "reflabel": "Two ways to measure"
 }
 </script>
 </div>
@@ -533,7 +536,10 @@ Order the quantitative chain.
   "Estimate the annual rate of occurrence (ARO)",
   "ALE = SLE × ARO",
   "Compare the ALE with the control's cost"
- ]
+ ],
+ "explain": "The ALE chain turns a scenario into money - and the money can be compared with the control's cost.",
+ "ref": "sec-20-the-quantitative-way",
+ "reflabel": "The quantitative way"
 }
 </script>
 </div>
@@ -576,7 +582,10 @@ Match each number to its source.
    "t": "The premium quoted for cyber cover",
    "b": "insurance"
   }
- ]
+ ],
+ "explain": "Your own records first, because they describe your organisation; studies and insurance prices calibrate the rest.",
+ "ref": "sec-20-where-the-numbers-come-from",
+ "reflabel": "Where the numbers come from"
 }
 </script>
 </div>
@@ -613,7 +622,10 @@ Select the documented weaknesses of qualitative matrices.
    "t": "Qualitative levels always overstate risk",
    "ok": false
   }
- ]
+ ],
+ "explain": "Cox documented the failures formally: Compressed ranges, reversible rankings, and arithmetic ordinal scales cannot carry.",
+ "ref": "sec-20-what-the-critics-say",
+ "reflabel": "What the critics say"
 }
 </script>
 </div>
@@ -633,7 +645,10 @@ Order the chapter's closing advice.
   "Screen the whole register qualitatively",
   "Deepen the big decisions quantitatively",
   "Be honest about the uncertainty either way"
- ]
+ ],
+ "explain": "Screen broadly, deepen selectively, stay honest about uncertainty - the two approaches are stages, not rivals.",
+ "ref": "sec-20-choosing-an-approach",
+ "reflabel": "Choosing an approach"
 }
 </script>
 </div>

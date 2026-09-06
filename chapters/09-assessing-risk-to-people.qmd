@@ -468,7 +468,10 @@ Order the blocks of a data protection impact assessment (Art. 35(7)).
   "Necessity and proportionality",
   "Risks to the rights and freedoms of data subjects",
   "Measures to address the risks"
- ]
+ ],
+ "explain": "Article 35(7) fixes the four blocks; the order is the argument - describe before judging, judge before mitigating.",
+ "ref": "sec-09-the-dpia-in-practice",
+ "reflabel": "The DPIA in practice"
 }
 </script>
 </div>
@@ -519,7 +522,10 @@ Drag each system onto its risk tier.
    "t": "The spam filter on the mail server",
    "b": "min"
   }
- ]
+ ],
+ "explain": "The AI Act regulates by risk to people: Bans at the top, obligations for high risk, transparency below, freedom at the bottom.",
+ "ref": "sec-09-the-eu-ai-act-s-risk",
+ "reflabel": "The EU AI Act's risk tiers"
 }
 </script>
 </div>
@@ -539,7 +545,10 @@ Order the legitimate-interests assessment.
   "Name the legitimate interest",
   "Necessity - no less intrusive way to achieve it",
   "Balancing against the data subjects' interests and rights"
- ]
+ ],
+ "explain": "Purpose, necessity, balance: The three-part test is the documented reasoning behind every legitimate-interests basis.",
+ "ref": "sec-09-the-legitimate-interests-assessment",
+ "reflabel": "The legitimate-interests assessment"
 }
 </script>
 </div>
@@ -576,7 +585,10 @@ Select the situations that trigger a DPIA.
    "t": "Any use of e-mail whatsoever",
    "ok": false
   }
- ]
+ ],
+ "explain": "A DPIA is due where processing is likely to be high-risk for the people concerned - scale, sensitivity and monitoring are the tell-tales.",
+ "ref": "sec-09-the-dpia-in-practice",
+ "reflabel": "The DPIA in practice"
 }
 </script>
 </div>
@@ -619,7 +631,10 @@ Whose risk is it - the organisation's or the people's?
    "t": "Profiling reveals a customer's home address",
    "b": "people"
   }
- ]
+ ],
+ "explain": "The risk assessment protects the organisation; the DPIA protects the people the data is about. Same method, different protected party.",
+ "ref": "sec-09-two-assessments-two-protected-parties",
+ "reflabel": "Two assessments, two protected parties"
 }
 </script>
 </div>

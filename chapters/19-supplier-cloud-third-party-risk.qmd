@@ -405,7 +405,10 @@ Order the stages of managing one supplier.
   "Onboard and connect",
   "Monitor through the relationship",
   "Exit with a tested plan"
- ]
+ ],
+ "explain": "Accountability never transfers, so the lifecycle never ends - diligence before, monitoring during, a tested exit after.",
+ "ref": "sec-19-the-supplier-lifecycle",
+ "reflabel": "The supplier lifecycle"
 }
 </script>
 </div>
@@ -452,7 +455,10 @@ FastGoods runs its shop on IaaS. Who secures what?
    "t": "Identity and access for the shop's admins",
    "b": "cust"
   }
- ]
+ ],
+ "explain": "In IaaS the provider stops at the hypervisor: OS, application, data and identities stay yours.",
+ "ref": "sec-19-the-cloud-and-who-secures-what",
+ "reflabel": "The cloud, and who secures what"
 }
 </script>
 </div>
@@ -499,7 +505,10 @@ The newsletter tool is SaaS. Who secures what?
    "t": "The sharing and configuration settings",
    "b": "cust"
   }
- ]
+ ],
+ "explain": "In SaaS the provider runs the application - but access, configuration and the data placed in it remain the customer's risk.",
+ "ref": "sec-19-the-cloud-and-who-secures-what",
+ "reflabel": "The cloud, and who secures what"
 }
 </script>
 </div>
@@ -540,7 +549,10 @@ Select the clauses that belong in a supplier contract.
    "t": "Liability capped at zero",
    "ok": false
   }
- ]
+ ],
+ "explain": "The clauses buy visibility and exit: Audit rights, notification duties, sub-processor control, data return.",
+ "ref": "sec-19-contracts-and-assurance",
+ "reflabel": "Contracts and assurance"
 }
 </script>
 </div>
@@ -591,7 +603,10 @@ Match each artefact to what it attests.
    "t": "The ISMS conforms to the standard",
    "b": "iso"
   }
- ]
+ ],
+ "explain": "You cannot audit every provider, so you read their assurance - and Type II, over a period, says more than Type I.",
+ "ref": "sec-19-contracts-and-assurance",
+ "reflabel": "Contracts and assurance"
 }
 </script>
 </div>

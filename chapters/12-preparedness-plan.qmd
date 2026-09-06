@@ -485,7 +485,10 @@ Order the phases of incident response.
   "Contain",
   "Eradicate and recover",
   "Learn and improve"
- ]
+ ],
+ "explain": "The cycle runs from preparation through detection, containment and recovery into learning - and the learning feeds the next preparation.",
+ "ref": "sec-12-the-response-plan-and-its-phases",
+ "reflabel": "The response plan and its phases"
 }
 </script>
 </div>
@@ -528,7 +531,10 @@ Match each definition to its recovery target.
    "t": "The outage length beyond which the business may not survive",
    "b": "mtd"
   }
- ]
+ ],
+ "explain": "RTO bounds the restore time, RPO the data loss, MTD the survival horizon - the BIA sets all three per service.",
+ "ref": "sec-12-critical-services-and-recovery-targets",
+ "reflabel": "Critical services and recovery targets"
 }
 </script>
 </div>
@@ -548,7 +554,10 @@ Order the ways of testing the plan, in rising cost and realism.
   "Tabletop exercise",
   "Simulation / drill of one part",
   "Full exercise, end to end"
- ]
+ ],
+ "explain": "Start cheap and honest: The tabletop finds role gaps, the drill proves RTO and RPO, the full exercise rehearses the whole.",
+ "ref": "sec-12-test-and-improve",
+ "reflabel": "Test and improve"
 }
 </script>
 </div>
@@ -591,7 +600,10 @@ Sort the artefacts of preparedness.
    "t": "The phases from detection to recovery",
    "b": "plan"
   }
- ]
+ ],
+ "explain": "The BIA says what matters and how fast it must return; the plan says who does what when it fails.",
+ "ref": "sec-12-critical-services-and-recovery-targets",
+ "reflabel": "Critical services and recovery targets"
 }
 </script>
 </div>
@@ -612,7 +624,10 @@ Order the worked denial-of-service timeline.
   "Mitigation activated with the DDoS service",
   "Checkout restored within the RTO",
   "Post-incident report and lessons learned"
- ]
+ ],
+ "explain": "The worked R2 timeline shows preparedness paying off: Detection, mitigation, restoration inside the RTO, then lessons.",
+ "ref": "sec-12-the-response-plan-and-its-phases",
+ "reflabel": "The response plan and its phases"
 }
 </script>
 </div>

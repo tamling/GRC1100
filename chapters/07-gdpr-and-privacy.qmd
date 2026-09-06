@@ -490,7 +490,10 @@ Drag each party onto its GDPR role.
    "t": "The payment service provider",
    "b": "ictrl"
   }
- ]
+ ],
+ "explain": "The controller decides purposes and means, the processor acts on instruction, the PSP decides for itself - and the customer is the data subject the rules protect.",
+ "ref": "sec-07-roles-records-and-contracts",
+ "reflabel": "Roles, records, and contracts"
 }
 </script>
 </div>
@@ -539,7 +542,10 @@ Select the six lawful bases of Article 6 - and only them.
    "t": "Management approval",
    "ok": false
   }
- ]
+ ],
+ "explain": "Article 6 knows exactly six lawful bases; convenience and management approval are not among them.",
+ "ref": "sec-07-principles-lawful-bases-and-rights",
+ "reflabel": "Principles, lawful bases, and rights"
 }
 </script>
 </div>
@@ -561,7 +567,10 @@ Order the duties a personal-data breach sets in motion.
   "Notify Datatilsynet within 72 hours",
   "Inform the data subjects if the risk is high",
   "Record the breach and the reasoning"
- ]
+ ],
+ "explain": "The 72-hour clock starts at awareness; high risk to the data subjects adds the duty to tell them directly.",
+ "ref": "sec-07-where-privacy-meets-security",
+ "reflabel": "Where privacy meets security"
 }
 </script>
 </div>
@@ -620,7 +629,10 @@ Match each practice to the Article 5 principle it honours.
    "t": "Encrypt the stored records",
    "b": "sec"
   }
- ]
+ ],
+ "explain": "The Article 5 principles are testable duties: Each maps to a concrete practice the supervisor can ask to see.",
+ "ref": "sec-07-principles-lawful-bases-and-rights",
+ "reflabel": "Principles, lawful bases, and rights"
 }
 </script>
 </div>
@@ -665,7 +677,10 @@ Select the rights the GDPR actually grants.
    "t": "Compensation for any processing, without damage",
    "ok": false
   }
- ]
+ ],
+ "explain": "The rights are strong but conditional - erasure, for instance, yields where other law requires keeping the data.",
+ "ref": "sec-07-principles-lawful-bases-and-rights",
+ "reflabel": "Principles, lawful bases, and rights"
 }
 </script>
 </div>

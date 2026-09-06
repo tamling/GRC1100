@@ -433,7 +433,10 @@ Assign each FastGoods item to the Canvas building block where it belongs.
    "t": "The shipping carrier",
    "b": "part"
   }
- ]
+ ],
+ "explain": "The Canvas shows how the company creates value - and every block it names is something security may have to protect.",
+ "ref": "sec-02-the-first-lens-the-business-model",
+ "reflabel": "The first lens"
 }
 </script>
 </div>
@@ -455,7 +458,10 @@ Put Porter's primary activities into their order along the chain.
   "Outbound logistics",
   "Marketing and sales",
   "Service"
- ]
+ ],
+ "explain": "Porter's five primary activities run from goods coming in to after-sales service; margin - and IT dependency - accumulates along the chain.",
+ "ref": "sec-02-the-second-lens-the-value-chain",
+ "reflabel": "The second lens"
 }
 </script>
 </div>
@@ -498,7 +504,10 @@ Each question is answered by one lens of this chapter - match them.
    "t": "In what order does the order-to-cash work actually flow?",
    "b": "bpmn"
   }
- ]
+ ],
+ "explain": "Each lens answers one question: The Canvas the value question, the chain the activity question, the process model the order-of-work question.",
+ "ref": "sec-02-from-business-understanding-to-security-priorities",
+ "reflabel": "From business understanding to security priorities"
 }
 </script>
 </div>
@@ -549,7 +558,10 @@ Sort Porter's activities.
    "t": "Technology development",
    "b": "supp"
   }
- ]
+ ],
+ "explain": "Primary activities touch the product on its way to the customer; support activities (HR, procurement, technology) enable them from below.",
+ "ref": "sec-02-the-second-lens-the-value-chain",
+ "reflabel": "The second lens"
 }
 </script>
 </div>
@@ -571,7 +583,10 @@ Order the steps of FastGoods' order-to-delivery process.
   "Warehouse picks and packs",
   "Carrier delivers",
   "Customer receives confirmation and tracking"
- ]
+ ],
+ "explain": "The modelled order process is where the running risks live: The payment step carries R2, the customer data behind it R1 and R3.",
+ "ref": "sec-02-the-third-lens-processes-and-modelling",
+ "reflabel": "The third lens"
 }
 </script>
 </div>

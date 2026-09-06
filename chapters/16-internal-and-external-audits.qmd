@@ -494,7 +494,10 @@ Order the phases of an audit after ISO 19011.
   "Fieldwork - evidence and testing",
   "Reporting the findings",
   "Follow-up on remediation"
- ]
+ ],
+ "explain": "An audit is a process, not a visit: Planned on risk, opened formally, evidenced, reported, and followed up.",
+ "ref": "sec-16-how-an-audit-runs",
+ "reflabel": "How an audit runs"
 }
 </script>
 </div>
@@ -545,7 +548,10 @@ Match each auditor's action to the technique.
    "t": "Re-running the control themselves on a sample",
    "b": "reperf"
   }
- ]
+ ],
+ "explain": "The techniques form a ladder of strength: Asking, watching, reading, and finally re-doing the control yourself.",
+ "ref": "sec-16-evidence-and-testing",
+ "reflabel": "Evidence and testing"
 }
 </script>
 </div>
@@ -588,7 +594,10 @@ Sort the findings by severity.
    "t": "The policy wording could name the owner more clearly",
    "b": "obs"
   }
- ]
+ ],
+ "explain": "Severity follows the gap: A missing mandatory element is major, a lapse in an otherwise working control minor, advice an observation.",
+ "ref": "sec-16-findings-and-fixing",
+ "reflabel": "Findings, and fixing"
 }
 </script>
 </div>
@@ -631,7 +640,10 @@ Sort the audit characteristics.
    "t": "An ISAE 3402 report for customers",
    "b": "ext"
   }
- ]
+ ],
+ "explain": "Internal audit serves the organisation's improvement; external audit gives third parties assurance - both need independence.",
+ "ref": "sec-16-internal-and-external",
+ "reflabel": "Internal and external"
 }
 </script>
 </div>
@@ -676,7 +688,10 @@ Sort the auditor's two questions about a control.
    "t": "Re-running the control on last quarter's data",
    "b": "toe"
   }
- ]
+ ],
+ "explain": "Design first, then operation: A well-designed control that never ran fails the second test.",
+ "ref": "sec-16-evidence-and-testing",
+ "reflabel": "Evidence and testing"
 }
 </script>
 </div>

@@ -556,7 +556,10 @@ For each incident, pick the CIA property that was primarily violated.
    "t": "Staff browsing records they have no need to see",
    "b": "c"
   }
- ]
+ ],
+ "explain": "Ask what failed: Who saw it (confidentiality), was it silently changed (integrity), could it be reached (availability).",
+ "ref": "sec-04-the-cia-triad-in-depth",
+ "reflabel": "The CIA triad, in depth"
 }
 </script>
 </div>
@@ -607,7 +610,10 @@ Match each threat actor to its typical primary motivation.
    "t": "A disgruntled or careless insider",
    "b": "grievance"
   }
- ]
+ ],
+ "explain": "Motivation predicts behaviour: Money seeks scale, espionage seeks persistence, ideology seeks attention, insiders act from access.",
+ "ref": "sec-04-threats-and-vulnerabilities",
+ "reflabel": "Threats and vulnerabilities"
 }
 </script>
 </div>
@@ -629,7 +635,10 @@ Arrange the chain a real incident follows.
   "Vulnerability exploited",
   "Incident",
   "Impact on the business"
- ]
+ ],
+ "explain": "A threat source uses a vector against a vulnerability; only then is there an incident, and only the incident lands as business impact.",
+ "ref": "sec-04-from-threat-to-impact",
+ "reflabel": "From threat to impact"
 }
 </script>
 </div>
@@ -680,7 +689,10 @@ Drag each FastGoods asset onto its classification level.
    "t": "Payment credentials",
    "b": "restr"
   }
- ]
+ ],
+ "explain": "Classification puts the strongest controls where the sensitivity is: The catalogue is meant to be public, the credentials never.",
+ "ref": "sec-04-categorising-the-assets",
+ "reflabel": "Categorising the assets"
 }
 </script>
 </div>
@@ -731,7 +743,10 @@ Match each behaviour to the malware type.
    "t": "Quietly observes and exfiltrates",
    "b": "spy"
   }
- ]
+ ],
+ "explain": "Ransomware extorts, worms self-propagate, trojans deceive their way in, spyware watches - the names describe the behaviour.",
+ "ref": "sec-04-threats-and-vulnerabilities",
+ "reflabel": "Threats and vulnerabilities"
 }
 </script>
 </div>

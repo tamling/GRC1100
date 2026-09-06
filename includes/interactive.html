@@ -46,6 +46,11 @@
 .grc-ex .gx-msg { font-weight: 700; min-height: 1.4em; text-align: center; margin-top: 0.5rem; }
 .grc-ex .gx-msg.ok { color: #2e7d32; }
 .grc-ex .gx-msg.bad { color: #C61932; }
+.grc-ex .gx-explain {
+  display: none; font-size: 0.85rem; font-style: italic; text-align: center;
+  margin: 0.35rem auto 0; max-width: 560px; opacity: 0.85;
+}
+.grc-ex .gx-explain.gx-show { display: block; }
 </style>
 <script>
 (function () {
@@ -62,15 +67,34 @@
     if (txt !== undefined) e.textContent = txt;
     return e;
   }
-  function controls(root, onCheck, onReset, onSolve) {
+  function controls(root, onCheck, onReset, onSolve, cfg) {
     const c = el('div', 'gx-controls');
     const bc = el('button', '', 'Check'); bc.type = 'button';
     const br = el('button', '', 'Reset'); br.type = 'button';
     const bs = el('button', '', 'Show solution'); bs.type = 'button';
     const msg = el('div', 'gx-msg'); msg.setAttribute('role', 'status');
+    // explanation + "see ..." reference, revealed with a correct answer
+    // or the solution
+    let exp = null;
+    if (cfg && cfg.explain) {
+      exp = el('div', 'gx-explain', cfg.explain + ' ');
+      if (cfg.ref) {
+        const a = document.createElement('a');
+        a.href = '#' + cfg.ref;
+        a.textContent = cfg.reflabel || 'this section';
+        exp.append('(see ', a, ').');
+      }
+    }
+    function explain(show) { if (exp) exp.classList.toggle('gx-show', show); }
     let armed = false;
-    bc.addEventListener('click', () => { armed = false; onCheck(msg); });
-    br.addEventListener('click', () => { armed = false; onReset(); msg.textContent = ''; msg.className = 'gx-msg'; });
+    bc.addEventListener('click', () => {
+      armed = false; onCheck(msg);
+      explain(msg.className.indexOf('ok') !== -1);
+    });
+    br.addEventListener('click', () => {
+      armed = false; onReset(); explain(false);
+      msg.textContent = ''; msg.className = 'gx-msg';
+    });
     bs.addEventListener('click', () => {
       if (!armed) {
         armed = true;
@@ -80,9 +104,11 @@
       armed = false;
       onSolve();
       say(msg, 'Solution shown - hit Reset to try it yourself.', 'ok');
+      explain(true);
     });
     c.append(bc, br, bs);
     root.append(c, msg);
+    if (exp) root.append(exp);
     return msg;
   }
   function say(msg, text, cls) { msg.textContent = text; msg.className = 'gx-msg' + (cls ? ' ' + cls : ''); }
@@ -169,7 +195,7 @@
         } else pool.appendChild(c);
         c.classList.add('gx-right');
       });
-    });
+    }, cfg);
   }
 
   // ---- order: click chips into sequence ----------------------------------
@@ -217,7 +243,7 @@
         if (c) { seq.appendChild(c); c.classList.add('gx-right'); }
       });
       renumber();
-    });
+    }, cfg);
   }
 
   // ---- pick: select the correct subset ------------------------------------
@@ -252,7 +278,7 @@
         c.classList.remove('gx-sel', 'gx-right', 'gx-wrong');
         if (c.dataset.ok) c.classList.add('gx-sel', 'gx-right');
       });
-    });
+    }, cfg);
   }
 
   const BUILDERS = { sort: buildSort, order: buildOrder, pick: buildPick };

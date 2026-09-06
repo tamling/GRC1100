@@ -442,7 +442,10 @@ Match each framework to its shape.
    "t": "The Norwegian national baseline",
    "b": "nsm"
   }
- ]
+ ],
+ "explain": "Different audiences built different maps of the same territory; a practitioner reads all four.",
+ "ref": "sec-06-the-other-maps-nist-cis-nsm",
+ "reflabel": "The other maps"
 }
 </script>
 </div>
@@ -464,7 +467,10 @@ Order the path a control travels into the Statement of Applicability.
   "Annex A control selected",
   "Control tailored to the organisation",
   "SoA row recorded with justification"
- ]
+ ],
+ "explain": "The SoA is the end of a traceable path: Risk, need, control, tailoring, recorded decision.",
+ "ref": "sec-06-the-statement-of-applicability",
+ "reflabel": "The Statement of Applicability"
 }
 </script>
 </div>
@@ -505,7 +511,10 @@ Select everything a defensible SoA row carries.
    "t": "The attacker's name",
    "ok": false
   }
- ]
+ ],
+ "explain": "An SoA row records the control, whether it applies, why, and its status - enough to implement from and to audit against.",
+ "ref": "sec-06-the-statement-of-applicability",
+ "reflabel": "The Statement of Applicability"
 }
 </script>
 </div>
@@ -564,7 +573,10 @@ Assign each tag of A.8.5 to its attribute dimension.
    "t": "#Protection",
    "b": "dom"
   }
- ]
+ ],
+ "explain": "Every 27002:2022 control carries five attribute dimensions; the tags let the catalogue be sliced by question.",
+ "ref": "sec-06-iso-iec-27002-and-annex-a",
+ "reflabel": "ISO/IEC 27002 and Annex A"
 }
 </script>
 </div>
@@ -631,7 +643,10 @@ Match each activity to the NIST CSF function it belongs to.
    "t": "Restoring the service from backup",
    "b": "rec"
   }
- ]
+ ],
+ "explain": "The CSF's functions are a lifecycle - govern wraps identify, protect, detect, respond, recover - and they map straight onto the 27002 attributes.",
+ "ref": "sec-06-the-other-maps-nist-cis-nsm",
+ "reflabel": "The other maps"
 }
 </script>
 </div>

@@ -470,7 +470,10 @@ Select the sectors NIS2 covers as essential or important.
    "t": "A neighbourhood gym",
    "ok": false
   }
- ]
+ ],
+ "explain": "NIS2 reaches essential and important entities in listed sectors - energy to health to digital infrastructure - not every small business.",
+ "ref": "sec-05-nis2-scope-and-duties",
+ "reflabel": "NIS2: Scope and duties"
 }
 </script>
 </div>
@@ -491,7 +494,10 @@ Order the notification duties an incident triggers under NIS2 and the Digital Se
   "Early warning within 24 hours",
   "Incident notification within 72 hours",
   "Final report within one month"
- ]
+ ],
+ "explain": "The clock runs in three beats: Early warning in 24 hours, notification in 72, the final report within a month.",
+ "ref": "sec-05-nis2-scope-and-duties",
+ "reflabel": "NIS2: Scope and duties"
 }
 </script>
 </div>
@@ -540,7 +546,10 @@ Sort the EU instruments by how they reach you.
    "t": "The CER Directive",
    "b": "dir"
   }
- ]
+ ],
+ "explain": "A regulation applies directly in every member state; a directive must first be transposed - which is why Norway has the Digital Security Act.",
+ "ref": "sec-05-the-eu-machinery-institutions-and-how",
+ "reflabel": "The EU machinery"
 }
 </script>
 </div>
@@ -583,7 +592,10 @@ Match each event to the regime (and supervisor) it triggers.
    "t": "A bank's ICT systems suffer a major incident",
    "b": "dora"
   }
- ]
+ ],
+ "explain": "One incident can trigger several regimes at once, each with its own supervisor and its own clock.",
+ "ref": "sec-05-one-incident-several-regimes",
+ "reflabel": "One incident, several regimes"
 }
 </script>
 </div>
@@ -624,7 +636,10 @@ Select what NIS2 actually requires of entities in scope.
    "t": "A legal ban on paying ransoms",
    "ok": false
   }
- ]
+ ],
+ "explain": "NIS2 demands risk-management measures, reporting, supply-chain security and management accountability - it names no certificate and bans no ransom.",
+ "ref": "sec-05-nis2-scope-and-duties",
+ "reflabel": "NIS2: Scope and duties"
 }
 </script>
 </div>

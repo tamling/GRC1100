@@ -324,7 +324,10 @@ Order the GRC cycle the twenty-two lectures walked.
   "Select and tailor controls",
   "Prepare, document, build culture",
   "Audit, evaluate, improve"
- ]
+ ],
+ "explain": "The course is one loop walked once: Understand, assess, control, prepare, audit - and improve into the next pass.",
+ "ref": "sec-22-the-whole-picture",
+ "reflabel": "The whole picture"
 }
 </script>
 </div>
@@ -346,7 +349,10 @@ Order the five-step method that travels to any case.
   "Rate likelihood and consequence",
   "Choose proportionate controls",
   "State the residual risk and who accepts it"
- ]
+ ],
+ "explain": "The five steps travel to any case: Assets, risks, ratings, controls, and a governed residual.",
+ "ref": "sec-22-the-exam-and-a-method-that",
+ "reflabel": "The exam, and a method that travels"
 }
 </script>
 </div>
@@ -397,7 +403,10 @@ Match each description to the trap.
    "t": "Policies and registers nobody reads or updates",
    "b": "shelf"
   }
- ]
+ ],
+ "explain": "All four traps produce visible activity without judgement - and share one cure: Ask which real risk this reduces.",
+ "ref": "sec-22-the-common-pitfalls",
+ "reflabel": "The common pitfalls"
 }
 </script>
 </div>
@@ -434,7 +443,10 @@ Select the statements the chapter defends.
    "t": "Compliance is the goal; security follows",
    "ok": false
   }
- ]
+ ],
+ "explain": "Compliance is a floor and a snapshot; security is specific to your risks. Aim for security and let compliance follow as evidence.",
+ "ref": "sec-22-the-common-pitfalls",
+ "reflabel": "The common pitfalls"
 }
 </script>
 </div>
@@ -485,7 +497,10 @@ Match each artefact to where the course built it.
    "t": "The supplier register",
    "b": "third"
   }
- ]
+ ],
+ "explain": "The artefacts are one connected file: Each chapter built a piece, and the register ties them together.",
+ "ref": "sec-22-fastgoods-end-to-end",
+ "reflabel": "FastGoods, end to end"
 }
 </script>
 </div>

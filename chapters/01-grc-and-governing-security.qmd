@@ -711,7 +711,10 @@ Drag each element of the Norsk Hydro handling (and of everyday practice) onto th
    "t": "Honouring the GDPR because personal data is held",
    "b": "comp"
   }
- ]
+ ],
+ "explain": "Governance decides and is answerable, risk management prepares in advance, compliance meets obligations - the praised Hydro handling contains all three.",
+ "ref": "sec-01-the-three-pillars-one-at-a",
+ "reflabel": "The three pillars"
 }
 </script>
 </div>
@@ -770,7 +773,10 @@ Place each FastGoods item on the term of the core vocabulary it instantiates.
    "t": "Requiring MFA",
    "b": "control"
   }
- ]
+ ],
+ "explain": "A risk arises where a threat meets a vulnerability in something of value, and a control breaks exactly that chain.",
+ "ref": "sec-01-the-core-vocabulary-from-threat-to",
+ "reflabel": "The core vocabulary"
 }
 </script>
 </div>
@@ -819,7 +825,10 @@ Sort the norms FastGoods lives under.
    "t": "The company's own password policy",
    "b": "adopt"
   }
- ]
+ ],
+ "explain": "Binding norms apply whether chosen or not; adopted norms bind only once chosen - but then they commit you all the same.",
+ "ref": "sec-01-the-three-pillars-one-at-a",
+ "reflabel": "The three pillars"
 }
 </script>
 </div>
@@ -840,7 +849,10 @@ Order the recurring loop of managing risk.
   "Analyse and rate them",
   "Treat what is above appetite",
   "Monitor and review"
- ]
+ ],
+ "explain": "Risk management is a loop, not a one-off project: What is identified and treated must be monitored and re-assessed as the world changes.",
+ "ref": "sec-01-governance-in-operation-a-first-look",
+ "reflabel": "Governance in operation"
 }
 </script>
 </div>
@@ -895,7 +907,10 @@ Sort the controls by when they act.
    "t": "The incident recovery procedure",
    "b": "corr"
   }
- ]
+ ],
+ "explain": "Preventive controls stop the incident, detective controls see it happening, corrective controls repair the damage - prevention alone is never enough.",
+ "ref": "sec-01-the-core-vocabulary-from-threat-to",
+ "reflabel": "The core vocabulary"
 }
 </script>
 </div>

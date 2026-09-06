@@ -1387,7 +1387,10 @@ Match each STRIDE threat to the property it attacks.
    "t": "Elevation of privilege",
    "b": "authz"
   }
- ]
+ ],
+ "explain": "STRIDE is a mnemonic over the properties: Each letter is the attack on one of them.",
+ "ref": "sec-08-mapping-the-system-the-data-flow",
+ "reflabel": "Mapping the system"
 }
 </script>
 </div>
@@ -1446,7 +1449,10 @@ Assign each part of the FastGoods Level 1 diagram to its DFD element type.
    "t": "The back office",
    "b": "proc"
   }
- ]
+ ],
+ "explain": "Four symbols carry the whole notation: Boxes outside your control, circles that change data, open lines where it rests, arrows where it moves.",
+ "ref": "sec-08-mapping-the-system-the-data-flow",
+ "reflabel": "Mapping the system"
 }
 </script>
 </div>
@@ -1468,7 +1474,10 @@ Arrange the parts of a well-formed risk statement.
   "Vulnerability exploited",
   "Asset affected",
   "Consequence"
- ]
+ ],
+ "explain": "A statement in this five-part form is assessable: Each part can be challenged, and each maps to a register column.",
+ "ref": "sec-08-formulating-the-risks",
+ "reflabel": "Formulating the risks"
 }
 </script>
 </div>
@@ -1509,7 +1518,10 @@ Select the drawing rules this chapter sets for a DFD.
    "t": "Level 2 is always required",
    "ok": false
   }
- ]
+ ],
+ "explain": "The rules keep the drawing honest - and a rule violation usually marks a forgotten process, which is where the missing control sits.",
+ "ref": "sec-08-mapping-the-system-the-data-flow",
+ "reflabel": "Mapping the system"
 }
 </script>
 </div>
@@ -1560,7 +1572,10 @@ Match each activity to the source of risk it works from.
    "t": "Reading last year's audit report as a risk list",
    "b": "audit"
   }
- ]
+ ],
+ "explain": "A risk that cannot name its source has been produced, not found - the four sources are where real risks come from.",
+ "ref": "sec-08-formulating-the-risks",
+ "reflabel": "Formulating the risks"
 }
 </script>
 </div>
@@ -1582,7 +1597,10 @@ Order the milestones of the data-flow diagram's security career.
   "Trust boundaries in Microsoft's SDL (2004)",
   "LINDDUN privacy threats (2010)",
   "The Threat Modeling Manifesto (2020)"
- ]
+ ],
+ "explain": "The diagram is older than its security career: Drawn since 1978, threat-modelled since STRIDE, boundary-marked since the SDL.",
+ "ref": "sec-08-mapping-the-system-the-data-flow",
+ "reflabel": "Mapping the system"
 }
 </script>
 </div>

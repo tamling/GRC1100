@@ -481,7 +481,10 @@ Match each definition to its term.
    "t": "The maximum loss it could survive at all",
    "b": "cap"
   }
- ]
+ ],
+ "explain": "Appetite is wanted risk, tolerance the accepted deviation, capacity the survivable maximum - in that order of size.",
+ "ref": "sec-17-appetite-tolerance-and-capacity",
+ "reflabel": "Appetite, tolerance and capacity"
 }
 </script>
 </div>
@@ -503,7 +506,10 @@ Order the evaluation of one risk.
   "Treat further or accept",
   "Acceptance recorded with the right authority",
   "Review date set"
- ]
+ ],
+ "explain": "Evaluation compares residual risk with the threshold and turns the comparison into a recorded, authorised decision.",
+ "ref": "sec-17-evaluation-and-the-acceptance-threshold",
+ "reflabel": "Evaluation, and the acceptance threshold"
 }
 </script>
 </div>
@@ -548,7 +554,10 @@ Sort the indicators.
    "t": "Growing backlog of unresolved vulnerabilities",
    "b": "kri"
   }
- ]
+ ],
+ "explain": "KPIs look backward at control performance; KRIs look forward at rising risk.",
+ "ref": "sec-17-kpis-and-kris-measuring-the-decision",
+ "reflabel": "KPIs and KRIs"
 }
 </script>
 </div>
@@ -607,7 +616,10 @@ Match each symptom to the bias.
    "t": "The owner who must fund the treatment rates it low",
    "b": "motiv"
   }
- ]
+ ],
+ "explain": "The counters are procedural and cheap: Rate independently, let the chair speak last, ask for the base rates.",
+ "ref": "sec-17-bias-at-the-evaluation-table",
+ "reflabel": "Bias at the evaluation table"
 }
 </script>
 </div>
@@ -644,7 +656,10 @@ Select what the one-page executive report should do.
    "t": "Report inherent risk only, it looks more urgent",
    "ok": false
   }
- ]
+ ],
+ "explain": "One honest page: Residual against appetite, the dissent recorded, the detail in the appendix.",
+ "ref": "sec-17-reporting-the-decision",
+ "reflabel": "Reporting the decision"
 }
 </script>
 </div>

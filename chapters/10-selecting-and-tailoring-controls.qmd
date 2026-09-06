@@ -411,7 +411,10 @@ Match each decision to the treatment option it is.
    "t": "Sign off the residual risk at the right level",
    "b": "accept"
   }
- ]
+ ],
+ "explain": "Reduce, transfer, avoid, accept - every rated risk gets exactly one deliberate decision, recorded.",
+ "ref": "sec-10-a-rated-risk-needs-a-decision",
+ "reflabel": "A rated risk needs a decision"
 }
 </script>
 </div>
@@ -460,7 +463,10 @@ Sort the controls the auditor will meet.
    "t": "The three-way match before an invoice is paid",
    "b": "itac"
   }
- ]
+ ],
+ "explain": "GITCs secure the environment every application relies on; application controls live inside one system's transactions.",
+ "ref": "sec-10-the-audit-view-gitc-and-application",
+ "reflabel": "The audit view"
 }
 </script>
 </div>
@@ -505,7 +511,10 @@ Sort the statements about a control.
    "t": "The restore drill succeeded, on the clock, in May",
    "b": "op"
   }
- ]
+ ],
+ "explain": "Design asks whether the control would work; operation asks whether it actually ran, with evidence - auditors test both.",
+ "ref": "sec-10-tailoring-cost-and-residual-risk",
+ "reflabel": "Tailoring, cost, and residual risk"
 }
 </script>
 </div>
@@ -556,7 +565,10 @@ Place each control on its layer.
    "t": "Awareness training",
    "b": "people"
   }
- ]
+ ],
+ "explain": "Defence in depth layers independent controls so that one failure does not expose everything behind it.",
+ "ref": "sec-10-choosing-controls-and-layering-them",
+ "reflabel": "Choosing controls, and layering them"
 }
 </script>
 </div>
@@ -593,7 +605,10 @@ Select what turns accepting a residual risk into a governed decision.
    "t": "It is permanent, never to be revisited",
    "ok": false
   }
- ]
+ ],
+ "explain": "Acceptance is a governed decision: Recorded, signed at the right level, and revisited - never a silent default.",
+ "ref": "sec-10-tailoring-cost-and-residual-risk",
+ "reflabel": "Tailoring, cost, and residual risk"
 }
 </script>
 </div>

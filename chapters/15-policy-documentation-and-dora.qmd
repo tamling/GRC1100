@@ -427,7 +427,10 @@ Order the four levels, top first.
   "Standard - the measurable rules",
   "Procedure - how, step by step",
   "Record - the evidence it happened"
- ]
+ ],
+ "explain": "Policy states what and why, standards make it measurable, procedures make it doable, records prove it happened.",
+ "ref": "sec-15-the-document-hierarchy",
+ "reflabel": "The document hierarchy"
 }
 </script>
 </div>
@@ -486,7 +489,10 @@ Match each activity to the DORA pillar it lives under.
    "t": "Exchanging threat intelligence with peers",
    "b": "share"
   }
- ]
+ ],
+ "explain": "DORA's five pillars run from the risk framework through incidents, testing and third parties to information sharing.",
+ "ref": "sec-15-dora-resilience-as-law",
+ "reflabel": "DORA: Resilience as law"
 }
 </script>
 </div>
@@ -537,7 +543,10 @@ Place each document on its level of the hierarchy.
    "t": "The signed access review of March",
    "b": "rec"
   }
- ]
+ ],
+ "explain": "Each document lives on one level - and an auditor will ask for the record, not the policy.",
+ "ref": "sec-15-the-document-hierarchy",
+ "reflabel": "The document hierarchy"
 }
 </script>
 </div>
@@ -574,7 +583,10 @@ Select the failure symptoms the chapter names.
    "t": "Procedures are kept short",
    "ok": false
   }
- ]
+ ],
+ "explain": "Conflicting versions, missing owners and stale review dates are the classic symptoms of documentation nobody governs.",
+ "ref": "sec-15-keeping-documentation-useful",
+ "reflabel": "Keeping documentation useful"
 }
 </script>
 </div>
@@ -621,7 +633,10 @@ Sort the features of the two regimes.
    "t": "Covers sectors from energy to health",
    "b": "nis2"
   }
- ]
+ ],
+ "explain": "DORA is a directly applicable regulation for finance with its own instruments (TLPT, the register); NIS2 is a directive across sectors.",
+ "ref": "sec-15-dora-resilience-as-law",
+ "reflabel": "DORA: Resilience as law"
 }
 </script>
 </div>

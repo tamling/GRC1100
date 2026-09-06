@@ -561,7 +561,10 @@ Put the four phases of the management cycle in order.
   "Do",
   "Check",
   "Act"
- ]
+ ],
+ "explain": "Plan-do-check-act is the engine of every management system: The ISMS never finishes, it cycles.",
+ "ref": "sec-03-the-pdca-cycle",
+ "reflabel": "The PDCA cycle"
 }
 </script>
 </div>
@@ -620,7 +623,10 @@ Drag each ISMS activity onto the PDCA phase where it belongs.
    "t": "Management review of measurements",
    "b": "check"
   }
- ]
+ ],
+ "explain": "Scope, policy and the risk assessment are planned; controls and training are done; audits and reviews check; corrective action acts.",
+ "ref": "sec-03-the-pdca-cycle",
+ "reflabel": "The PDCA cycle"
 }
 </script>
 </div>
@@ -665,7 +671,10 @@ Select the four control themes of ISO/IEC 27002:2022 - and nothing else.
    "t": "Legal",
    "ok": false
   }
- ]
+ ],
+ "explain": "Since the 2022 revision the 93 controls sit under exactly four themes: Organisational, people, physical, technological.",
+ "ref": "sec-03-scope-policy-and-the-annex-a",
+ "reflabel": "Scope, policy and the Annex A controls"
 }
 </script>
 </div>
@@ -724,7 +733,10 @@ Match each ISMS activity to the clause it lives in.
    "t": "Correcting a nonconformity at its root cause",
    "b": "c10"
   }
- ]
+ ],
+ "explain": "Clauses 4-10 are the mandatory management system: Context, leadership, planning, support, operation, evaluation, improvement.",
+ "ref": "sec-03-inside-the-standard-clauses-4-to",
+ "reflabel": "Inside the standard"
 }
 </script>
 </div>
@@ -765,7 +777,10 @@ Select what an ISO/IEC 27001 certificate actually says.
    "t": "Security is guaranteed until the next audit",
    "ok": false
   }
- ]
+ ],
+ "explain": "A certificate says an accredited auditor found the ISMS conforming for the stated scope on the audit days - not that breaches are impossible.",
+ "ref": "sec-03-certification-the-law-and-practice",
+ "reflabel": "Certification, the law, and practice"
 }
 </script>
 </div>
