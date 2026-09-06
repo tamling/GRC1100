@@ -126,9 +126,9 @@
       if (chip.dataset.term === z.dataset.answer) { z.classList.add('cia-right'); right++; }
       else { z.classList.add('cia-wrong'); wrong++; }
     });
-    if (right === 3) { msg.textContent = '✓ All correct — the CIA triad is in place.'; msg.className = 'cia-msg ok'; }
-    else if (empty > 0 && wrong === 0) { msg.textContent = 'Keep going — ' + empty + ' corner(s) still empty.'; msg.className = 'cia-msg'; }
-    else { msg.textContent = '✗ Not yet — the red corners are wrong (three of the six terms are distractors).'; msg.className = 'cia-msg bad'; }
+    if (right === 3) { msg.textContent = '✓ All correct - the CIA triad is in place.'; msg.className = 'cia-msg ok'; }
+    else if (empty > 0 && wrong === 0) { msg.textContent = 'Keep going - ' + empty + ' corner(s) still empty.'; msg.className = 'cia-msg'; }
+    else { msg.textContent = '✗ Not yet - the red corners are wrong (three of the six terms are distractors).'; msg.className = 'cia-msg bad'; }
   });
   root.querySelector('.cia-reset').addEventListener('click', () => {
     root.querySelectorAll('.cia-chip').forEach(c => pool.appendChild(c));

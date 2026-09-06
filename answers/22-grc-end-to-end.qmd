@@ -1,32 +1,32 @@
-<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+<!-- Answer key - source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
 
-# Chapter 22 — sketch answers {.unnumbered}
+# Chapter 22 - sketch answers {.unnumbered}
 
-\(1\) Asset and risk: Members' health data --- special-category --- at risk of
+\(1\) Asset and risk: Members' health data - special-category - at risk of
 exposure through an uncontrolled shared file on unmanaged devices. Assessment:
 High impact (sensitive data, GDPR, member trust), likely (broad access, personal
 laptops, no control). Control: Move the data to an access-controlled system with
 per-role rights and MFA (A.5.15, A.8.5); retire the spreadsheet. Residual: Low
---- authorised misuse remains; formally accepted by the owner with a review
+- authorised misuse remains; formally accepted by the owner with a review
 date. Assurance: Quarterly access review plus a sampled check that no copies
-persist outside the system. (2) (a) Shelf-ware --- replace it with the short set
+persist outside the system. (2) (a) Shelf-ware - replace it with the short set
 of Chapter 15 that people actually use, and retire the rest. (b) Security
-theatre --- spend the visible-control money on the risk: Lock the server room;
-keep the camera if it still earns its place. (c) Tick-box compliance --- the
+theatre - spend the visible-control money on the risk: Lock the server room;
+keep the camera if it still earns its place. (c) Tick-box compliance - the
 certificate met the letter; run the joiner--mover--leaver control for real and
 let the certificate follow. (3) The audit proves the standard was met on that
-day --- a snapshot, not a state; the standard is a floor set for everyone, while
-FastGoods' specific risks --- R1--R3 --- are its own to manage; compliance and
+day - a snapshot, not a state; the standard is a floor set for everyone, while
+FastGoods' specific risks - R1--R3 - are its own to manage; compliance and
 security relate in one direction: Manage the real risks well and compliance
 falls out as evidence; reverse the direction and you hold a certificate over an
 open gap. (4) (a) Check-and-report firing into improve: Chapter 17's review
 trigger reopens the acceptance, with data. (b) Understand-and-govern: Chapter
 5's regime map is redrawn, obligations flow into the ISMS and the SoA. (c) Check
-into improve: A Chapter 16 finding --- major, given Chapter 12's stakes --- with
+into improve: A Chapter 16 finding - major, given Chapter 12's stakes - with
 a remediation row, an owner, a deadline, and a re-test; twice-skipped makes it a
 candidate repeat finding, which is a governance signal, not a calendar slip. (5)
 General: Security is governed by finding the real risks, deciding about them
-proportionately, and being able to show --- with records an auditor could test
---- that the decisions are made and kept. FastGoods: A 25-person shop took three
+proportionately, and being able to show - with records an auditor could test
+- that the decisions are made and kept. FastGoods: A 25-person shop took three
 named risks from discovery through treatment, acceptance and audit to watched
-closure --- proving the cycle scales down without losing its shape.
+closure - proving the cycle scales down without losing its shape.

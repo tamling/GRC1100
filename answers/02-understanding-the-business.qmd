@@ -1,20 +1,20 @@
-<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+<!-- Answer key - source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
 
-# Chapter 2 — sketch answers {.unnumbered}
+# Chapter 2 - sketch answers {.unnumbered}
 
 \(1\) You cannot protect what you do not understand. Failure modes: Protecting
 the wrong things because the critical assets were never identified, and being
-blindsided when an unknown dependency (a supplier, a single system) fails --- in
+blindsided when an unknown dependency (a supplier, a single system) fails - in
 both cases effort is spent in the wrong places at real cost. (2) Any sound
 answer works; the pattern is: The model names what the organisation depends on
 (resources, channels, revenue), the chain shows which activity carries the most
 value, and the process pins possible harm to specific steps. (3) Value
 concentrates at the checkout, where it is captured; a denial-of-service there
 stops revenue, which is risk R2. The vault analogy is apt because protection
-should follow value, not be spread evenly --- the jeweller guards the vault, not
+should follow value, not be spread evenly - the jeweller guards the vault, not
 the stationery cupboard. (4) Because the auditor cannot judge where the risks of
 the engagement lie without knowing the business and its environment; risk
-assessment in this course rests on the same discipline --- understanding the
+assessment in this course rests on the same discipline - understanding the
 entity first is what makes the later judgements trustworthy in both professions.
 (5) Key resource: The customer database (R3). Channel: The webshop, whose login
 step carries account takeover (R1). Revenue stream: Sales through the checkout,

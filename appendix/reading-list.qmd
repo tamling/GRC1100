@@ -5,8 +5,8 @@ so the whole plan can be seen at a glance. Page numbers are to the editions
 below; the per-chapter reading paragraphs give the same references with a little
 more context.
 
-**Core texts.** **Jøsang** --- A. Jøsang, *Cybersecurity: Technology and
-Governance* (Springer, 2025). **E&W** --- Edwards & Weaver, *The Cybersecurity
+**Core texts.** **Jøsang** - A. Jøsang, *Cybersecurity: Technology and
+Governance* (Springer, 2025). **E&W** - Edwards & Weaver, *The Cybersecurity
 Guide to Governance, Risk, and Compliance* (Wiley, 2024).
 
   **Ch.**                    **Topic**                                               **Reading**

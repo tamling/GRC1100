@@ -5,11 +5,11 @@ Each chapter belongs to one lecture: Chapter 1 to Lecture 1, Chapter 2 to
 Lecture 2, and so on through all twenty-two. The slides shown in the lectures
 carry the same structure, so you can use slides, script and readings side by
 side without translating between them. The course is taught jointly by two
-equal lecturers --- Timo Amling and Dr. Roksana Moore --- and the script covers
+equal lecturers - Timo Amling and Dr. Roksana Moore - and the script covers
 the whole course alike, whoever stands at the front; the shared contact address
 `timo.amling@kristiania.no` reaches both of us.
 
-The script is written to be read --- before the lecture if you can, after it if
+The script is written to be read - before the lecture if you can, after it if
 you must. It explains in connected prose what the slides can only sketch, it
 works through the running case more slowly than a lecture allows, and it tells
 you at the end of every chapter exactly what to read next in the two course
@@ -17,9 +17,9 @@ books. It does not replace those books: Jøsang's *Cybersecurity: Technology and
 Governance* and Edwards & Weaver's *The Cybersecurity Guide to Governance, Risk,
 and Compliance* remain the curriculum. Think of this script as the connective
 tissue between the lectures and the literature. The script also assumes what
-Kristiania students bring with them --- the foundations of *Digital Security*,
+Kristiania students bring with them - the foundations of *Digital Security*,
 the platform view of *Cloud Security*, and the attacker's craft of *Ethical
-Hacking* --- and it points back to all three where they carry part of the load.
+Hacking* - and it points back to all three where they carry part of the load.
 
 A practical suggestion from someone who once learned from a script very much
 like this one: Read a chapter with a pen. Mark what is obvious, mark what is
@@ -31,7 +31,7 @@ Timo Amling
 ::: {.callout-tip}
 ## Annotate this script
 
-You can highlight and annotate any passage of this script with Hypothesis ---
+You can highlight and annotate any passage of this script with Hypothesis -
 select text and comment directly in the margin. See [How to
 annotate](appendix/how-to-annotate.qmd) for what counts as a substantive
 contribution and how merged contributions are credited.

@@ -1,24 +1,24 @@
-<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+<!-- Answer key - source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
 
-# Chapter 6 — sketch answers {.unnumbered}
+# Chapter 6 - sketch answers {.unnumbered}
 
 \(1\) The requirement (NIS2 Art. 21, GDPR Art. 32) obliges protection but names
 no measures; the catalogue (A.8.5) supplies the named, checkable control; the
 organisation judges how strongly to implement it, proportionate to its risk. (2)
-Technical: Encryption of the database (A.8.24) --- preventive. Process: A
-periodic access review of who can reach the database --- detective. People:
-Training staff who handle customer data (A.6.3) --- preventive. (A corrective
+Technical: Encryption of the database (A.8.24) - preventive. Process: A
+periodic access review of who can reach the database - detective. People:
+Training staff who handle customer data (A.6.3) - preventive. (A corrective
 complement: Restore from backup.) (3) Yes in substance: A.8.5 (MFA) and A.8.24
 (encryption) sit under Protect in the CSF mapping, as does the awareness
 training. Because the frameworks map onto each other, the same implementation
-evidence --- configurations, logs --- answers the CSF question without any new
+evidence - configurations, logs - answers the CSF question without any new
 work. (4) Tailoring fits the control's purpose to the organisation's risk and
 size: FastGoods' alerts-plus-weekly-review detects incidents in time to act, at
 proportionate cost, which is what the control requires; a bank's SOC answers a
 bank's risk, not a webshop's. The variant that fails is alerts sent to an unread
-mailbox --- the purpose (timely detection) is not met, however configured the
+mailbox - the purpose (timely detection) is not met, however configured the
 tooling. (5) Control: A.8.13 / backup (or, from this chapter's tables, the
 corrective complement to A.8.24). Applies: Yes. Justification: Treats R3's
 impact and enables restoration (GDPR Art. 32 names restore capability). Status:
 Implemented. Evidence: Backup job logs and a documented restore test. It treats
-R3 --- and, by restoring availability, softens R2's worst case too.
+R3 - and, by restoring availability, softens R2's worst case too.

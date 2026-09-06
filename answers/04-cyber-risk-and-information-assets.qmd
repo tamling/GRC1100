@@ -1,27 +1,27 @@
-<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+<!-- Answer key - source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
 
-# Chapter 4 — sketch answers {.unnumbered}
+# Chapter 4 - sketch answers {.unnumbered}
 
 \(1\) The hardware is worth a few hundred kroner and is easily replaced; the
 customer data on it can expose customers, trigger GDPR duties and destroy trust.
 The loss is therefore valued by what the information's exposure would cost the
 business, not by the replacement price of the machine. (2) Product catalogue:
-Availability dominates (it is meant to be seen) --- protected by capacity and
-resilience. Order records: Integrity dominates (they must be right) ---
+Availability dominates (it is meant to be seen) - protected by capacity and
+resilience. Order records: Integrity dominates (they must be right) -
 protected by access control and logging of changes. Checkout: Availability
-dominates (revenue stops without it) --- protected by denial-of-service defences
+dominates (revenue stops without it) - protected by denial-of-service defences
 and redundancy. (3) Requiring MFA closes the vulnerability, so the likelihood of
-account takeover falls sharply and the risk shrinks --- but the hacker and the
+account takeover falls sharply and the risk shrinks - but the hacker and the
 credential-stuffing attempts are still out there, so the threat is unchanged.
 Risk lives in the meeting of the two, which is why both the weaknesses and the
 threat picture are managed. (4) Threat acts: An attacker sends the phishing
-email --- intervene with filtering and awareness training. Exploits a
+email - intervene with filtering and awareness training. Exploits a
 vulnerability: The attachment runs and the staff member's machine is unprotected
---- intervene by patching and hardening. Causes an incident: Ransomware encrypts
-the data --- intervene by detecting and isolating early. Leading to impact: The
-checkout is down and data may be exposed --- intervene with backups, a response
-plan and notification. (5) Supplier price lists: Internal --- staff need them,
+- intervene by patching and hardening. Causes an incident: Ransomware encrypts
+the data - intervene by detecting and isolating early. Leading to impact: The
+checkout is down and data may be exposed - intervene with backups, a response
+plan and notification. (5) Supplier price lists: Internal - staff need them,
 leakage causes minor commercial harm; handling rule: Staff-only access, not
-published. Customer database: Confidential --- personal data whose disclosure
+published. Customer database: Confidential - personal data whose disclosure
 causes real harm (R3); handling rule: Encrypted storage with strictly limited
 access and careful disposal.

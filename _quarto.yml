@@ -58,3 +58,5 @@ format:
     toc: true
     number-sections: true
     include-in-header: includes/hypothesis.html
+    # Interactive exercise engine (sort/order/pick widgets in the chapters)
+    include-after-body: includes/interactive.html

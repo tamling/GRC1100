@@ -1,24 +1,24 @@
-<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+<!-- Answer key - source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
 
-# Chapter 3 — sketch answers {.unnumbered}
+# Chapter 3 - sketch answers {.unnumbered}
 
-\(1\) Tools without a system leave gaps nobody owns --- nobody owns patching;
-security depends on a few people remembering things --- the admin account
+\(1\) Tools without a system leave gaps nobody owns - nobody owns patching;
+security depends on a few people remembering things - the admin account
 without MFA that nobody checked; nothing connects risk, controls and improvement
---- no record of what was decided or why. (2) Plan: Assess R3 and decide the
+- no record of what was decided or why. (2) Plan: Assess R3 and decide the
 customer database must be encrypted with strictly limited access. Do: Implement
 encryption (A.8.24) and tighten access rights. Check: The internal audit finds a
 database export routine writing unencrypted copies to a shared folder. Act:
 Encrypt or remove the export, restrict the folder, and add the routine to the
-next audit's checklist. (3) Clause 6 is Plan --- the risk assessment and
-treatment decisions for R1--R3; Clause 8 is Do --- running the planned processes
-and implementing treatment; Clause 9 is Check --- internal audit and management
-review; Clause 10 is Act --- corrective action such as automating
+next audit's checklist. (3) Clause 6 is Plan - the risk assessment and
+treatment decisions for R1--R3; Clause 8 is Do - running the planned processes
+and implementing treatment; Clause 9 is Check - internal audit and management
+review; Clause 10 is Act - corrective action such as automating
 de-provisioning. (4) Not defensible as stated: The checkout is where FastGoods'
 revenue and payment risk live (R2), and using a provider transfers work, not
-accountability. The auditor would call it scope gaming --- the boundary drawn to
-dodge the real risk --- and require the payment flow, including the provider
-relationship, inside the scope. (5) Applies: A.8.5 Secure authentication ---
-logins need MFA --- linked to R1. Excluded: A.7.4 Physical security monitoring
---- FastGoods runs no data centre of its own; the cloud provider's physical
+accountability. The auditor would call it scope gaming - the boundary drawn to
+dodge the real risk - and require the payment flow, including the provider
+relationship, inside the scope. (5) Applies: A.8.5 Secure authentication -
+logins need MFA - linked to R1. Excluded: A.7.4 Physical security monitoring
+- FastGoods runs no data centre of its own; the cloud provider's physical
 controls are covered through the supplier relationship (Lecture 19).

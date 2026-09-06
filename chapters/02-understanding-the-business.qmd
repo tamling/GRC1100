@@ -2,13 +2,13 @@
 
 Chapter 1 gave you the vocabulary; this chapter takes the first real step, and
 it is deliberately not a technical one. Before any threat, any control and any
-standard, we study the organisation we are trying to protect --- its business
-model, its value chain, and its processes --- because you cannot assess risk
+standard, we study the organisation we are trying to protect - its business
+model, its value chain, and its processes - because you cannot assess risk
 sensibly without understanding the business. This may feel like a detour through
 business studies before we reach security. It is not a detour: Every later risk
 decision in this course depends on knowing what the organisation does, what it
 depends on, and what it cannot afford to lose. By the end of the chapter you
-should be able to look at any organisation --- FastGoods included --- through
+should be able to look at any organisation - FastGoods included - through
 three lenses of increasing detail, and to hand the result over to security as a
 grounded list of what to protect first.
 
@@ -18,8 +18,8 @@ Begin with the principle that justifies the whole chapter. Security is never an
 end in itself; it exists to keep the organisation able to do what it set out to
 do. Security protects the organisation's ability to operate and to create value,
 and it follows that a control with no business purpose is just cost and
-friction. It also follows --- and this is the part technicians sometimes resist
---- that the business decides what is worth protecting, and how much. If you do
+friction. It also follows - and this is the part technicians sometimes resist
+- that the business decides what is worth protecting, and how much. If you do
 not know what the business values, you cannot say which risks are serious or
 which controls are worth their cost.
 
@@ -28,8 +28,8 @@ paragraph of history. For a long time security was treated as a purely technical
 concern, handled in the server room and isolated from business strategy. Costly
 failures taught the lesson the hard way: A security failure is a business
 problem, not just an IT one, and it lands on revenue, customers and reputation.
-Frameworks began to draw the connection explicitly --- COBIT, first published in
-1996, tied IT and its controls to business goals --- and over time it became
+Frameworks began to draw the connection explicitly - COBIT, first published in
+1996, tied IT and its controls to business goals - and over time it became
 accepted that decisions about security are really decisions about business risk,
 and belong with the business. This course teaches that modern, business-aligned
 view from the very first principle.
@@ -38,8 +38,8 @@ One useful way to see what an organisation must protect is to ask who depends on
 it. An organisation sits in a web of stakeholders, each expecting something from
 it, and the expectations map with surprising directness onto security
 obligations (@tbl-stakeholders). For FastGoods, customers expect their
-personal data protected and the shop online --- expectations that point straight
-at risks R3 and R2 --- while regulators expect the GDPR met whether or not
+personal data protected and the shop online - expectations that point straight
+at risks R3 and R2 - while regulators expect the GDPR met whether or not
 anyone at FastGoods has read it. Stakeholders are, in effect, a first list of
 what the organisation must not let down.
 
@@ -53,7 +53,7 @@ what the organisation must not let down.
   Suppliers & partners   Reliable, trustworthy dealings
 
   : The organisation and its stakeholders. Each expectation maps onto something
-  security must deliver --- for FastGoods, the customers' row alone points at R2
+  security must deliver - for FastGoods, the customers' row alone points at R2
   and R3.
 :::
 
@@ -61,7 +61,7 @@ The central claim of the lecture deserves to be stated plainly: You cannot
 protect what you do not understand. Not knowing the critical assets means
 protecting the wrong things; not knowing the processes means missing where harm
 would land; not knowing the dependencies means being blindsided when one of them
-fails. The result is effort spent in the wrong places, at real cost --- a risk
+fails. The result is effort spent in the wrong places, at real cost - a risk
 assessment built on a shaky understanding of the business is confident about the
 wrong things. Understanding first is what makes everything that follows
 trustworthy.
@@ -72,7 +72,7 @@ obliges an auditor to understand the entity and its environment before assessing
 where the risks of the engagement lie. An IT auditor walking into FastGoods
 would first map the business and its key processes, exactly as we are about to,
 and only then judge any control. Much of this course mirrors how auditors
-actually work --- a parallel we lean on again in Block V, when the auditors
+actually work - a parallel we lean on again in Block V, when the auditors
 arrive at FastGoods themselves.
 
 ## The first lens: The business model {#sec-02-the-first-lens-the-business-model}
@@ -90,15 +90,15 @@ You do not need an MBA to describe a business model; you need a clear account of
 what the organisation does and how it survives. That account is the foundation
 everything else in this chapter builds on, and there is a widely used tool for
 writing it down on one page: The Business Model Canvas, introduced by
-Osterwalder in 2010, whose nine building blocks --- customers, value
+Osterwalder in 2010, whose nine building blocks - customers, value
 proposition, channels, relationships, activities, resources, partners, costs and
-revenue --- force you to think about the whole business, not just the product.
+revenue - force you to think about the whole business, not just the product.
 We met FastGoods on a canvas in Chapter 1 (@fig-bmc); here the point is
 the tool itself. It captures the whole business on a single page, it names the
 key dependencies explicitly, and it is therefore a fast way to find assets: The
 blocks that name key resources and activities are usually where the assets worth
 protecting are hiding. Reduced to its essentials, the FastGoods model is easy to
-state (@tbl-fgmodel) --- and that simplicity is exactly why it is a good
+state (@tbl-fgmodel) - and that simplicity is exactly why it is a good
 teaching case, because each line points to something the business depends on.
 
 ::: {#tbl-fgmodel}
@@ -123,7 +123,7 @@ hurt the organisation. Each key resource is an asset that needs protecting; each
 channel is a route that could be attacked or go down; each revenue stream is
 something an incident could interrupt. For FastGoods the model already flags the
 customer database (an asset), the webshop (a channel) and the checkout (revenue)
-as things to protect --- together they describe the organisation's real
+as things to protect - together they describe the organisation's real
 exposure. The business model, read carefully, is the first draft of a risk
 picture.
 :::
@@ -135,17 +135,17 @@ picture.
 
 The value chain, introduced by Michael Porter in 1985, breaks a business into
 the activities that create value: *Primary* activities that directly make and
-deliver the product --- inbound logistics, operations, outbound logistics,
-marketing and sales, service --- and *support* activities --- firm
+deliver the product - inbound logistics, operations, outbound logistics,
+marketing and sales, service - and *support* activities - firm
 infrastructure, human resource management, technology development, procurement
---- that enable them all. The model reads left to right as value is added,
+- that enable them all. The model reads left to right as value is added,
 ending in the margin the activities together earn.
 :::
 
 ![Porter's value chain (1985). Value is added left to right through the primary activities, with the support activities running underneath them all; for security, the model is a map of where a disruption would break the flow of value.](figures/fig-porter.svg){#fig-porter}
 
 The usefulness of the value chain for security is that it shows where value
-piles up --- and value is exactly what attackers and accidents threaten.
+piles up - and value is exactly what attackers and accidents threaten.
 Protecting everything equally is wasteful, so the discipline is to map the chain
 and then concentrate effort where value concentrates: The activities that carry
 the most value are the ones worth protecting most, because a break there does
@@ -154,16 +154,16 @@ precisely this reason; the value chain is how you find the equivalent of the
 vault in any organisation. Applied to FastGoods (@fig-fgchain), the
 chain runs from sourcing goods to after-sales support, and it immediately
 highlights the activity that carries the most risk: The checkout is where the
-value is captured, so it is where a denial-of-service attack would hurt most ---
+value is captured, so it is where a denial-of-service attack would hurt most -
 this is risk R2, located by nothing more sophisticated than drawing the chain.
 
-![The FastGoods value chain. The checkout (highlighted) is where value is captured, so its failure costs the business the most --- mapping the chain points straight at risk R2.](figures/fig-fgchain.svg){#fig-fgchain}
+![The FastGoods value chain. The checkout (highlighted) is where value is captured, so its failure costs the business the most - mapping the chain points straight at risk R2.](figures/fig-fgchain.svg){#fig-fgchain}
 
 It is tempting to focus only on the primary activities, but the support
 activities underneath them are often where security actually lives, because a
 failure in support can disable every primary activity at once. Three deserve
 naming now. *Technology development* covers the IT and systems everything runs
-on --- for FastGoods, the cloud hosting that supports the whole chain, whose
+on - for FastGoods, the cloud hosting that supports the whole chain, whose
 failure stops everything. *Procurement* covers the suppliers and services
 brought in, which is where supplier and third-party risk enters (Lecture 19).
 And *human resource management* covers the people, and the access they hold
@@ -173,21 +173,21 @@ in the visible primary activities.
 One more structural view completes the lens. A business runs on layered
 information systems, and the layers map onto the classic levels of management
 (@fig-pyramid). At the operational level, transaction systems handle the
-day-to-day events --- for FastGoods, the webshop, payment processing and the
+day-to-day events - for FastGoods, the webshop, payment processing and the
 inventory database. At the management level, ERP and CRM systems run planning,
-finance and customer relationships --- order and stock management. At the
+finance and customer relationships - order and stock management. At the
 strategic level, business-intelligence dashboards support long-range decisions,
 such as which markets to enter. The point for this course is that every layer
 holds data and processes that GRC must govern: Access rights, change management,
-and the evidence an auditor will later ask to see --- the IT general controls
+and the evidence an auditor will later ask to see - the IT general controls
 (ITGC) that return in Block V. One order, traced through the stack, makes it
 concrete: A customer's click is a transaction in the webshop (operational),
 becomes a line in order and stock management (management), and ends as a data
-point in the quarter's sales dashboard (strategic) --- three appearances of one
+point in the quarter's sales dashboard (strategic) - three appearances of one
 fact, each needing its own integrity, which is why "the numbers are right" is an
 ITGC question long before it is a finance question.
 
-![Enterprise systems map onto the levels of management, here with the FastGoods examples. Every layer holds data and processes GRC must reach --- access rights, change management, and the audit evidence of Block V.](figures/fig-pyramid.svg){#fig-pyramid}
+![Enterprise systems map onto the levels of management, here with the FastGoods examples. Every layer holds data and processes GRC must reach - access rights, change management, and the audit evidence of Block V.](figures/fig-pyramid.svg){#fig-pyramid}
 
 ## The third lens: Processes and modelling {#sec-02-the-third-lens-processes-and-modelling}
 
@@ -195,14 +195,14 @@ ITGC question long before it is a finance question.
 ## Business process
 
 A business process is an ordered set of steps that produces an outcome. It
-crosses people, systems and sometimes whole organisations --- and security
+crosses people, systems and sometimes whole organisations - and security
 incidents happen inside processes, at specific steps.
 :::
 
 Where the value chain is a high-level map, a process is the step-by-step route a
 single task follows. "Place an order" is a process: Browse, add to basket, log
 in, pay, confirm. Seeing those individual steps is what lets us pinpoint exactly
-where a risk such as account takeover sits --- not "somewhere in the webshop",
+where a risk such as account takeover sits - not "somewhere in the webshop",
 but at one nameable step.
 
 To analyse a process we draw it, and there is a recognised notation for doing
@@ -213,7 +213,7 @@ an event (a start or an end), a rounded box is a task, and a diamond is a
 gateway where the flow branches on a decision. With just these, a complex
 process becomes a picture anyone in the room can read and check.
 
-![A small process in BPMN. A circle is an event, a rounded box a task, a diamond a gateway branching on a decision --- here, Yes ships the order and No sends it to back-order. Few symbols, and the whole room reads the flow the same way.](figures/fig-bpmn.svg){#fig-bpmn}
+![A small process in BPMN. A circle is an event, a rounded box a task, a diamond a gateway branching on a decision - here, Yes ships the order and No sends it to back-order. Few symbols, and the whole room reads the flow the same way.](figures/fig-bpmn.svg){#fig-bpmn}
 
 ::: {#exm-orderproc}
 ## The order process, and where the risks sit
@@ -233,7 +233,7 @@ questions that prose would hide. Each step raises the question *what could go
 wrong here?*; the hand-offs between systems and people are common weak points;
 the model shows dependencies that text descriptions tend to hide; and it gives
 the whole team a shared picture to reason about. Drawing the FastGoods checkout
-immediately raises the question of what protects the payment step --- which is
+immediately raises the question of what protects the payment step - which is
 exactly the security conversation we want. A good model does not answer the
 questions, but it makes sure the right ones get asked.
 
@@ -242,11 +242,11 @@ questions, but it makes sure the right ones get asked.
 
 Apply the first source from Chapter 1's box to @fig-orderproc, step by
 step. *Browse*: What can go wrong here? Little of consequence. *Log in*: Someone
-who is not the customer logs in --- that sentence *is* R1, found, not invented.
-*Pay*: The step stops working --- R2. *Store data*: The stored data gets out ---
+who is not the customer logs in - that sentence *is* R1, found, not invented.
+*Pay*: The step stops working - R2. *Store data*: The stored data gets out -
 R3. The process did the work: Each risk fell out of one honest question asked at
 one concrete step. When a risk feels impossible to formulate, the cure is always
-the same --- go back to a step and ask the question there.
+the same - go back to a step and ask the question there.
 :::
 
 ## From business understanding to security priorities {#sec-02-from-business-understanding-to-security-priorities}
@@ -256,12 +256,12 @@ material of security. The three lenses each hand us a list: The business model
 names the key resources and the revenue; the value chain shows where value, and
 so risk, concentrates; the processes show the specific steps where harm can
 occur. Put together, they give a grounded list of the organisation's assets and
-weak points --- precisely the starting point for the next chapter, where assets
+weak points - precisely the starting point for the next chapter, where assets
 and risk are studied in depth.
 
 Not every asset on that list deserves equal attention, so the next move is to
 rank: Order the assets by how badly the business would suffer without them, and
-give the most business-critical --- sometimes called the crown jewels --- the
+give the most business-critical - sometimes called the crown jewels - the
 strongest protection. Done formally, this ranking is a Business Impact Analysis
 (BIA), a method we return to properly with the preparedness planning of Lecture
 12; done informally, it is simply the judgement that FastGoods' customer
@@ -270,7 +270,7 @@ business depends on them far more. Business understanding is what makes that
 ranking defensible rather than arbitrary, and it is the ranking that drives the
 risk assessment of Block III. One number often decides the ranking before any
 formal method: What downtime costs per unit of time. A first, rough cut for
-FastGoods (@tbl-downtime) already orders the dependencies --- and it
+FastGoods (@tbl-downtime) already orders the dependencies - and it
 previews the Business Impact Analysis this rough cut later grows into (Lecture
 12).
 
@@ -282,13 +282,13 @@ previews the Business Impact Analysis this rough cut later grows into (Lecture
   Marketing site      Nothing measurable   Minor                          Minor
 
   : Downtime, roughly costed per dependency. Even a qualitative cut orders the
-  priorities --- and grows into the Business Impact Analysis of Lecture 12.
+  priorities - and grows into the Business Impact Analysis of Lecture 12.
 :::
 
 Everything in this chapter comes together in the three running risks, each of
 which can now be traced back to a business dependency (@tbl-dep2risk).
 Each of the three risks we carry through the whole course is rooted in a clear
-business dependency, not plucked from a generic checklist --- and that is what
+business dependency, not plucked from a generic checklist - and that is what
 makes them the *right* risks for FastGoods to worry about. This is the payoff of
 starting with the business rather than the technology.
 
@@ -314,22 +314,22 @@ library and on the Canvas course page.
 
 Security serves the business: It protects the organisation's ability to operate
 and create value, a control with no business purpose is cost and friction, and
-the business decides what is worth protecting --- a view the field reached the
+the business decides what is worth protecting - a view the field reached the
 hard way, through costly failures and frameworks such as COBIT (1996) that tied
 IT to business goals. The central claim follows: You cannot protect what you do
 not understand, and auditors, obliged by ISA 315 to understand the entity before
 testing it, start exactly the same way. Three lenses of increasing detail
 deliver that understanding: The business model (@def-bm), captured on
-Osterwalder's canvas, names the resources, channels and revenue --- the first
+Osterwalder's canvas, names the resources, channels and revenue - the first
 draft of a risk picture; the value chain (@def-vc), after Porter, shows
 where value concentrates and so where a break hurts most, with the support
 activities and the layered enterprise systems underneath; and the business
-process (@def-proc), drawn in BPMN, places harm at specific steps ---
+process (@def-proc), drawn in BPMN, places harm at specific steps -
 for FastGoods, R1 at log in, R2 at payment, R3 at storage. Ranked by business
 impact, the result is a defensible list of priorities, and the three running
 risks stand revealed as rooted in real dependencies rather than a checklist.
 
-From here we turn to how an organisation governs its security at all --- the
+From here we turn to how an organisation governs its security at all - the
 management system that ties assets, risks and controls into one governed,
 repeating whole, and the standard that defines it. That is where Lecture 3, and
 the ISMS, begin.
@@ -375,4 +375,205 @@ approaches risk assessment?
 
 From the FastGoods Business Model Canvas, name one key resource, one channel and
 one revenue stream, and state which running risk each one maps onto.
+:::
+
+::: {#exr-02-bmc-interactive}
+## The Business Model Canvas, interactive
+
+Assign each FastGoods item to the Canvas building block where it belongs.
+
+```{=html}
+<div class="grc-ex" data-type="sort">
+<script type="application/json">
+{
+ "buckets": [
+  {
+   "id": "seg",
+   "label": "Customer segments"
+  },
+  {
+   "id": "vp",
+   "label": "Value proposition"
+  },
+  {
+   "id": "chan",
+   "label": "Channels"
+  },
+  {
+   "id": "kr",
+   "label": "Key resources"
+  },
+  {
+   "id": "part",
+   "label": "Key partners"
+  }
+ ],
+ "chips": [
+  {
+   "t": "Busy urban households",
+   "b": "seg"
+  },
+  {
+   "t": "Groceries delivered the same day",
+   "b": "vp"
+  },
+  {
+   "t": "The webshop and the app",
+   "b": "chan"
+  },
+  {
+   "t": "The customer database",
+   "b": "kr"
+  },
+  {
+   "t": "The payment service provider",
+   "b": "part"
+  },
+  {
+   "t": "The shipping carrier",
+   "b": "part"
+  }
+ ]
+}
+</script>
+</div>
+```
+:::
+
+::: {#exr-02-valuechain-interactive}
+## The value chain, interactive
+
+Put Porter's primary activities into their order along the chain.
+
+```{=html}
+<div class="grc-ex" data-type="order">
+<script type="application/json">
+{
+ "steps": [
+  "Inbound logistics",
+  "Operations",
+  "Outbound logistics",
+  "Marketing and sales",
+  "Service"
+ ]
+}
+</script>
+</div>
+```
+:::
+
+::: {#exr-02-lens-interactive}
+## Three lenses, interactive
+
+Each question is answered by one lens of this chapter - match them.
+
+```{=html}
+<div class="grc-ex" data-type="sort">
+<script type="application/json">
+{
+ "buckets": [
+  {
+   "id": "bmc",
+   "label": "Business Model Canvas"
+  },
+  {
+   "id": "chain",
+   "label": "Value chain"
+  },
+  {
+   "id": "bpmn",
+   "label": "Process model (BPMN)"
+  }
+ ],
+ "chips": [
+  {
+   "t": "How does the company create and capture value?",
+   "b": "bmc"
+  },
+  {
+   "t": "Which activities add margin, and where do they depend on IT?",
+   "b": "chain"
+  },
+  {
+   "t": "In what order does the order-to-cash work actually flow?",
+   "b": "bpmn"
+  }
+ ]
+}
+</script>
+</div>
+```
+:::
+
+::: {#exr-02-porter-interactive}
+## Primary or support activity? Interactive
+
+Sort Porter's activities.
+
+```{=html}
+<div class="grc-ex" data-type="sort">
+<script type="application/json">
+{
+ "buckets": [
+  {
+   "id": "prim",
+   "label": "Primary activity"
+  },
+  {
+   "id": "supp",
+   "label": "Support activity"
+  }
+ ],
+ "chips": [
+  {
+   "t": "Operations",
+   "b": "prim"
+  },
+  {
+   "t": "Outbound logistics",
+   "b": "prim"
+  },
+  {
+   "t": "Service",
+   "b": "prim"
+  },
+  {
+   "t": "Human resources",
+   "b": "supp"
+  },
+  {
+   "t": "Procurement",
+   "b": "supp"
+  },
+  {
+   "t": "Technology development",
+   "b": "supp"
+  }
+ ]
+}
+</script>
+</div>
+```
+:::
+
+::: {#exr-02-orderproc-interactive}
+## The order process, interactive
+
+Order the steps of FastGoods' order-to-delivery process.
+
+```{=html}
+<div class="grc-ex" data-type="order">
+<script type="application/json">
+{
+ "steps": [
+  "Customer places the order",
+  "Payment is authorised",
+  "Warehouse picks and packs",
+  "Carrier delivers",
+  "Customer receives confirmation and tracking"
+ ]
+}
+</script>
+</div>
+```
 :::

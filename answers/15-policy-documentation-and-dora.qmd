@@ -1,28 +1,28 @@
-<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+<!-- Answer key - source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
 
-# Chapter 15 — sketch answers {.unnumbered}
+# Chapter 15 - sketch answers {.unnumbered}
 
-\(1\) (a) Standard --- specific, mandatory, measurable. (b) Policy ---
-high-level intent and direction. (c) Guideline --- recommended, judgement-based,
-not mandatory. (d) Procedure --- step-by-step how. (2) Policy: "We can recover
+\(1\) (a) Standard - specific, mandatory, measurable. (b) Policy -
+high-level intent and direction. (c) Guideline - recommended, judgement-based,
+not mandatory. (d) Procedure - step-by-step how. (2) Policy: "We can recover
 our data and services after loss." Standard: Nightly encrypted backups, 30-day
 retention, quarterly restore test. Procedure: The restore checklist, step by
 step, from console to verification. Guideline: Tips for choosing what else
 (laptops, shared drives) is worth backing up. (3) Design: The
 access/authentication standard (and the policy above it). Operation: The MFA
 configuration export, and authentication logs or the periodic access-review
-sign-off. Design without operation means a paper control --- designed, not
-operating --- which an auditor reports as ineffective (Chapter 10's ineffective
+sign-off. Design without operation means a paper control - designed, not
+operating - which an auditor reports as ineffective (Chapter 10's ineffective
 control, found by Chapter 16's method). (4) Finding: The incident-response
 documentation is outdated and diverges from actual practice, so the documented
 control no longer matches reality. Risk: In an incident, staff follow an
-outdated or private procedure --- exploiting the unmaintained documentation ---
+outdated or private procedure - exploiting the unmaintained documentation -
 so that response is delayed and inconsistent, extending the outage and its cost.
 (5) Pillar 1: The documented ICT risk framework, board minutes showing
 accountability. Pillar 2: The incident classification scheme and a filed
 major-incident report template. Pillar 3: The testing plan and last test's
 evidence (TLPT only if designated significant). Pillar 4: The register of
 information listing every ICT contract. Pillar 5: Membership or participation
-record in an intelligence-sharing arrangement. For merchants: Indirectly yes ---
+record in an intelligence-sharing arrangement. For merchants: Indirectly yes -
 expect revised contracts with notification duties and cooperation clauses,
 because our compliance now depends partly on you.

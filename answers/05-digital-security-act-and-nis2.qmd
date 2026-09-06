@@ -1,17 +1,17 @@
-<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+<!-- Answer key - source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
 
-# Chapter 5 — sketch answers {.unnumbered}
+# Chapter 5 - sketch answers {.unnumbered}
 
-\(1\) Societal dependence on digital services --- WannaCry stopping hospital
-appointments; systemic, cascading risk --- NotPetya spreading from one Ukrainian
+\(1\) Societal dependence on digital services - WannaCry stopping hospital
+appointments; systemic, cascading risk - NotPetya spreading from one Ukrainian
 software vendor to ports and factories worldwide; under-investment as market
-failure --- Colonial Pipeline, where one company's weakness interrupted fuel
+failure - Colonial Pipeline, where one company's weakness interrupted fuel
 supply for a region. (2) GDPR and DORA are regulations: Directly binding,
 applying as-is (in Norway via the EEA, with the Personal Data Act giving the
 GDPR effect). NIS2 is a directive: It binds only through national implementing
 law, which for Norway additionally requires EEA incorporation first. (3) What is
 in force is the Digital Security Act (adopted 2023, in force 1 October 2025),
-which implements NIS1 --- covering operators of essential services and digital
+which implements NIS1 - covering operators of essential services and digital
 service providers, supervised by NSM. NIS2 has not yet been incorporated into
 the EEA agreement and is therefore not yet Norwegian law; it is the stricter
 benchmark to come. (4) Early warning by Wednesday 09:00 (24h); notification by
@@ -19,7 +19,7 @@ Friday 09:00 (72h); final report within one month, i.e. by the same date next
 month. Needed in advance: The authority contact points and reporting templates,
 and a preparedness plan naming who assesses, who drafts and who signs (Lecture
 12). (5) Compliance is a floor set for everyone in the same situation, while
-security means controls matched to your actual risks --- so every box can be
+security means controls matched to your actual risks - so every box can be
 ticked while a real weakness stands open. An ISMS serves both: Run honestly, it
 produces security, and its documentation is simultaneously the evidence of
 compliance. Chasing the certificate alone produces neither.

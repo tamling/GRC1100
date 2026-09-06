@@ -1,22 +1,22 @@
-<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+<!-- Answer key - source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
 
-# Chapter 14 — sketch answers {.unnumbered}
+# Chapter 14 - sketch answers {.unnumbered}
 
 \(1\) Urgency and scarcity ("2 hours", "final notice"), social proof ("your
 classmates"), implied authority ("IT"). Red flags: The sender's actual domain,
-and the link target --- opened by navigating to the real site yourself, never by
+and the link target - opened by navigating to the real site yourself, never by
 clicking. (2) Threats: BEC/fake-supplier payment fraud and invoice manipulation.
 Behaviour: Call back on a known number before changing any account details or
 paying outside the routine. Metric: Share of simulated payment-change requests
-that trigger a call-back. (3) Fewer people click, but far fewer report --- the
+that trigger a call-back. (3) Fewer people click, but far fewer report - the
 silent middle is growing, so detection is *weakening* even as susceptibility
 falls; a punitive simulation or shaming message is the usual cause. Change: Make
 reporting one click, thank every reporter, and state publicly that simulation
 clicks carry no consequences. (4) "Spot a suspicious email? Hit the Report
-button --- thank you. Clicked something? Tell us straight away; fast reports
+button - thank you. Clicked something? Tell us straight away; fast reports
 protect everyone." Nudge: The one-click Report button in the mail client, so
 reporting is easier than deleting. (5) A weak culture wearing a compliant
 costume: Workarounds are normal, mistakes are hidden, and leadership exempts
-itself --- the three warning signs at once. First intervention: Remove the CEO's
-exemption, visibly --- tone from the top is the lever the other two symptoms
+itself - the three warning signs at once. First intervention: Remove the CEO's
+exemption, visibly - tone from the top is the lever the other two symptoms
 hang from.

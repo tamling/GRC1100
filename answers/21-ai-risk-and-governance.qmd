@@ -1,35 +1,35 @@
-<!-- Answer key — source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
+<!-- Answer key - source-only. answers/ is excluded from every render (see _quarto.yml), so this never appears on the site. -->
 
-# Chapter 21 — sketch answers {.unnumbered}
+# Chapter 21 - sketch answers {.unnumbered}
 
 \(1\) Spam filter: Machine learning (learns from labelled data, no deep network
-implied). Chatbot: Generative AI --- an LLM producing text, the innermost box.
-Expert system: AI but not machine learning --- hand-written rules, the 1980s
-layer. Fraud model: Deep learning --- a neural network learning patterns, inside
+implied). Chatbot: Generative AI - an LLM producing text, the innermost box.
+Expert system: AI but not machine learning - hand-written rules, the 1980s
+layer. Fraud model: Deep learning - a neural network learning patterns, inside
 ML, not generative. (2) The lure becomes a fluent, personalised email from a
 one-letter-off supplier domain, followed by a deepfaked voice call from "the
 supplier's accountant" pressing for a changed account number. Surviving
 unchanged: The domain check, the pressure itself as a flag, the link/target
-check --- and above all the process controls: Call back on the known number and
+check - and above all the process controls: Call back on the known number and
 second-approve any payment change; the spelling heuristic dies, the out-of-band
 verification does not, because it never depended on detecting the fake. (3)
-Injection: A crafted customer message --- exploiting the model's inability to
-separate instructions from data --- causes disclosure of other customers' order
+Injection: A crafted customer message - exploiting the model's inability to
+separate instructions from data - causes disclosure of other customers' order
 data, harming confidentiality (R3-adjacent). Control: Least-privilege data
 access for the bot plus output filtering; metric: Injection attempts detected in
-red-team tests per quarter. Hallucination: The bot --- exploiting unverified
-generation --- gives a customer wrong delivery or refund terms, creating
+red-team tests per quarter. Hallucination: The bot - exploiting unverified
+generation - gives a customer wrong delivery or refund terms, creating
 financial and trust harm. Control: Grounding answers in the order system plus
 human escalation for commitments; metric: Sampled-answer error rate per month.
-(4) (a) Minimal risk --- recommendation with no legal or similar effect; largely
-unregulated. (b) High risk --- employment screening is a named high-risk use:
+(4) (a) Minimal risk - recommendation with no legal or similar effect; largely
+unregulated. (b) High risk - employment screening is a named high-risk use:
 Strict obligations (and Chapter 9's fundamental-rights machinery) apply to
-FastGoods as deployer. (c) Limited risk --- a chatbot carries transparency
+FastGoods as deployer. (c) Limited risk - a chatbot carries transparency
 duties, met by the disclosure already in the policy. (5) Sources: Expense and
 card records filtered for AI vendors; SSO/network logs for AI domains. Question:
-"Which AI tools actually help you, and what do you paste into them?" --- asked
+"Which AI tools actually help you, and what do you paste into them?" - asked
 blame-free, or the census measures silence. Conversion: Any tool receiving
-personal, customer or confidential data gets a register row --- source (the
-tool), event (data leaves control), consequence (GDPR/R3) --- plus either
+personal, customer or confidential data gets a register row - source (the
+tool), event (data leaves control), consequence (GDPR/R3) - plus either
 onboarding as a proper supplier (Chapter 19) or a provided alternative; banning
 without an alternative just re-hides the shadow.
