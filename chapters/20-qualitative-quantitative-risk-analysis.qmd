@@ -234,7 +234,7 @@ year, from the sector figure, adjusted upward slightly because the checkout is
 exposed and unprotected. *Magnitude*: A four-hour outage in trading hours is
 EUR 12,000 of lost orders plus perhaps EUR 3,000 of recovery and support, and
 some fraction of the customers who bounce do not come back. *Expected annual
-loss*: $0.4 \times$ EUR 15,000 $=$ EUR 6,000 per year --- with the sources
+loss*: $0.4 \times$ EUR 15,000 =   EUR 6,000 per year --- with the sources
 named, so that the managing director can dispute the frequency, the hourly
 revenue or the bounce assumption separately instead of dismissing the whole
 figure.
@@ -263,7 +263,7 @@ uncertainty in $P$ and $V$, so it argues a case rather than settling it.
 ::: {#exm-rosi}
 ## MFA and DDoS protection, priced
 
-*R1, account takeover.* Before: $0.5 \times$ EUR 400k $=$ EUR 200k a year. After
+*R1, account takeover.* Before: $0.5 \times$ EUR 400k =   EUR 200k a year. After
 MFA, the analysis of Chapter 18 puts the residual frequency at roughly a tenth:
 About EUR 20k a year. The control costs EUR 5k. Risk removed EUR 180k against
 EUR 5k spent --- a ROSI of 35, which is why nobody argues about MFA. *R2,
@@ -286,12 +286,12 @@ know it, because the criticism is where the methods' real limits sit.
 Against the matrix, the sharpest paper is Tony Cox's "What's Wrong with Risk
 Matrices?" (2008), and its findings are uncomfortable in three specific ways.
 *Range compression*: A single cell can hold risks that differ by orders of
-magnitude --- "possible $\times$ major" covers a EUR 50k annual expectation and
+magnitude --- "possible ×        major" covers a EUR 50k annual expectation and
 a EUR 5M one --- so the matrix hides exactly the differences a budget decision
 needs. *Rank reversal*: Because the cells are coarse, a matrix can rate risk A
 above risk B when the underlying expected losses run the other way. And *ordinal
 arithmetic*: The levels are ranks, not quantities, so multiplying them
-("likelihood 4 $\times$ impact 5 $=$ 20") performs arithmetic the numbers do not
+("likelihood 4 ×        impact 5 =   20") performs arithmetic the numbers do not
 support --- the error that @sec-20-the-qualitative-way warned against,
 now with a citation. Douglas Hubbard's *The Failure of Risk Management* (2009)
 presses the same point at the level of method: Popular scoring schemes are

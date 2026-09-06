@@ -252,16 +252,16 @@ boundary and every data store is visible, which for a small organisation is
 usually Level 1.
 
 ::: {#tbl-dfdnotation}
-   **Symbol**  **Element**       **Meaning and rule**
-  ------------ ----------------- -----------------------------------------------------------------------------------------------
-               External entity   People or systems outside your control: The customer, the payment provider, the tax authority
-               Process           Changes data; at least one flow in and one out; the whole system is process 0
-               Data store        Data at rest --- database, file, backup; read or written only by a process
-               Data flow         Data in motion, labelled by content, not technology
-               Trust boundary    Where the level of trust changes; every crossing arrow is an entry point
+| Symbol | Element | Meaning and rule |
+|:--:|:----|:---------|
+| ![](figures/fig-sym-entity.svg){width="86" fig-alt="Rectangle"} | External entity | People or systems outside your control: The customer, the payment provider, the tax authority |
+| ![](figures/fig-sym-process.svg){width="52" fig-alt="Circle"} | Process | Changes data; at least one flow in and one out; the whole system is process 0 |
+| ![](figures/fig-sym-store.svg){width="86" fig-alt="Open double lines"} | Data store | Data at rest --- database, file, backup; read or written only by a process |
+| ![](figures/fig-sym-flow.svg){width="86" fig-alt="Labelled arrow"} | Data flow | Data in motion, labelled by content, not technology |
+| ![](figures/fig-sym-tb.svg){width="86" fig-alt="Dashed line"} | Trust boundary | Where the level of trust changes; every crossing arrow is an entry point |
 
-  : The DFD notation used in this course: Yourdon/DeMarco shapes (1978) with the
-  trust boundary added by Microsoft's SDL (2004).
+: The DFD notation used in this course: Yourdon/DeMarco shapes (1978) with the
+trust boundary added by Microsoft's SDL (2004).
 :::
 
 ### FastGoods, drawn {#fastgoods-drawn .unnumbered}
@@ -341,7 +341,7 @@ a fourth language, ArchiMate, which
   **Notation**   **The question it answers**                                                **Origin**                                                    **Used in the course for**
   -------------- -------------------------------------------------------------------------- ------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------
   **DFD**        Where does data move and rest, and which boundary does it cross?           DeMarco 1978; Gane & Sarson 1979; security use since 1999     Threat modelling (this chapter, Chapter 13); the DPIA's description (Chapter 9); the audit walkthrough (Chapter 16)
-  **BPMN**       In what order does work happen, and who does it?                           BPMI 2004, OMG 2006; BPMN 2.0 (2011) $=$ ISO/IEC 19510:2013   Process maps and the BIA (Chapters 2, 12); control points and segregation of duties (Chapters 10, 11)
+  **BPMN**       In what order does work happen, and who does it?                           BPMI 2004, OMG 2006; BPMN 2.0 (2011) =   ISO/IEC 19510:2013   Process maps and the BIA (Chapters 2, 12); control points and segregation of duties (Chapters 10, 11)
   **SoaML**      Which services exist, who provides and consumes them, on which contract?   OMG; beta 2009, version 1.0 in 2012; a UML profile            The service and API landscape; supplier contracts (Chapter 19)
 
   : Three notations, three questions. Complementary, not rivals: The DFD first;
@@ -502,15 +502,15 @@ one statement per cell. And the pass is a completeness check on the gut-feel
 list: Chapter 13 will use it as such.
 
 ::: {#tbl-strideelement}
-  **Element**          **S**       **T**            **R**            **I**       **D**       **E**    **FastGoods element $\rightarrow$ candidate threat**
+  **Element**          **S**       **T**            **R**            **I**       **D**       **E**    **FastGoods element →             candidate threat**
   ----------------- ----------- ----------- --------------------- ----------- ----------- ----------- --------------------------------------------------------------------------------------------
-  External entity    $\bullet$                    $\bullet$                                           Payment provider: A forged "payment OK" callback (S); a customer denies an order later (R)
-  Process            $\bullet$   $\bullet$        $\bullet$        $\bullet$   $\bullet$   $\bullet$  Checkout: Flooded offline (D $=$ R2); a price altered in transit (T)
-  Data flow                      $\bullet$                         $\bullet$   $\bullet$              Credentials over TB1: Replayed from a leak (feeds R1); read in transit without TLS (I)
-  Data store                     $\bullet$   $\bullet^{\dagger}$   $\bullet$   $\bullet$              Customer database D1: Bulk read (I $=$ R3); records edited with no audit log (R)
+  External entity    ●                            ●                                                   Payment provider: A forged "payment OK" callback (S); a customer denies an order later (R)
+  Process            ●           ●                ●                ●           ●           ●          Checkout: Flooded offline (D =   R2); a price altered in transit (T)
+  Data flow                      ●                                 ●           ●                      Credentials over TB1: Replayed from a leak (feeds R1); read in transit without TLS (I)
+  Data store                     ●           ●†                    ●           ●                      Customer database D1: Bulk read (I =   R3); records edited with no audit log (R)
 
   : STRIDE per element (Shostack 2014, Table 3.1) applied to FastGoods.
-  $^{\dagger}$Only for a store that holds logs or evidence. Two of the
+  †           Only for a store that holds logs or evidence. Two of the
   candidates --- the forged callback and the unlogged edit --- were missing from
   the gut-feel list of three.
 :::
@@ -555,8 +555,8 @@ craft with a pattern:
 
 A risk statement names, in one sentence, the threat source, the event, the
 vulnerability exploited, the asset affected and the consequence: \[Threat
-source\] $\rightarrow$ \[event\] exploiting \[vulnerability\] $\rightarrow$
-\[asset\] $\rightarrow$ \[consequence\]. A statement in this form is assessable;
+source\] →             \[event\] exploiting \[vulnerability\] →
+\[asset\] →             \[consequence\]. A statement in this form is assessable;
 a fragment is not.
 :::
 

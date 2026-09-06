@@ -284,7 +284,7 @@ The skeleton, filled for R1 before the MFA decision was won. *Summary*:
 Account-takeover risk is high; MFA reduces it cheaply --- approve EUR 5,000.
 *The risk*: Attackers log in as customers with stolen, reused passwords and
 reach personal data --- a breach with notification duties and lost trust.
-*Size*: Likely $\times$ major (the register's reasoning attached). *Options*:
+*Size*: Likely ×        major (the register's reasoning attached). *Options*:
 (1) Accept --- no cost, breach exposure remains; (2) MFA on all accounts ---
 EUR 5k and some login friction, risk drops to low; (3) MFA plus
 breached-password screening --- EUR 9k, marginal further gain. *Recommendation*:

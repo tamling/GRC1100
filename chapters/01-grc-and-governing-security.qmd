@@ -390,7 +390,7 @@ is. If you can run this example, you can run FastGoods'.
   Asset           Something of value to protect        The customer database
   Threat          Something that could cause harm      A hacker, or malware
   Vulnerability   A weakness that can be exploited     No multi-factor login
-  Risk            Likelihood $\times$ impact of harm   Account takeover (R1)
+  Risk            Likelihood ×        impact of harm   Account takeover (R1)
   Control         A measure that reduces risk          Requiring MFA
 
   : The core vocabulary, anchored in the running case. The five terms form a

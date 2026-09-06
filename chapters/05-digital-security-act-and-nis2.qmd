@@ -115,7 +115,7 @@ management to personal accountability.
                       **NIS1 (2016)**                 **NIS2 (2022)**
   ------------------- ------------------------------- --------------------------------
   Sectors             About 7                         18
-  Entities in scope   $\sim$`<!-- -->`{=html}10 000   $\sim$`<!-- -->`{=html}160 000
+  Entities in scope   ≈                      10 000   ≈                      160 000
   Reporting           Loosely defined                 Strict 24--72--one-month clock
   Management          Little said                     Personally accountable
 

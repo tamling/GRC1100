@@ -272,7 +272,7 @@ Catalogue-first selection (controls without risks), tool-worship (buying
 products instead of building process and behaviour), and set-and-forget
 (controls implemented in 2023 and never revisited --- the stale SoA below). Each
 has a familiar audit signature; each is avoidable by keeping the chain
-risk $\to$ control $\to$ record alive.
+risk →     control →     record alive.
 
 ## The Statement of Applicability {#sec-06-the-statement-of-applicability}
 
@@ -346,7 +346,7 @@ Govern as the wrapping frame; SP 800-53 as the encyclopaedia; CIS v8 as the
 prioritised on-ramp; NSM's grunnprinsipper as the Norwegian baseline; and, in a
 different family altogether, COBIT, COSO and ISO 31000 governing decisions
 rather than listing safeguards. Selection is risk-driven ---
-R1 $\to$ need $\to$ A.8.5 $\to$ SoA row --- tailoring is proportionality,
+R1 →     need →     A.8.5 →     SoA row --- tailoring is proportionality,
 layering is defence in depth, and one implemented control can evidence three
 regimes at once. The Statement of Applicability (@def-soa) records it
 all: Every control, applicable or not, justified, statused, evidenced --- alive

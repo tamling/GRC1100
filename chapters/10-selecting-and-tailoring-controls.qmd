@@ -152,7 +152,7 @@ warrants and --- worse --- slows people until they route around it (Lecture 14),
 and a control people bypass protects no one.
 
 Tailoring includes economics, because every control is a spend of money, time
-and user friction, weighed against the reduction in likelihood $\times$ impact
+and user friction, weighed against the reduction in likelihood ×        impact
 it buys. The yardstick --- made quantitative in Lecture 20's annualised loss
 expectancy --- is whether the control costs less than the expected loss it
 prevents, and the portfolio rule follows: Spend where the risk reduction per
@@ -167,7 +167,7 @@ and the discipline is that every yes and every no cites the same yardstick.
 ::: {#tbl-costbenefit}
   **Candidate (for R1)**          **Cost / yr**              **Effect**                  **Verdict**
   ------------------------------- -------------------------- --------------------------- ----------------------------------------------------
-  MFA via identity provider       $\sim$EUR 5k               Likelihood high $\to$ low   Yes --- large reduction per euro
+  MFA via identity provider       $\sim$EUR 5k               Likelihood high →     low   Yes --- large reduction per euro
   24/7 external SOC               $\sim$EUR 120k             Faster detection only       No --- disproportionate; tailored alerting instead
   Hardware tokens for customers   $\sim$EUR 60k + friction   Marginal over app MFA       No --- residual already low, friction real
 
