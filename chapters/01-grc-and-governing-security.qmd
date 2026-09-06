@@ -648,3 +648,14 @@ For the denial-of-service risk on the checkout (R2), propose one preventive, one
 detective and one corrective control, and state which CIA property all three
 defend.
 :::
+
+::: {#exr-01-cia-triangle}
+## The CIA triad, interactive
+
+Three of the six terms below are the protection goals of @def-cia; the
+other three are distractors. Drag each protection goal onto the corner of the
+triangle whose description matches it (or click a term, then click a corner),
+then press **Check**.
+
+{{< include _cia-widget.qmd >}}
+:::
