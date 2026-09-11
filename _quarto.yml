@@ -7,6 +7,8 @@ project:
     # Answer keys are source-only: answers/ is excluded from every render,
     # so no sketch answer ever appears on the published site.
     - "!answers/"
+  resources:
+    - robots.txt
 
 # ── Annotations (Hypothesis) ─────────────────────────────────────────────
 # ON by default: every HTML page loads the Hypothesis client (see
@@ -18,6 +20,10 @@ annotations: true
 
 book:
   title: "GRC1100 — Course Script"
+  # Search is OFF: the site is password-protected with StatiCrypt (see the
+  # publish workflow), and search.json would carry the full text in clear.
+  # The workflow deletes search.json as a second line of defence.
+  search: false
   # One chapter per lecture; each chapter ends with a "Self-check" section
   # whose sketch answers live in answers/ (source-only, never rendered).
   chapters:
@@ -48,7 +54,6 @@ book:
     - appendix/reading-list.qmd
     - appendix/abbreviations.qmd
     - appendix/how-to-annotate.qmd
-
 format:
   html:
     # Light/dark theme pair: every page gets the dark-mode toggle.
@@ -57,6 +62,8 @@ format:
       dark: [darkly, theme-dark.scss]
     toc: true
     number-sections: true
-    include-in-header: includes/hypothesis.html
+    include-in-header:
+      - includes/hypothesis.html
+      - includes/noindex.html
     # Interactive exercise engine (sort/order/pick widgets in the chapters)
     include-after-body: includes/interactive.html
