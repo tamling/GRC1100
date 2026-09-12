@@ -9,6 +9,17 @@ equal lecturers - Timo Amling and Dr. Roksana Moore - and the script covers
 the whole course alike, whoever stands at the front; the shared contact address
 `timo.amling@kristiania.no` reaches both of us.
 
+::: {.callout-note}
+## How this script was written
+
+The chapters were drafted with the help of a large language model
+(Anthropic's Claude), working from the lecturers' slide decks and notes,
+and were reviewed and edited by the lecturers before publication. Drafting
+this way is fast but not infallible: If something looks wrong, it may well
+be - [annotate the passage](appendix/how-to-annotate.qmd) and it will be
+checked, corrected and credited.
+:::
+
 The script is written to be read - before the lecture if you can, after it if
 you must. It explains in connected prose what the slides can only sketch, it
 works through the running case more slowly than a lecture allows, and it tells
