@@ -20,10 +20,6 @@ annotations: true
 
 book:
   title: "GRC1100 — Course Script"
-  # Search is OFF: the site is password-protected with StatiCrypt (see the
-  # publish workflow), and search.json would carry the full text in clear.
-  # The workflow deletes search.json as a second line of defence.
-  search: false
   # One chapter per lecture; each chapter ends with a "Self-check" section
   # whose sketch answers live in answers/ (source-only, never rendered).
   chapters:
