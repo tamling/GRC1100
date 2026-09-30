@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # GRC end to end: The whole course, and the exam {#sec-22-grc-end-to-end}
 
 The taught material is complete; this closing chapter puts it back together. The

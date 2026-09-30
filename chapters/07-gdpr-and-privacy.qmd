@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # GDPR and privacy {#sec-07-gdpr-and-privacy}
 
 The laws of Chapter 5 protect services; this one protects people. Personal data

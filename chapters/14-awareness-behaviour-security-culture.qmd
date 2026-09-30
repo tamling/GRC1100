@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # Awareness, behaviour and security culture {#sec-14-awareness-behaviour-security-culture}
 
 Chapter 13 closed on the observation that many of the remaining gaps are human,

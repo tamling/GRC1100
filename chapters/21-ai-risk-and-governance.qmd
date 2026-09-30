@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # AI: Risk and governance {#sec-21-ai-risk-and-governance}
 
 One technology has moved fast enough since 2022 to earn its own chapter before

@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # Cyber risk and information assets {#sec-04-cyber-risk-and-information-assets}
 
 The management system of Chapter 3 runs on knowing what it protects. Block II

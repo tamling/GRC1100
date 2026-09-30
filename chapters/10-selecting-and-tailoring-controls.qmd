@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # Selecting and tailoring controls {#sec-10-selecting-and-tailoring-controls}
 
 The register now holds rated, justified risks; this chapter decides what to do

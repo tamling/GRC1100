@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # Understanding the business {#sec-02-understanding-the-business}
 
 Chapter 1 gave you the vocabulary; this chapter takes the first real step, and

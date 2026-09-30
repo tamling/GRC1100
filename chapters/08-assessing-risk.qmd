@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # Assessing risk: From assets to the register {#sec-08-assessing-risk}
 
 Blocks I and II built the machinery - the management system, the assets and

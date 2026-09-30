@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # Frameworks and the Statement of Applicability {#sec-06-frameworks-and-the-soa}
 
 The management system (Lecture 3) and the first legal duties (Lecture 5) are in

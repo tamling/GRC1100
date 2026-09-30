@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # The Digital Security Act and NIS2 {#sec-05-digital-security-act-and-nis2}
 
 Lecture 3 gave you the management system an organisation may choose; this

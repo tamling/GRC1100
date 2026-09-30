@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # Qualitative and quantitative risk analysis {#sec-20-qualitative-quantitative-risk-analysis}
 
 Block VI opens with the question every executive eventually asks of a risk

@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # Internal and external audits {#sec-16-internal-and-external-audits}
 
 Block IV built and documented; Block V checks. The reason it opens with the

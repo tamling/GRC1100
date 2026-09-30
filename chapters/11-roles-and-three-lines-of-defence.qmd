@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # Roles and the three lines of defence {#sec-11-roles-and-three-lines-of-defence}
 
 Block III has assessed and analysed (Lecture 8), weighed for the people in the

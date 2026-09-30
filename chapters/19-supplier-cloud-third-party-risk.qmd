@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # Supplier, cloud and third-party risk {#sec-19-supplier-cloud-third-party-risk}
 
 Chapter 18 governed FastGoods' own riskiest control end to end; Block V closes

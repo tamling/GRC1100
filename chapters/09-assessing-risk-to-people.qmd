@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # Assessing risk to people: DPIA, LIA and the EU AI Act {#sec-09-assessing-risk-to-people}
 
 Chapter 8 assessed risk to the organisation. This chapter runs the assessment

@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # Policy, documentation and DORA {#sec-15-policy-documentation-and-dora}
 
 Chapter 14 ended on the division of labour between culture and rules: Culture

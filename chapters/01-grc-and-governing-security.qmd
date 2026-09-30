@@ -1,3 +1,5 @@
+{{< include ../includes/ai-note.qmd >}}
+
 # GRC, and what governing security means {#sec-01-grc-and-governing-security}
 
 The first lecture of this course does two things at once: It sets out how the
