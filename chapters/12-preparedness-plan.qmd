@@ -8,7 +8,7 @@ zero, and some incidents will get through. Prevention lowers *how often*;
 preparedness lowers *how bad* - and an organisation needs both. This chapter
 builds the second half: Which services must come back first and how fast, what
 happens in each phase of handling an incident, who acts and who is told, which
-legal clocks start ticking at detection, and why a plan that has never been
+legal clocks start ticking at awareness, and why a plan that has never been
 exercised is a document rather than a capability. The best-run companies are not
 the ones that never have incidents; they are the ones that handle them well -
 and handling them well is decided long before the incident, calmly, on paper.
@@ -294,9 +294,12 @@ under GDPR Article 33, with the staged content Chapter 7 walked through
 (@exm-breachclock); a significant incident under the Digital Security
 Act and NIS2 starts the 24-hour early-warning ladder of Chapter 5
 (@fig-clock, @exm-ddosclock); and one incident can run both
-clocks at once. The clocks start at detection, not when convenient - which is
-precisely why the reporting duty belongs in the preparedness plan: *Who*
-reports, to *whom*, by *when*, with the forms and addresses ready. An
+clocks at once. The clocks start at *awareness* - a reasonable degree of
+certainty that a breach has occurred (EDPB Guidelines 9/2022), which the first
+alert is not, so a short, documented triage between detection and awareness is
+defensible - but never when convenient, which is precisely why the reporting
+duty belongs in the preparedness plan: *Who* reports, to *whom*, by *when*,
+with the forms and addresses ready. An
 organisation that first looks up its supervisory authority during the incident
 has already spent hours it did not have, and turned a compliance duty into a
 compliance finding.
@@ -419,7 +422,7 @@ capability is staffed as SOC and CSIRT or bought as MSS, MDR or XDR. Crisis
 roles are named in advance with contacts on paper, escalation thresholds prevent
 both panic and silence, communication is planned inward and outward, and the
 legal clocks - GDPR's 72 hours, NIS2's 24-hour early warning - start at
-detection and belong in the plan. And none of it is real until exercised:
+awareness and belong in the plan. And none of it is real until exercised:
 Tabletop, drill, full exercise - the restore drill first - with the plan
 kept alive, and kept reachable when the systems are not.
 
