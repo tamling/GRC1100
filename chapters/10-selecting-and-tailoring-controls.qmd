@@ -197,9 +197,9 @@ real, smaller, and now somebody's signed decision rather than an accident.
   Residual risk     Low - a stolen password alone no longer gets in
   Decision          Accept the residual; keep monitoring (owner signs)
 
-  : Residual risk, worked. The control moved R1 from high to low; what remains
-  is consciously accepted - an unaccepted residual risk is just an
-  undocumented one.
+  : Residual risk, worked. The control moved R1 from high to low in this
+  example; what remains is consciously accepted - an unaccepted residual risk
+  is just an undocumented one.
 :::
 
 One distinction completes the effectiveness test that Chapter 1's box has
@@ -261,7 +261,10 @@ expecting them to agree.
 
   : The FastGoods register, treated. Risk, decision, controls, residual - with
   owners from Chapter 8 - is the treatment plan an auditor reads against the
-  SoA.
+  SoA. The residual levels are this example's result, not the expectation:
+  Treatment is meant to bring risk within appetite, not necessarily to low,
+  and where the consequence cannot be reduced, moderate is a legitimate end
+  state.
 :::
 
 One last discipline separates a plan from wishful thinking: Track each control
