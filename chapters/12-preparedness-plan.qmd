@@ -140,6 +140,11 @@ target without funding it is the continuity version of an unowned risk.
   follow the BIA and drive the recovery spend.
 :::
 
+Targets can also vary by *when*, not only by *what*: For a seasonal business
+the same checkout may tolerate hours of downtime in the off-season and only
+minutes on an event day, so the BIA should state the period a target applies
+to and set the aggressive one for the time that matters.
+
 ##### Dependencies from the diagram.
 
 What a critical service needs in order to run is read off Chapter 8's Level 1
