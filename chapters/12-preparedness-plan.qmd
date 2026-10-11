@@ -103,9 +103,11 @@ objective* (RPO) is the acceptable age of the last backup - the window of data
 the organisation can afford to lose; backup frequency must be dimensioned to
 satisfy it. The *recovery time objective* (RTO) is the time within which the
 service is expected to be restored - the downtime the organisation plans for.
-The *maximum tolerable downtime* (MTD) is the ceiling above both: The point past
-which the damage becomes unacceptable. The RTO must sit safely inside the MTD,
-and every tightening costs money: A shorter RPO means more frequent backups; a
+The *maximum tolerable downtime* (MTD) is the ceiling above the RTO: The point
+past which the damage becomes unacceptable, under which the recovery and the
+work to catch up must both fit. The RPO is a separate question - how much
+data may be lost - and is dimensioned against the business, not against the
+MTD. The RTO must sit safely inside the MTD, and every tightening costs money: A shorter RPO means more frequent backups; a
 shorter RTO means more expensive recovery capability (Jøsang, §14.3, Fig. 14.2,
 pp. 304--305).
 :::
