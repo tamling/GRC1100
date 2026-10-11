@@ -246,9 +246,10 @@ The Digital Operational Resilience Act (Regulation (EU) 2022/2554) is a directly
 binding EU regulation, applying since 17 January 2025, that sets uniform
 requirements for how financial entities - banks, insurers, investment firms
 and more - manage ICT risk, and brings their *critical ICT third-party
-providers* under financial supervision. Its requirements run in five pillars:
-ICT risk management, incident classification and reporting, resilience testing,
-third-party risk, and information sharing.
+providers* under financial supervision. Its requirements run in four binding
+pillars - ICT risk management, incident classification and reporting,
+resilience testing, third-party risk - plus a voluntary framework for
+information sharing.
 :::
 
 The five pillars read like this course's table of contents made mandatory
@@ -266,8 +267,9 @@ information* - a documented inventory of every ICT contractual arrangement -
 and, the genuine novelty, places *critical* providers such as the big cloud
 platforms under direct oversight by the European supervisory authorities: The
 cloud, supervised like a bank's counterparty (Lecture 19). Information sharing
-(Art. 45) encourages exchanging cyber threat intelligence - Chapter 8's CTI,
-institutionalised.
+(Art. 45) is the one voluntary element: Financial entities *may* exchange
+cyber threat intelligence among themselves within trusted communities -
+Chapter 8's CTI, given a legal frame but not made a duty.
 
 ::: {#tbl-dorapillars}
   **Pillar (articles)**             **What it requires - and where taught**
@@ -276,11 +278,11 @@ institutionalised.
   2\. Incident reporting (17--23)   Classify incidents; report major ones on the clock (Ch. 12)
   3\. Resilience testing (24--27)   A testing programme; TLPT for significant entities (Lecture 16)
   4\. Third-party risk (28--44)     Contracts, the register of information, oversight of critical providers (Lecture 19)
-  5\. Information sharing (45)      Cyber-threat-intelligence exchange (Ch. 8)
+  5\. Information sharing (45)      Voluntary: cyber-threat-intelligence exchange "may" take place (Ch. 8)
 
-  : DORA's five pillars, mapped to the course. Nothing in the regulation is new
-  material - what is new is that, for finance, all of it is mandatory,
-  documented and tested.
+  : DORA's four binding pillars and the voluntary fifth, mapped to the course.
+  Nothing in the regulation is new material - what is new is that, for
+  finance, the first four are mandatory, documented and tested.
 :::
 
 Why DORA sits in *this* chapter is its texture: It is, to an unusual degree, a
