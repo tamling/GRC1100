@@ -29,9 +29,10 @@ how the con works. The psychology beneath it was mapped even earlier: Robert
 Cialdini's *Influence* (1984) named the handful of triggers that move people -
 authority, urgency and scarcity, social proof, reciprocity and liking,
 commitment - and social-engineering lures are those triggers weaponised, one
-or two per email (@tbl-triggers). Jøsang puts it plainly: Social
-engineering exploits the mental weaknesses we humans have (Jøsang, §13.4,
-pp. 283 ff.).
+or two per email (@tbl-triggers). What it exploits is not a weakness but
+the trust people extend to one another, to institutions and to roles - the
+same trust that makes everyday work possible, which is why it cannot simply be
+switched off (Jøsang, §13.4, pp. 283 ff.).
 
 ::: {#def-socialengineering}
 ## Social engineering
