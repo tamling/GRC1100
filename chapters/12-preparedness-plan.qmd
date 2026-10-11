@@ -304,10 +304,15 @@ Outward communication is not only reputation management; some of it is law, and
 the clocks are shorter than most first-timers expect. A personal-data breach -
 an R3 event - must be notified to Datatilsynet within 72 hours of awareness
 under GDPR Article 33, with the staged content Chapter 7 walked through
-(@exm-breachclock); a significant incident under the Digital Security
-Act and NIS2 starts the 24-hour early-warning ladder of Chapter 5
-(@fig-clock, @exm-ddosclock); and one incident can run both
-clocks at once. The clocks start at *awareness* - a reasonable degree of
+(@exm-breachclock); a significant incident must *today* be notified under
+the Digital Security Act and its regulation (digitalsikkerhetsloven and
+-forskriften, in force since 1 October 2025, which implement NIS1) to NSM's
+NCSC or the sector authority *without undue delay* ("uten ugrunnet
+opphold"); the 24-hour / 72-hour / one-month ladder of NIS2 that Chapter 5
+walked through (@fig-clock, @exm-ddosclock) is what arrives when
+NIS2 is taken into the EEA Agreement - and it already applies to EU
+subsidiaries and EU customers; and one incident can run both clocks at
+once. The clocks start at *awareness* - a reasonable degree of
 certainty that a breach has occurred (EDPB Guidelines 9/2022), which the first
 alert is not, so a short, documented triage between detection and awareness is
 defensible - but never when convenient, which is precisely why the reporting
@@ -434,7 +439,8 @@ the RTO, and the post-incident review feeds controls, plan and register; the
 capability is staffed as SOC and CSIRT or bought as MSS, MDR or XDR. Crisis
 roles are named in advance with contacts on paper, escalation thresholds prevent
 both panic and silence, communication is planned inward and outward, and the
-legal clocks - GDPR's 72 hours, NIS2's 24-hour early warning - start at
+legal clocks - GDPR's 72 hours, the Digital Security Act's "without undue
+delay", NIS2's 24-hour early warning once it reaches the EEA - start at
 awareness and belong in the plan. And none of it is real until exercised:
 Tabletop, drill, full exercise - the restore drill first - with the plan
 kept alive, and kept reachable when the systems are not.
