@@ -267,8 +267,8 @@ register that turns this chapter from a lecture into a routine.
   Email provider      Marketing mail    Important   Self-attested   Spot-check
   Stationery          Office supplies   Low         None needed     None
 
-  : The FastGoods supplier register: Tier drives assurance, assurance drives the
-  action - and the empty cells are as deliberate as the filled ones.
+  : The FastGoods supplier register: Tier sets the level of assurance, and the
+  level of assurance sets the action.
 :::
 
 ::: {.callout-tip}
