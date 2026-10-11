@@ -328,8 +328,15 @@ A preparedness plan that has never been exercised is a document, not a
 capability - and the space between the two is where plans fail. Paper plans
 look complete and break on contact: The contact list has two leavers on it, the
 responder lacks access to the console the playbook assumes, step four says
-"restore from backup" and nobody has ever restored from backup. The only way to
-find these failures before the incident does is to exercise the plan, which is
+"restore from backup" and nobody has ever restored from backup. Østre Toten
+municipality learned the last point in January 2021: Ransomware encrypted its
+systems and reached the backups too, the rebuild took months, and the
+Data Protection Authority later fined the municipality for the lack of basic
+safeguards (widely reported; Datatilsynet's decision of 2022). The lesson for
+the drill is precise: A restore test must also check whether the backup
+survives an attacker with administrator rights - which is why one copy is
+kept offline or immutable. The only way to find these failures before the
+incident does is to exercise the plan, which is
 why Jøsang treats testing as part of readiness itself (Jøsang, §14.7,
 pp. 316--319 - where pentesting, red-teaming and, for the financial sector,
 the TIBER framework apply the same logic to the technical defences). Exercising
