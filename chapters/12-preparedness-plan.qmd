@@ -143,7 +143,13 @@ target without funding it is the continuity version of an unowned risk.
 Targets can also vary by *when*, not only by *what*: For a seasonal business
 the same checkout may tolerate hours of downtime in the off-season and only
 minutes on an event day, so the BIA should state the period a target applies
-to and set the aggressive one for the time that matters.
+to and set the aggressive one for the time that matters. And targets inherit
+along dependencies: The checkout cannot have a one-hour RTO while the customer
+database it reads has four, because a component can never recover faster than
+what it depends on - either the database gets an RTO of one hour or less, or
+the checkout gets a fallback that works without it, such as queuing orders
+for later processing. Finding exactly these chains is what the dependency
+analysis in the BIA is for.
 
 ##### Dependencies from the diagram.
 
