@@ -52,8 +52,10 @@ delivered through a poisoned update of Ukrainian accounting software and causing
 billions in collateral damage worldwide; SolarWinds (2020), the definitive case
 below; Log4Shell (2021), one flaw in one ubiquitous open-source library becoming
 everyone's emergency at once; MOVEit (2023), a single file-transfer product's
-vulnerability exploited to extract data from hundreds of organisations that had
-merely bought a tool. Trusted suppliers are high-value targets precisely because
+vulnerability exploited to extract data from more than 2,700 organisations and
+over 90 million individuals, many of them hit through fourth parties such as
+payroll providers that had merely bought a tool (Emsisoft's running count,
+*Unpacking the MOVEit Breach*, accessed 11 October 2026). Trusted suppliers are high-value targets precisely because
 they are trusted - and the practical consequence is that the attack surface
 now reaches beyond the walls: Every integration, API key and third-party script
 on the checkout page is a potential way in, many dependencies stay invisible
