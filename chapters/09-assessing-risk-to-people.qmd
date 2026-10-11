@@ -246,9 +246,15 @@ Union has ruled out entirely - social scoring by authorities, manipulative
 techniques exploiting vulnerabilities, and untargeted scraping of facial images
 to build recognition databases, the practice for which Clearview AI had already
 collected GDPR fines of around twenty million euros apiece from several European
-authorities before the ban existed. High-risk, per Annex III: Systems used in
-employment, credit, education, essential services, law enforcement - domains
-where a wrong output changes a life. Limited-risk: Systems people interact with
+authorities before the ban existed. High-risk, by two routes (Art. 6): Under
+Annex I, an AI system that is a safety component of, or itself, a product
+covered by the EU harmonisation legislation listed there *and* subject to
+third-party conformity assessment under that legislation - medical devices
+under the MDR, machinery, lifts - so that a diagnostic AI reaches high-risk
+through the medical-device rules, not through "essential services"; and under
+Annex III, stand-alone systems used in the listed areas - employment, credit,
+education, essential services, law enforcement - domains where a wrong output
+changes a life. Limited-risk: Systems people interact with
 or whose output could deceive - chatbots and deepfakes - where the duty is
 honesty: Tell people they are dealing with AI, and label generated content
 (Art. 50). Minimal: The long tail - spam filters, recommendation engines -
