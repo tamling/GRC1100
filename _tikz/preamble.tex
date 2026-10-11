@@ -39,8 +39,8 @@
   dfdproc/.style={draw=kristiania,thick,circle,fill=kristiania!12,minimum size=1.42cm,
                   align=center,font=\scriptsize,inner sep=1pt},
   dfdstore/.style={fill=white,minimum height=0.82cm,minimum width=2.2cm,align=center,
-                   font=\scriptsize,inner sep=3pt,
-                   append after command={\pgfextra{\draw[ink,thick]
+                   font=\dfdstorefont,inner sep=3pt,
+                   append after command={\pgfextra{\draw[ink,line width=\dfdstorelw]
                      (\tikzlastnode.north west)--(\tikzlastnode.north east)
                      (\tikzlastnode.south west)--(\tikzlastnode.south east);}}},
   dfdflow/.style={-{Stealth[length=2mm]},thick,ink!75},
@@ -100,9 +100,14 @@
   \end{tikzpicture}%
 }
 
+% data-store rendering: the audit figure (Ch. 16) uses heavier lines and a bold
+% label so the DFD store symbol (two parallel lines) stays legible
+\newcommand{\dfdstorelw}{0.8pt}
+\newcommand{\dfdstorefont}{\scriptsize}
 \newcommand{\FastGoodsLevelOneDFD}[1][plain]{%
   \begin{tikzpicture}[font=\scriptsize]
     \ifstrequal{#1}{privacy}{\tikzset{pdflow/.style={dfdpd}}}{\tikzset{pdflow/.style={}}}
+    \ifstrequal{#1}{audit}{\renewcommand{\dfdstorelw}{1.4pt}\renewcommand{\dfdstorefont}{\scriptsize\bfseries}}{}
     % trust boundaries: the FastGoods scope box (TB1) and the internal tier split (TB2)
     \draw[dfdtb] (2.55,-0.15) rectangle (11.35,3.68);
     \draw[dfdtb] (6.9,-0.15) -- (6.9,3.68);
