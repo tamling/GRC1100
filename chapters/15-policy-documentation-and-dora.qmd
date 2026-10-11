@@ -17,8 +17,8 @@ sector.
 
 ## Why write it down {#sec-15-why-write-it-down}
 
-Undocumented security depends on specific people remembering specific things,
-and that breaks in three predictable ways: New staff cannot follow rules nobody
+Undocumented security depends on specific people remembering specific things.
+That breaks in three predictable ways. New staff cannot follow rules nobody
 wrote down; when a key person leaves, their knowledge leaves with them; and
 different people do the same task differently, which is another word for
 inconsistently. "We just know how we do it" works for three people and fails for
