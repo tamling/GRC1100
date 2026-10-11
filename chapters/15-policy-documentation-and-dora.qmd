@@ -30,7 +30,10 @@ mortal, and there is nothing to audit - a real problem, because to an auditor
 an undocumented control barely exists. The audit phrase is blunt but real: *If
 it isn't written down, it didn't happen* - the auditor tests evidence, so a
 control performed but never recorded is, to the audit, the same as one never
-performed (Chapter 16 runs this in full). The standard says the same in calmer
+performed (Chapter 16 runs this in full). For systems, "written down" means
+logging: Without logs that are switched on, retained and protected there is
+no evidence in an audit and no trail in an incident - the logs Chapter 12
+preserves for forensics are the same ones Chapter 16 asks for as evidence. The standard says the same in calmer
 language: ISO/IEC 27001's Clause 7.5 requires *documented information* - the
 2013 revision's deliberately neutral term for what older editions split into
 documents and records - and an ISO audit starts by asking for it.
