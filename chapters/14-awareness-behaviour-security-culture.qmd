@@ -118,6 +118,23 @@ convincing voice. The fixes that followed were equally human: Tighter access to
 internal tools, and training aimed at exactly this call.
 :::
 
+::: {.callout-note}
+## Real-world case: Linus Tech Tips (2023): The PDF that "would not open"
+
+In March 2023 the technology channel Linus Tech Tips lost control of its
+YouTube channels for a day. The lure was a sponsorship offer by email with a
+PDF attached that "did not open" - because it was not a document but
+malware, which read the session tokens out of the employee's browser. With
+those tokens the attackers were logged in as the channel without ever seeing
+a password or being asked for a second factor: A session token is proof of a
+login that has already happened, and MFA protects the login, not the session.
+The channels were restored and the channel's own video on the incident
+(*My Channel Was Deleted Last Night*, 24 March 2023) became a widely used
+training example. The lesson adds to Twitter's: Session theft is the way
+around MFA, and the defence is the same person who opens the attachment -
+plus short session lifetimes and alerts on new sessions.
+:::
+
 Not every threat rings from outside. The *insider* - a person with legitimate
 access who misuses it - is a category of its own, and Jøsang gives the reason
 it is feared out of proportion to its frequency: The insider knows the
