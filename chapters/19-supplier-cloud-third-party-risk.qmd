@@ -126,8 +126,8 @@ FastGoods depends on, and the cloud host sits under everything without appearing
 on any arrow - the supplier a diagram would otherwise hide. Tiered by what a
 failure would do: Two critical suppliers (the payment provider and the cloud
 host, without which the checkout stops), two important ones (the carrier and the
-newsletter tool); the tax authority and the customer are not suppliers. This is
-the supplier register of this chapter drawn before it is written - and, for a
+newsletter tool); the tax authority and the customer are not suppliers.
+@tbl-fgsuppliers is the supplier register of this chapter - and, for a
 financial entity, the register of information that DORA's Article 28 requires.
 
 ![Every external entity as a supplier: Chapter 8's context diagram with supplier tiers, and the cloud host - under everything, on no arrow - made visible.](figures/fig-fgcontextthird.svg){#fig-fgcontextthird}
