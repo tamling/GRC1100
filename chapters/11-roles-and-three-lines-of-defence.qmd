@@ -373,23 +373,25 @@ page.
 
 ## Summary {#sec-11-summary}
 
-Security is not the IT department's job: Risk lives in the business, and the
-people who run a process are best placed to own its risk. Good governance
-separates three jobs - own, oversee, check - because nobody can objectively
-check their own work, and the standard structure for the separation is the three
-lines model (@def-threelines): First line owns and manages, second line
-oversees and advises without taking ownership, third line gives independent
-assurance and reports past management to the board - external audit and
-regulators repeating the pattern from outside. The model fails in known ways -
-second-line drift, captive audit, gaps, overlaps and silos - and the 2020
-revision stresses collaboration over walls. Above the lines, accountability
-stays at the top and cannot be delegated: Clause 5 makes it a certifiable
-requirement, NIS2 Article 20 makes it personal, and the board's own controls are
-its questions, its funding, and the tone its behaviour sets - the control
-environment that COSO put under everything else. In practice the model scales
-down to a webshop that buys its third line externally; RACI puts exactly one
-accountable name on every task; and the risk owner (@def-riskowner) is
-the role that turns a noted risk into a managed one.
+- **Security is not the IT department's job.** Risk lives in the business,
+  and the people who run a process are best placed to own its risk.
+- **Three jobs, separated: own, oversee, check.** Nobody can objectively check
+  their own work, and the standard structure for the separation is the
+  **three lines model** (@def-threelines): First line owns and manages,
+  second line oversees and advises without taking ownership, third line gives
+  independent assurance and reports past management to the board - external
+  audit and regulators repeating the pattern from outside.
+- **Known failure modes.** Second-line drift, captive audit, gaps, overlaps and
+  silos - and the 2020 revision stresses collaboration over walls.
+- **Accountability stays at the top** and cannot be delegated: Clause 5 makes
+  it a certifiable requirement, NIS2 Article 20 makes it personal, and the
+  board's own controls are its questions, its funding, and the tone its
+  behaviour sets - the **control environment** that COSO put under everything
+  else.
+- **In practice** the model scales down to a webshop that buys its third line
+  externally; **RACI** puts exactly one accountable name on every task; and
+  the **risk owner** (@def-riskowner) is the role that turns a noted risk
+  into a managed one.
 
 Block III stands complete, and owned. What no owner can do is reduce risk to
 zero - Lecture 12, and Block IV, are about being ready when the residual
