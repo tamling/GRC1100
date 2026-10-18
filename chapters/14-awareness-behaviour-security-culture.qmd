@@ -39,8 +39,8 @@ switched off (Jøsang, §13.4, pp. 283 ff.).
 
 Social engineering is the manipulation of people into performing actions or
 divulging information that compromises security, by exploiting predictable
-psychological triggers - authority, urgency, social proof, reciprocity -
-rather than technical weaknesses. Its techno-social form arrives by message or
+psychological triggers - for example authority, urgency, social proof,
+reciprocity and commitment - rather than technical weaknesses. Its techno-social form arrives by message or
 call; its physical form arrives at the door.
 :::
 
@@ -376,8 +376,8 @@ books are available in the library and on the Canvas course page.
 
 Most breaches begin with a human action, which makes people central to risk
 rather than a footnote. Social engineering (@def-socialengineering)
-weaponises Cialdini's triggers - authority, urgency, social proof, reciprocity
-- with BEC as the costliest variant and phishing's family (spear, whaling,
+weaponises Cialdini's triggers - for example authority, urgency, social proof,
+reciprocity and commitment - with BEC as the costliest variant and phishing's family (spear, whaling,
 vishing, smishing, quishing, and the physical forms) as the delivery channels;
 the Twitter case of 2020 shows a phone call opening a tech giant. The insider
 divides into malicious (met with access discipline and monitoring) and negligent
