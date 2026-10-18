@@ -98,7 +98,10 @@ for spotting phishing - fills the space Chapter 14 ended on, where good
 judgement is the point and a hard rule would either be ignored or gamed.
 Mislabelling the levels is a common cause of unmanageable documentation: A
 "policy" full of IP addresses will be perpetually out of date, and a
-two-hundred-page document called a procedure will simply not be read.
+two-hundred-page document called a procedure will simply not be read. Laws and
+contracts sit outside and above the four levels: They are the requirements
+from which the policy draws its "why" sentences, not documents the
+organisation writes.
 
 ::: {#tbl-doclevels}
   **Level**   **Answers**     **Mandatory?**   **Example**
