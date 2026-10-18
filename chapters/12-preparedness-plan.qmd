@@ -126,7 +126,8 @@ much but bites less instantly: Four hours and one hour are defensible. Internal
 reporting can wait two days and lose one. The table is not a wish list; it is a
 purchase order in disguise, because the targets drive what FastGoods spends on
 backup frequency, standby capacity and recovery tooling - a five-minute RPO on
-the checkout means continuous replication, not a nightly tape. Setting a tight
+the checkout means continuous replication or snapshots every few minutes -
+not a nightly tape. Setting a tight
 target without funding it is the continuity version of an unowned risk.
 :::
 
