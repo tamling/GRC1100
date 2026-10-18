@@ -80,6 +80,10 @@ for performing a task in compliance with the standards. The *guideline* advises
 situation needs. Policy, standard and procedure bind; guidelines do not.
 :::
 
+Records - tickets, logs, sign-offs - are not a fifth level of the hierarchy
+but the evidence the procedures produce when they are followed, which is why
+@exm-evidencechain lists them as the evidence layer under the four documents.
+
 ![The document hierarchy (after Edwards & Weaver, Ch. 12). Each level widens: One short policy, a handful of standards, many procedures - and guidelines where judgement beats a rule.](figures/fig-dochierarchy.svg){#fig-dochierarchy}
 
 The levels differ in more than detail - they differ in audience, change rate
