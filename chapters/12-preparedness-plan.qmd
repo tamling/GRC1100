@@ -267,7 +267,11 @@ Chapter 11's standing structure, activated when the plan is invoked, and they
 are assigned *in advance*, by name, with deputies and contact points -
 Jøsang's practical demand that the plan and the contacts also exist on paper is
 not nostalgia but the lesson of incidents where the contact list lived inside
-the system that was down. Four roles cover a small organisation
+the system that was down. The plan therefore needs a channel that does not
+depend on the systems it is for - a second phone, a messenger on private
+devices, a printed list - which MITRE ATT&CK lists as mitigation M1060,
+[Out-of-Band Communications Channel](https://attack.mitre.org/mitigations/M1060/).
+Four roles cover a small organisation
 (@tbl-irroles); the RACI scheme of Chapter 11 fits them precisely, and
 Jøsang's own worked example uses it for exactly this purpose (§14.4, Table 14.1,
 p. 306): One row per crisis activity, exactly one accountable name.
