@@ -255,7 +255,7 @@ resilience testing, third-party risk - plus a voluntary framework for
 information sharing.
 :::
 
-The five pillars read like this course's table of contents made mandatory
+The four binding pillars and the voluntary fifth read like this course's table of contents made mandatory
 (@tbl-dorapillars). ICT risk management (Arts. 5--16) demands a
 governed, documented risk framework with the management body explicitly
 accountable - Chapter 11's board responsibility, in statute. Incident
@@ -340,7 +340,7 @@ and Chapter 19 (the auditor's view of documentation and evidence, pp. 333 ff.
 Jøsang, Chapter 18 (governance and documentation, pp. 377 ff.). Standards and
 law: ISO/IEC 27001, Clause 7.5 (documented information); ISO/IEC 27002:2022,
 A.5.1 and A.5.37; and DORA, Regulation (EU) 2022/2554 - Articles 5, 17--19,
-24--28 and 45 cover the five pillars, and the recitals are a readable statement
+24--28 and 45 cover the four binding pillars and the voluntary fifth, and the recitals are a readable statement
 of why. Both books are available in the library and on the Canvas course page.
 
 ## Summary {#sec-15-summary}
@@ -445,7 +445,7 @@ Order the four levels, top first.
 :::
 
 ::: {#exr-15-dora-interactive}
-## DORA's five pillars, interactive
+## DORA's pillars, interactive
 
 Match each activity to the DORA pillar it lives under.
 
@@ -497,7 +497,7 @@ Match each activity to the DORA pillar it lives under.
    "b": "share"
   }
  ],
- "explain": "DORA's five pillars run from the risk framework through incidents, testing and third parties to information sharing.",
+ "explain": "DORA's four binding pillars run from the risk framework through incidents and testing to third parties; information sharing is the voluntary fifth.",
  "ref": "sec-15-dora-resilience-as-law",
  "reflabel": "DORA: Resilience as law"
 }
