@@ -103,8 +103,9 @@ with four phases, and knowing the shape of it removes most of the anxiety around
 being audited (@tbl-auditphases). The phases have a standard as well:
 ISO 19011, the international guideline for auditing management systems, sets out
 the audit programme, the principles auditors work to - integrity, fair
-presentation, professional care, confidentiality, independence, and the
-evidence-based approach - and the conduct of an engagement from initiation to
+presentation, due professional care, confidentiality, independence, the
+evidence-based approach and, since the 2018 edition, the risk-based approach
+- and the conduct of an engagement from initiation to
 follow-up; ISO/IEC 27007 adds the ISMS-specific guidance, and ISO/IEC 27008
 covers the technical assessment of individual controls. An organisation with an
 internal audit function runs against those documents the way it runs its ISMS
