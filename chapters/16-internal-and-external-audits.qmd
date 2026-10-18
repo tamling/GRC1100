@@ -576,6 +576,11 @@ Sort the findings by severity.
 {
  "buckets": [
   {
+   "id": "crit",
+   "label": "Critical",
+   "desc": "an open, exploitable hole"
+  },
+  {
    "id": "major",
    "label": "Major nonconformity"
   },
@@ -590,6 +595,10 @@ Sort the findings by severity.
  ],
  "chips": [
   {
+   "t": "Customer passwords stored in plaintext",
+   "b": "crit"
+  },
+  {
    "t": "No risk assessment exists at all",
    "b": "major"
   },
@@ -602,7 +611,7 @@ Sort the findings by severity.
    "b": "obs"
   }
  ],
- "explain": "Severity follows the gap: A missing mandatory element is major, a lapse in an otherwise working control minor, advice an observation.",
+ "explain": "Severity follows the gap, on the scale of the findings table: An open, exploitable hole is critical, a missing mandatory element major, a lapse in an otherwise working control minor, advice an observation.",
  "ref": "sec-16-findings-and-fixing",
  "reflabel": "Findings, and fixing"
 }
