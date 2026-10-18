@@ -168,7 +168,7 @@ escalation.
   **Term**    **Question it answers**                     **FastGoods**
   ----------- ------------------------------------------- -------------------------------------------------------------------------------------
   Appetite    How much risk do we want to take?           No high risks to customer data; medium accepted on the marketing site
-  Tolerance   How far may one risk drift before we act?   Checkout downtime beyond one hour per quarter is escalated to the managing director
+  Tolerance   How far may one risk drift before we act?   A single checkout outage is escalated to the managing director at 45 minutes, before the one-hour line
   Capacity    How much could we survive at all?           A breach costing more than three months' margin would threaten the company
 
   : Three words, three jobs. Capacity is a fact about the business; appetite is
@@ -413,8 +413,8 @@ Try these before the next lecture.
 ::: {#exr-17-place-the-line}
 ## Place the line
 
-FastGoods' board states: "No high risks to customer data; checkout downtime
-beyond one hour per quarter is unacceptable; marketing-site risks up to medium
+FastGoods' board states: "No high risks to customer data; no single checkout
+outage over one hour; marketing-site risks up to medium
 may be accepted by the operations lead." Translate the statement onto
 @fig-threshold: Which of R1--R3 may be accepted as they stand, and who
 could sign?
