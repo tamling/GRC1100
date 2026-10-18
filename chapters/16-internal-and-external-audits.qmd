@@ -60,7 +60,7 @@ the certificate but the corrective actions that feed the next cycle.
   -------------------- -------------------------------------------------------------------------------------
   Financial            The annual statements are true and fair - yearly, for shareholders and regulators
   Cybersecurity / IT   Security controls exist and work - this chapter
-  Compliance           Legal duties are met (NIS2, GDPR, DORA)
+  Compliance           The legal duties that apply to the organisation are met (for FastGoods: GDPR; NIS2 and DORA only if in scope)
   Operational          A process is efficient and effective
 
   : Types of audit. The financial audit is the classic annual external audit; IT
