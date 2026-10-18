@@ -90,7 +90,7 @@ The levels differ in more than detail - they differ in audience, change rate
 and test (@tbl-doclevels). The policy is short, board-approved (Chapter
 11's tone from the top, in writing) and rarely changes; it says "we protect
 access to customer data" and stops. The standard makes it measurable - MFA on
-all logins, passwords at least twelve characters - and its test is that
+all logins, passwords at least fifteen characters - and its test is that
 compliance can be checked mechanically. The procedure changes as often as the
 systems it describes, and its test is that a competent newcomer can follow it
 under pressure. The guideline - tips for choosing a strong passphrase, hints
