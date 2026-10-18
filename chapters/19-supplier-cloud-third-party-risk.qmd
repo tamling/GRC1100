@@ -265,7 +265,8 @@ register that turns this chapter from a lecture into a routine.
   **Supplier**        **Service**       **Tier**    **Assurance**   **Action**
   ------------------- ----------------- ----------- --------------- ---------------
   Cloud host          Runs the shop     Critical    SOC 2 Type II   Review yearly
-  Payment processor   Card data         Critical    PCI DSS         Review yearly
+  Payment processor   Card data         Critical    PCI DSS + SOC 2 / ISAE 3402   Review yearly
+  Shipping carrier    Delivery, name and address   Important   Self-attested + DPA   Spot-check
   Email provider      Marketing mail    Important   Self-attested   Spot-check
   Stationery          Office supplies   Low         None needed     None
 
