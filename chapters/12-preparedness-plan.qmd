@@ -36,12 +36,12 @@ first computer emergency response team - and the CSIRT model then spread
 worldwide, national teams included. NIST distilled the practice into Special
 Publication 800-61, the *Computer Security Incident Handling Guide*, first
 published in 2004 and revised since, whose phase model this chapter uses.
-Business *continuity* is older still: It descends from the disaster recovery
+Business *continuity* is older still. It descends from the disaster recovery
 planning of the 1970s mainframe era - fire, flood and the off-site tape -
-matured into a management discipline, was standardised in Britain as BS 25999
-(2006), and became the international standard ISO 22301 for business continuity
-management systems in 2012 (revised 2019), with ISO/IEC 27031 (2011) covering
-the ICT readiness underneath it. Norway adds a third source that Jøsang builds
+and matured into a management discipline. Britain standardised it as BS 25999
+(2006), and the international standard ISO 22301 for business continuity
+management systems followed in 2012 (revised 2019), with ISO/IEC 27031 (2011)
+covering the ICT readiness underneath it. Norway adds a third source that Jøsang builds
 on directly: The civil-preparedness principles of Norwegian public security
 doctrine - *ansvar* (responsibility), *likhet* (similarity), *nærhet*
 (proximity), joined after the 22 July 2011 attacks by *samvirke*
