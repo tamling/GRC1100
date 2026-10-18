@@ -135,7 +135,7 @@ target without funding it is the continuity version of an unowned risk.
   **Service**           **RTO**   **RPO**   **Why**
   --------------------- --------- --------- -------------------------------
   Checkout / web shop   1 hour    5 min     Lost sales mount fast (Ch. 2)
-  Customer database     4 hours   1 hour    Serious, but less instant
+  Customer database     1 hour    1 hour    The checkout depends on it (see below)
   Internal reporting    2 days    1 day     Can wait
 
   : FastGoods' recovery targets per service: The checkout needs near-instant
@@ -149,10 +149,13 @@ minutes on an event day, so the BIA should state the period a target applies
 to and set the aggressive one for the time that matters. And targets inherit
 along dependencies: The checkout cannot have a one-hour RTO while the customer
 database it reads has four, because a component can never recover faster than
-what it depends on - either the database gets an RTO of one hour or less, or
-the checkout gets a fallback that works without it, such as queuing orders
-for later processing. Finding exactly these chains is what the dependency
-analysis in the BIA is for.
+what it depends on - which is why the database carries the checkout's
+one-hour target in @tbl-rtorpo; the alternative would be a fallback that
+lets the checkout work without it, such as queuing orders for later
+processing. An equal RTO is enough only where the dependent component is back
+within negligible time once its dependency is; otherwise its RTO has to be the
+dependency's RTO plus its own restore time. Finding exactly these chains is
+what the dependency analysis in the BIA is for.
 
 ##### Dependencies from the diagram.
 
