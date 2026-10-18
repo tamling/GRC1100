@@ -267,7 +267,7 @@ Fear and shame. "Don't be the idiot who gets us hacked" produces anxiety,
 freezing and hidden mistakes; fear without a doable action produces avoidance,
 not caution. The strong version of the same message - "Spot a dodgy email? Hit
 Report - thank you" - names a clear action, keeps reporting safe, and thanks
-the reporter, which is the no-blame culture in eleven words.
+the reporter, which is the no-blame culture in eight words.
 
 The most reliable lever moves the environment rather than the person. *Nudging*
 - choice architecture, from Thaler and Sunstein's *Nudge* (2008) - shapes
