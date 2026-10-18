@@ -206,7 +206,7 @@ writing (Chapter 7's controller--processor machinery).
   **Clause**              **What it secures**
   ----------------------- --------------------------------------------------------------------------------------
   Security requirements   The supplier must meet a defined standard
-  Breach notification     They must tell you fast (e.g. within 24 hours) - your clocks start with their call
+  Breach notification     They must tell you without undue delay, at most 12 hours for personal-data breaches: Your clocks run from your own awareness, which their call usually creates - a 24-hour clause leaves nothing of NIS2's 24 hours and little of GDPR's 72
   Right to audit          You may audit, or receive an assurance report
   Sub-processors          Limits on passing your data down the chain
   Service levels (SLA)    Agreed availability and response times
