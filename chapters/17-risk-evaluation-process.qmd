@@ -93,7 +93,7 @@ a risk nobody is watching.
 ::: {#tbl-acceptrow}
   -------------------- -----------------------------------------------------------
   **Risk**             R1 residual - account takeover, after the MFA rollout
-  **Residual level**   Low (likelihood unlikely, impact moderate)
+  **Residual level**   Low (likelihood unlikely after MFA; consequence minor after least privilege and segmentation)
   **Decision**         Accept the residual risk
   **Accepted by**      IT lead (risk owner), 15 Oct 2026
   **Review trigger**   Revisit if login-fraud reports double, or after 12 months
@@ -118,8 +118,14 @@ everyone above.
 One risk through the whole machine. *Evaluate*: R1's residual level - account
 takeover with password-only login - stands high, above FastGoods' line ("no
 high risks to customer data"). *Treat*: Reduce - enable MFA on all accounts,
-the control Chapter 10 selected and Chapter 16 tested. *Re-evaluate*: The
-residual drops to low - below the line. *Accept*: The small remainder is
+the control Chapter 10 selected and Chapter 16 tested. MFA is a *likelihood*
+control: It makes the takeover unlikely but leaves a successful one as
+damaging as before (major), and on Chapter 8's matrix unlikely times major is
+still moderate. Reaching low needs an *impact* control beside it - least
+privilege and segmentation, so that a taken-over customer account reaches that
+customer's data and nothing else, which brings the consequence down to minor.
+*Re-evaluate*: With both in place the residual drops to low - below the
+line. *Accept*: The small remainder is
 accepted by the IT lead, dated, with the review trigger of
 @tbl-acceptrow. Above the line, reduce; below the line, accept and
 document - evaluation and treatment in one row, and the row the rest of this
