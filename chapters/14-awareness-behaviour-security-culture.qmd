@@ -100,7 +100,11 @@ link and "log in" on a page that imitates FastGoods' own. *The red flags*: A
 sender domain one letter off, pressure where a real supplier would ring, a link
 that does not lead to FastGoods. Two defences meet here, and both are needed:
 The technical one - MFA, control A.8.5 - blunts what the stolen password is
-worth; the human one is the clerk who pauses, checks the domain, and reports.
+worth - unless the fake page is an adversary-in-the-middle proxy that relays the
+code and steals the session (Evilginx-style, the same session theft as in the
+Linus Tech Tips case below); only phishing-resistant MFA, FIDO2 or passkeys,
+holds, Chapter 18; the human one is the clerk who pauses, checks the domain, and
+reports.
 The rest of this chapter is about producing that clerk.
 :::
 
