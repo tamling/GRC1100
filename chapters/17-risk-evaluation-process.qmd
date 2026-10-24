@@ -294,7 +294,8 @@ Account-takeover risk is high; MFA reduces it cheaply - approve EUR 5,000.
 reach personal data - a breach with notification duties and lost trust.
 *Size*: Likely ×        major (the register's reasoning attached). *Options*:
 (1) Accept - no cost, breach exposure remains; (2) MFA on all accounts -
-EUR 5k and some login friction, risk drops to low; (3) MFA plus
+EUR 5k and some login friction, risk drops to moderate; with the
+least-privilege clean-up already planned, to low; (3) MFA plus
 breached-password screening - EUR 9k, marginal further gain. *Recommendation*:
 Option 2 - the second factor removes the decisive weakness; option 3's extra
 spend buys little until MFA has landed. *Decision needed*: Approve EUR 5k; owner
