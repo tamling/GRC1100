@@ -462,8 +462,8 @@ the RTO, and the post-incident review feeds controls, plan and register; the
 capability is staffed as SOC and CSIRT or bought as MSS, MDR or XDR. Crisis
 roles are named in advance with contacts on paper, escalation thresholds prevent
 both panic and silence, communication is planned inward and outward, and the
-legal clocks - GDPR's 72 hours, the Digital Security Act's "without undue
-delay", NIS2's 24-hour early warning once it reaches the EEA - start at
+legal clocks - GDPR's 72 hours, the Digital Security Act's 24 hours / 72
+hours / one month (forskriften § 17), the ladder NIS2 generalises - start at
 awareness and belong in the plan. And none of it is real until exercised:
 Tabletop, drill, full exercise - the restore drill first - with the plan
 kept alive, and kept reachable when the systems are not.
