@@ -246,7 +246,11 @@ watch for incidents, ownership changes and new sub-processors, and re-read
 assurance reports each year as they are reissued. Two subtler exposures live in
 the aggregate view. *Concentration risk*: Too much depending on one provider, so
 its outage takes much of you down at once - CrowdStrike's July 2024, from
-Chapter 15, is the canonical morning. *Fourth-party risk*: Your suppliers'
+Chapter 15, is the canonical morning. Change Healthcare, February 2024, is the
+sector-wide form: A claims-processing provider with a large share of US
+healthcare payments went down, and pharmacies and clinics could not bill for
+weeks; the entrance was a remote-access portal without MFA (Chapter 18).
+*Fourth-party risk*: Your suppliers'
 suppliers - risk you cannot see directly, and the place concentration hides:
 If the cloud host, the email service and the analytics tool all run on the same
 underlying platform, three contracts share one failure. And because suppliers do
