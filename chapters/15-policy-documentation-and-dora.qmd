@@ -329,13 +329,15 @@ regulate the providers too?"
 ## DORA reaches FastGoods anyway
 
 FastGoods is a webshop, not a bank - DORA does not apply to it. It applies to
-FastGoods' *payment provider*, and that is how the regulation arrives through
-the side door: The provider, mapping its own ICT dependencies for the register
-of information, sends FastGoods a revised contract - incident-notification
-duties within fixed hours, cooperation in the provider's resilience testing,
-audit and information rights. FastGoods' preparedness plan (Chapter 12) gains a
-new external clock, and its own documentation is suddenly evidence in someone
-else's compliance. The pattern generalises, and it is the direction of travel
+FastGoods' *payment provider*, which must demonstrate *its* resilience - and
+DORA's contract and register duties (Articles 28--30) reach the provider's ICT
+third-party service providers, not its merchant customers. FastGoods is a
+customer of the payment service, not an ICT supplier to it. What arrives at
+FastGoods through the side door is therefore a revised set of terms the
+provider passes on of its own accord - incident-notification routes, cooperation
+in the provider's resilience testing - a consequence of the contract, not a DORA
+obligation on FastGoods. The side door becomes a DORA duty only if FastGoods
+itself provides ICT services to a financial entity. The pattern generalises, and it is the direction of travel
 worth stating plainly: Resilience regulation propagates down supply chains,
 sector by sector - document it, test it, and be ready to prove it, whether or
 not the law names you yet.
