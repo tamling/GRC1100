@@ -262,13 +262,13 @@ supplier, its service, its tier, its assurance, and the standing action - the
 register that turns this chapter from a lecture into a routine.
 
 ::: {#tbl-fgsuppliers}
-  **Supplier**        **Service**       **Tier**    **Assurance**   **Action**
-  ------------------- ----------------- ----------- --------------- ---------------
-  Cloud host          Runs the shop     Critical    SOC 2 Type II   Review yearly
-  Payment processor   Card data         Critical    PCI DSS + SOC 2 / ISAE 3402   Review yearly
-  Shipping carrier    Delivery, name and address   Important   Self-attested + DPA   Spot-check
-  Email provider      Marketing mail    Important   Self-attested   Spot-check
-  Stationery          Office supplies   Low         None needed     None
+  **Supplier**        **Service**                  **Tier**    **Assurance**                 **Action**
+  ------------------- ---------------------------- ----------- ----------------------------- ---------------
+  Cloud host          Runs the shop                Critical    SOC 2 Type II                 Review yearly
+  Payment processor   Card data                    Critical    PCI DSS + SOC 2 / ISAE 3402   Review yearly
+  Shipping carrier    Delivery, name and address   Important   Self-attested + DPA           Spot-check
+  Email provider      Marketing mail               Important   Self-attested                 Spot-check
+  Stationery          Office supplies              Low         None needed                   None
 
   : The FastGoods supplier register: Tier sets the level of assurance, and the
   level of assurance sets the action.

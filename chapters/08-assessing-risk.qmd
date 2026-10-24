@@ -1088,11 +1088,11 @@ beats a folder of documents.
 ::: {#tbl-sixnames}
   **View**                                                 **Name there**                                                   **What it adds**
   -------------------------------------------------------- ---------------------------------------------------------------- ---------------------------------------
-  Asset register (Ch. 4, 8)                                Customer database - owner IT, C high, I high                   Value and owner
-  DFD (@sec-08-mapping-the-system-the-data-flow)   D1 Customer DB, data tier behind TB2                             Position; paths in
-  Risk register (@sec-08-into-the-register)        R3 - breach of the customer database, high                     Rating, treatment
+  Asset register (Ch. 4, 8)                                Customer database - owner IT, C high, I high                     Value and owner
+  DFD (@sec-08-mapping-the-system-the-data-flow)           D1 Customer DB, data tier behind TB2                             Position; paths in
+  Risk register (@sec-08-into-the-register)                R3 - breach of the customer database, high                       Rating, treatment
   Art. 30 record; DPIA (Ch. 7, 9)                          Customer data: Names, addresses, order history                   Purpose, basis, retention, recipients
-  SoA (Ch. 6, 10)                                          , 8.3, 8.15 - applicable because of R3                         Controls, justification
+  SoA (Ch. 6, 10)                                          , 8.3, 8.15 - applicable because of R3                           Controls, justification
   EA repository                                            Data object realised by artifact *customer-db* on node *db-01*   The technology it lives on
 
   : One thing, six names: The customer database across the course's views. A
@@ -1161,7 +1161,7 @@ imported into a tool is no more found, stated or rated than it was on paper.
   **Platform**                          **What it holds**                                                                    **Note**
   ------------------------------------- ------------------------------------------------------------------------------------ -------------------------------------------
   Diri (Norway; NTNU Gjøvik spin-off)   ISO 27005 risk assessments and DPIAs; links processes, systems, vendors and assets   Norwegian SMEs and public sector
-  ServiceNow IRM                        Risks, controls, policies, audits, issues - linked to the CMDB                     The CMDB is the EA repository in practice
+  ServiceNow IRM                        Risks, controls, policies, audits, issues - linked to the CMDB                       The CMDB is the EA repository in practice
   Archer, MetricStream, OneTrust        Enterprise suites: Registers, workflows, board reporting; OneTrust privacy-first     Large organisations; configuration-heavy
   eramba, CISO Assistant                Open-source GRC: ISMS, register, SoA, audits                                         Free; enough for a shop of twenty-five
   Ardoq (Oslo), SAP LeanIX, Archi       Enterprise-architecture repositories: The layers and their dependencies              Ardoq is Norwegian; Archi is free

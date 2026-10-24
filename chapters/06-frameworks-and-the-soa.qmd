@@ -123,7 +123,7 @@ the mechanism (@tbl-attrs) - the hash notation is the standard's own.
 
 ::: {#tbl-anatomy}
   ------------ ------------------------------------------------------------
-  **A.8.5 Secure authentication (ISO/IEC 27002:2022)**
+  **A.8.5**    **Secure authentication (ISO/IEC 27002:2022)**
 
   Control      Secure authentication technologies and procedures shall be
                implemented, based on access restrictions and the
