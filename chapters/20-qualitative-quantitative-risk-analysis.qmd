@@ -63,7 +63,7 @@ few biggest, which is where the numbers come in.
 
 ::: {#tbl-ratingscale}
   **Level**   **Likelihood - meaning**          **Impact - meaning**
-  ----------- ----------------------------------- ---------------------------------------
+  ----------- --------------------------------- ---------------------------------------
   5           Certain - expected within weeks   Disastrous - threatens the business
   4           Likely - expected this year       Major - serious, lasting harm
   3           Possible - could happen           Significant - noticeable harm
