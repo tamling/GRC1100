@@ -4,6 +4,15 @@
 $web-font-path: false;
 
 /*-- scss:rules --*/
+// Tables: never break a word inside a cell ("Di sastrous" in the rating
+// scale at narrow widths). Cells wrap at spaces only; a long word widens
+// the column instead, and the table scrolls if it must.
+.table th, .table td, table th, table td {
+  hyphens: manual;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
 // The chapter figures are SVGs with transparent background and dark
 // ink; give them a light backing card so they stay readable in dark mode.
 .quarto-figure img,

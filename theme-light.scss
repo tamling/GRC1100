@@ -3,3 +3,13 @@
 // there stalls the whole stylesheet (and the dark-mode toggle with it).
 // System fonts are used instead.
 $web-font-path: false;
+
+/*-- scss:rules --*/
+// Tables: never break a word inside a cell ("Di sastrous" in the rating
+// scale at narrow widths). Cells wrap at spaces only; a long word widens
+// the column instead, and the table scrolls if it must.
+.table th, .table td, table th, table td {
+  hyphens: manual;
+  overflow-wrap: normal;
+  word-break: normal;
+}
