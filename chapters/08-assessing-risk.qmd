@@ -401,7 +401,7 @@ strongest argument for drawing it well (@tbl-dfdreuse).
   9             The personal-data flows and the GDPR role of every party   The DPIA's systematic description, Art. 35(7)(a); the Art. 30 record
   10            The selected controls, placed where they act               A control has a location, an owner and a test point
   12            The dependencies of the critical services                  Continuity planning: What the checkout needs to run
-  16            One order followed through the system in six stops         The audit walkthrough (ISA 315); PCI DSS 1.2.4; ISAE 3402
+  16            One order followed through the system in six stops         The audit walkthrough (ISA 315); PCI DSS 1.2.4; SOC 2 / ISAE 3000
   19            Every external entity as a dependency, suppliers tiered    The supplier register; DORA's register of information
 
   : One diagram, many uses. The same two figures return in five later chapters

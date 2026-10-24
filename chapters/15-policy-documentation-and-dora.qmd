@@ -159,7 +159,7 @@ evidence comes in layers. The policy and procedure show what *should* happen -
 the basis for testing a control's design; the records - logs, tickets,
 sign-offs - show that it *did* happen, the basis for testing operating
 effectiveness (both tests are Chapter 16's subject, and the same split underpins
-the ISAE 3402 reports of Lecture 16). Design lives in the document; operation
+the SOC 2 and ISAE 3402 reports of Lecture 16). Design lives in the document; operation
 lives in the records; an audit checks both. Responsibility for the writing maps
 cleanly onto Chapter 11's three lines: Management owns the policy and the board
 approves it; the second line - security, compliance - sets the standards;

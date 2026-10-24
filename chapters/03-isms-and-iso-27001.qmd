@@ -453,7 +453,7 @@ An ISMS is also the practical way many organisations meet their legal duties and
 pass external audits, and in practice the same control evidence does triple
 duty: NIS2 (Article 21) and the GDPR (Article 32) demand exactly the systematic,
 risk-based security an ISMS provides (Lectures 5 and 7); certification gives
-auditors and assurance reports such as ISAE 3402 a strong baseline (Lecture 16);
+auditors and assurance reports such as SOC 2 / ISAE 3000 a strong baseline (Lecture 16);
 and the controls map onto the IT general controls (ITGC) a financial auditor
 tests. The law sets the floor; ISO 27001 is how you clear it and prove it -
 the connective tissue between governance, risk, controls and audit.

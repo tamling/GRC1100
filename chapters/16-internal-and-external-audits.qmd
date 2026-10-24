@@ -89,8 +89,9 @@ each control both adequacy and effectiveness. And the areas they walk are so
 standard that Chapter 10's audit view already listed them: The general IT
 controls - access management with its joiners and leavers, change management,
 IT operations, backup and recovery, system development, physical and
-environmental - which are also the typical control areas of an ISAE 3402
-report. For every control the whole audit compresses into three plain questions,
+environmental - which are also the typical control areas of a
+service-organisation report, ISAE 3402 and SOC 2 alike. For every control the
+whole audit compresses into three plain questions,
 asked in order: *Is there a control? Does it actually work? Can you prove it?*
 Saying yes is not enough at any step - the auditor wants to see the control,
 see it working, and see the evidence - and the third question is where the
@@ -128,8 +129,8 @@ Planning deserves more attention than it usually gets, because a badly planned
 audit tests the wrong things carefully. It is *risk-based*: The auditor looks at
 where failure would hurt most - the same reasoning as Chapter 8's assessment,
 applied to the audit itself - and spends the days there. It sets *criteria*
-(the yardstick), *scope* (systems, sites, period), and a *sample period*: An
-ISAE 3402 Type II report might cover 1 January to 31 December, and evidence
+(the yardstick), *scope* (systems, sites, period), and a *sample period*: A
+SOC 2 Type II report might cover 1 January to 31 December, and evidence
 outside that window proves nothing about it. And it produces the audit
 programme: One row per control, naming the requirement, the test, the evidence
 to request and the person to ask. @exm-auditprogramme shows a row of
@@ -208,8 +209,8 @@ evidence to request. PCI DSS
 Requirement 1.2.4 demands that the diagram exists and is current - for merchants
 assessed on the full standard; a SAQ A merchant like FastGoods is not asked for
 it, but the assessor and FastGoods' own auditor use the same diagram; the ISAE
-3402 report from the cloud host or the payment provider describes the controls
-on their side of TB1. Same picture, third use.
+3000 / SOC 2 report from the cloud host or the payment provider describes the
+controls on their side of TB1. Same picture, third use.
 
 ![The audit walkthrough: One order followed through the system in seven stops on Chapter 8's diagram. Every stop is a control to test and a piece of evidence to request.](figures/fig-fglevelaudit.svg){#fig-fglevelaudit}
 
@@ -247,14 +248,18 @@ findings (Ch. 22--24).
 One external form is so important to a company like FastGoods that it gets its
 own machinery. When operations run on a service provider - the cloud host, the
 payment processor - your auditor cannot audit their data centre; instead, the
-provider commissions one audit and hands the report to all its customers. The
-international standard for this is **ISAE 3402** (IAASB, 2011, successor to the
-American SAS 70): An assurance report on controls at a service organisation, in
-two types. *Type I* covers design - the controls are suitably designed, at a
+provider commissions one audit and hands the report to all its customers. Two
+report families do this, with the same two-type logic. **ISAE 3402** (IAASB,
+2011, successor to the American SAS 70; the American SOC 1 runs in parallel and
+IDW PS 951 is the German sibling) covers controls relevant to the *customers'
+financial reporting* - payroll, payment processing. **ISAE 3000**, and in the
+United States **SOC 2** against the AICPA Trust Services Criteria, covers
+security, availability and confidentiality - for a cloud host's security
+controls FastGoods asks for the SOC 2 or ISAE 3000 Type II. Both come in two
+types. *Type I* covers design - the controls are suitably designed, at a
 single point in time: A snapshot. *Type II* covers design *and* operating
 effectiveness - tested across a period, typically six to twelve months: A
-film. Germany's national equivalent is IDW PS 951, and the American SOC 1 family
-runs in parallel; a practitioner reads all three the same way. The distinction
+film. A practitioner reads them all the same way. The distinction
 inside them is the heart of the next section - and the reason Chapter 19's
 supplier work will keep asking providers for "the Type II".
 
@@ -266,8 +271,8 @@ ladder of increasing strength: *Interview* - ask staff how the control works;
 the control being used; *re-perform* - test it yourself, trying to log in
 without MFA. Each rung outweighs the ones below, because an auditor trusts what
 they can re-perform far more than what they are told. On every control, the
-testing itself splits in two - the split Chapter 15 promised and ISAE 3402's
-types encode:
+testing itself splits in two - the split Chapter 15 promised and the Type I /
+Type II reports encode:
 
 ::: {#def-todtoe}
 ## Test of design and test of effectiveness
@@ -277,8 +282,8 @@ risk - judged at a point in time: Is MFA configured to require a second
 factor? The *test of operating effectiveness* (ToE) asks whether the control
 actually operated, consistently, over the period - tested across many
 instances: Did every login through the year really require it? A control can be
-well designed and still fail in operation, so both tests are run; ISAE 3402 Type
-I stops at design, Type II adds effectiveness.
+well designed and still fail in operation, so both tests are run; a Type I
+report stops at design, Type II adds effectiveness.
 :::
 
 ::: {#exm-mfatest}
@@ -410,8 +415,9 @@ environment, testing, findings, pp. 333 ff.) and Chapters 22--24 (regulatory
 visits, penalties and the remediation of regulatory findings, pp. 395 ff.);
 Jøsang, §14.7--§14.8 (security testing and the security audit, pp. 316--320) and
 Chapter 18 (the management system the audit checks, pp. 377 ff.). Standards
-side: ISAE 3402 (and IDW PS 951 as the German sibling) for service-organisation
-assurance. Both books are available in the library and on the Canvas course
+side: ISAE 3402 / SOC 1 (and IDW PS 951 as the German sibling) for controls
+relevant to financial reporting, ISAE 3000 / SOC 2 for security - the two
+families of service-organisation assurance. Both books are available in the library and on the Canvas course
 page.
 
 ## Summary {#sec-16-summary}
@@ -426,8 +432,10 @@ environment and the general-IT-control areas of Chapter 10, asking three
 questions of every control: Is it there, does it work, can you prove it.
 Internal audit improves - the third line, required by ISO 27001; external
 audit proves - the Big Four, certification bodies, and the state's own
-auditors and regulators; and between companies travel ISAE 3402 reports, Type I
-for design and Type II for operating effectiveness, the split
+auditors and regulators; and between companies travel service-organisation
+reports - SOC 2 / ISAE 3000 for security, ISAE 3402 / SOC 1 for
+financial-reporting controls - Type I for design and Type II for operating
+effectiveness, the split
 @def-todtoe generalises into the ToD and ToE run on every control.
 Evidence climbs a ladder - interview, inspect, observe, re-perform - lands
 on representative samples whose size barely grows with the population, and is
@@ -458,7 +466,7 @@ company.
 ::: {#exr-16-type-the-report}
 ## Type the report
 
-FastGoods' cloud provider offers an ISAE 3402 Type I dated last March. State
+FastGoods' cloud provider offers a SOC 2 Type I dated last March. State
 what assurance this gives, what it does not, and what FastGoods should ask for
 - with the film-versus-snapshot distinction in your answer.
 :::
@@ -654,7 +662,7 @@ Sort the audit characteristics.
    "b": "ext"
   },
   {
-   "t": "An ISAE 3402 report for customers",
+   "t": "A SOC 2 or ISAE 3402 report for customers",
    "b": "ext"
   }
  ],

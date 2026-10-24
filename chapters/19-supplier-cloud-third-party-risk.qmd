@@ -97,7 +97,7 @@ you trust, set expectations in writing, and keep watching.
 Ask for evidence - certifications, assurance reports, security policies -
 and match the depth of the check to the sensitivity of the data and access
 involved: The payment processor handling card data warrants PCI DSS compliance
-and an ISAE 3402 or SOC 2 report read before signing; a low-risk tool needs a
+and a SOC 2 or ISAE 3000 report read before signing; a low-risk tool needs a
 basic check and no more. Record the decision, and any risks accepted with it -
 Chapter 17's register does not stop at the company boundary. Because scrutiny is
 finite, *tiering* rations it (@tbl-suppliertiers): Grade suppliers by
@@ -224,8 +224,9 @@ A.5.22 (monitoring and reviewing supplier services), and A.5.23 (cloud
 services); ISO/IEC 27036 gives the deeper supplier-relationship guidance behind
 them. And where auditing a hyperscale provider yourself is impossible,
 *assurance reports* substitute: An independent auditor tests the supplier's
-controls and you read the result - ISAE 3402 and SOC 2 being the common
-frameworks, in the Type I and Type II flavours Chapter 16 defined. FastGoods
+controls and you read the result - SOC 2 and ISAE 3000 for security, ISAE 3402
+/ SOC 1 for financial-reporting controls, in the Type I and Type II flavours
+Chapter 16 defined. FastGoods
 does not audit its cloud host; it reads the host's Type II - an opinion that
 the controls operated all year, the film rather than the snapshot, exactly the
 report Chapter 16 taught it to ask for - and for cloud providers specifically,
@@ -269,7 +270,7 @@ register that turns this chapter from a lecture into a routine.
   **Supplier**        **Service**                  **Tier**    **Assurance**                 **Action**
   ------------------- ---------------------------- ----------- ----------------------------- ---------------
   Cloud host          Runs the shop                Critical    SOC 2 Type II                 Review yearly
-  Payment processor   Card data                    Critical    PCI DSS + SOC 2 / ISAE 3402   Review yearly
+  Payment processor   Card data                    Critical    PCI DSS + SOC 2 / ISAE 3000   Review yearly
   Shipping carrier    Delivery, name and address   Important   Self-attested + DPA           Spot-check
   Email provider      Marketing mail               Important   Self-attested                 Spot-check
   Stationery          Office supplies              Low         None needed                   None
@@ -338,8 +339,8 @@ side - misconfiguration first - while two assumptions ("they secure it",
 "they back it up") stay false until the contract says otherwise (A.5.23). Where
 you cannot configure, you contract (@tbl-contractclauses) - breach
 notification feeding your own clocks, audit rights, sub-processor limits, the
-Article 28 DPA - and where you cannot audit, you read assurance: The ISAE 3402
-/ SOC 2 Type II, Chapter 16's film, with A.5.19--A.5.23, NIS2 Article 21 and
+Article 28 DPA - and where you cannot audit, you read assurance: The SOC 2 /
+ISAE 3000 Type II, Chapter 16's film, with A.5.19--A.5.23, NIS2 Article 21 and
 DORA's third-party pillar making the discipline law. Over time, oversight runs
 on the ISMS rhythm: Re-assessment, reissued reports, concentration and
 fourth-party awareness, a tested exit per critical dependency, and the one-page
@@ -580,15 +581,19 @@ Match each artefact to what it attests.
  "buckets": [
   {
    "id": "t1",
-   "label": "ISAE 3402 Type I"
+   "label": "Type I report"
   },
   {
    "id": "t2",
-   "label": "ISAE 3402 Type II"
+   "label": "Type II report"
   },
   {
    "id": "soc2",
-   "label": "SOC 2"
+   "label": "SOC 2 / ISAE 3000"
+  },
+  {
+   "id": "soc1",
+   "label": "ISAE 3402 / SOC 1"
   },
   {
    "id": "iso",
@@ -605,8 +610,12 @@ Match each artefact to what it attests.
    "b": "t2"
   },
   {
-   "t": "A report against the trust-services criteria",
+   "t": "Security controls against the trust-services criteria",
    "b": "soc2"
+  },
+  {
+   "t": "Controls relevant to the customers' financial reporting",
+   "b": "soc1"
   },
   {
    "t": "The ISMS conforms to the standard",
