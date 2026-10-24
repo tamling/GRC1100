@@ -246,8 +246,9 @@ Basel Committee and the Bank of England prominent among them) spent the late
 2010s writing operational-resilience principles; the EU proposed DORA in its
 digital-finance package in September 2020; Regulation (EU) 2022/2554 was adopted
 in December 2022 and has applied since **17 January 2025**. Norway follows
-through the EEA: The Norwegian DORA Act, passed in 2025, carries the regime into
-Norwegian law under Finanstilsynet's supervision.
+through the EEA: The Norwegian DORA Act (lov om digital operasjonell
+motstandsdyktighet i finanssektoren, adopted May 2025, in force since 1 July
+2025) carries the regime into Norwegian law under Finanstilsynet's supervision.
 
 ::: {#def-dora}
 ## DORA
