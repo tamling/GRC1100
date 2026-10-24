@@ -46,13 +46,13 @@ call; its physical form arrives at the door.
 :::
 
 ::: {#tbl-triggers}
-  **Trigger**            **How it is used against us**
-  ---------------------- --------------------------------------------------
-  Authority              "This is the CEO - pay this invoice now"
+  **Trigger**                    **How it is used against us**
+  ------------------------------ --------------------------------------------------
+  Authority                      "This is the CEO - pay this invoice now"
   Urgency (Cialdini: scarcity)   "Your account closes in one hour"
-  Social proof           "Everyone in your team has already signed in"
-  Reciprocity / liking   A friendly favour first, then the request
-  Commitment             "You agreed to the audit - here is the portal"
+  Social proof                   "Everyone in your team has already signed in"
+  Reciprocity / liking           A friendly favour first, then the request
+  Commitment                     "You agreed to the audit - here is the portal"
 
   : Cialdini's triggers (1984), as attackers use them. Urgency is not one of
   Cialdini's six but the everyday form of scarcity - scarcity of time - that
