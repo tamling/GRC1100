@@ -122,7 +122,8 @@ targets should show it (@tbl-rtorpo). The checkout gets the aggressive
 pair - one hour of downtime, five minutes of data - because Chapter 2's
 downtime table showed the losses mounting fast and because a lost order is lost
 twice, in revenue and in the customer's trust. The customer database weighs as
-much but bites less instantly: Four hours and one hour are defensible. Internal
+much and, because the checkout cannot run without it, inherits its clock: One
+hour and one hour. Internal
 reporting can wait two days and lose one. The table is not a wish list; it is a
 purchase order in disguise, because the targets drive what FastGoods spends on
 backup frequency, standby capacity and recovery tooling - a five-minute RPO on
