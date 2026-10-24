@@ -325,7 +325,8 @@ which this course now puts to work.
 A *key performance indicator* (KPI) looks backwards at how a control performed:
 Are our controls working - "95 % of systems patched on time". A *key risk
 indicator* (KRI) looks forward at the exposure still carried: How exposed are we
-- "12 systems currently unpatched". KPIs judge performance; KRIs warn early.
+- "four internet-facing systems with a known exploited vulnerability still
+unpatched". KPIs judge performance; KRIs warn early.
 They answer different questions, and a managed risk carries both.
 :::
 
