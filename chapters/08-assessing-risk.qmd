@@ -402,7 +402,7 @@ strongest argument for drawing it well (@tbl-dfdreuse).
   10            The selected controls, placed where they act               A control has a location, an owner and a test point
   12            The dependencies of the critical services                  Continuity planning: What the checkout needs to run
   16            One order followed through the system in six stops         The audit walkthrough (ISA 315); PCI DSS 1.2.4; ISAE 3402
-  19            Every external entity as a supplier, tiered                The supplier register; DORA's register of information
+  19            Every external entity as a dependency, suppliers tiered    The supplier register; DORA's register of information
 
   : One diagram, many uses. The same two figures return in five later chapters
   with a different overlay each time.
