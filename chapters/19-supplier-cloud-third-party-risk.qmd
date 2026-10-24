@@ -120,7 +120,7 @@ maintains.
   strong the contract must be, and how often the relationship is reviewed.
 :::
 
-##### Every external entity is a supplier.
+##### Every external entity is a dependency - most are suppliers.
 
 The context diagram of Chapter 8 doubles as the supplier map
 (@fig-fgcontextthird): Every box outside the circle is a third party
@@ -132,7 +132,7 @@ newsletter tool); the tax authority and the customer are not suppliers.
 @tbl-fgsuppliers is the supplier register of this chapter - and, for a
 financial entity, the register of information that DORA's Article 28 requires.
 
-![Every external entity as a supplier: Chapter 8's context diagram with supplier tiers, and the cloud host - under everything, on no arrow - made visible.](figures/fig-fgcontextthird.svg){#fig-fgcontextthird}
+![Every external entity as a dependency: Chapter 8's context diagram with supplier tiers, and the cloud host - under everything, on no arrow - made visible.](figures/fig-fgcontextthird.svg){#fig-fgcontextthird}
 
 ## The cloud, and who secures what {#sec-19-the-cloud-and-who-secures-what}
 
