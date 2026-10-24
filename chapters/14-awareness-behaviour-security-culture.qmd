@@ -120,8 +120,13 @@ and used legitimate staff access to reset the accounts. Every element of this
 chapter is in the case: The triggers (authority, helpfulness), the targeting of
 people rather than systems, legitimate insider tooling as the prize, and the
 lesson that a company with world-class engineering can still be opened with a
-convincing voice. The fixes that followed were equally human: Tighter access to
-internal tools, and training aimed at exactly this call.
+convincing voice. MGM Resorts, September 2023, is the same lesson at the
+helpdesk: Attackers found an employee on LinkedIn, rang the helpdesk in his name
+and had the credentials reset; the ransomware attack that followed cost MGM, by
+its own account, around USD 100 million. The control is human - identity
+verification at the helpdesk before every reset. The fixes that followed at
+Twitter were equally human: Tighter access to internal tools, and training aimed
+at exactly this call.
 :::
 
 ::: {.callout-note}
