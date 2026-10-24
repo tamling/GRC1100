@@ -319,11 +319,13 @@ the risk to them is high (Article 34); a significant incident must *today* be no
 the Digital Security Act and its regulation (digitalsikkerhetsloven and
 -forskriften, in force since 1 October 2025, which implement NIS1) to NSM's
 NCSC or the sector authority *without undue delay* ("uten ugrunnet
-opphold"); the 24-hour / 72-hour / one-month ladder of NIS2 that Chapter 5
-walked through (@fig-clock, @exm-ddosclock) is what arrives when
-NIS2 is taken into the EEA Agreement - and it already applies to EU
-subsidiaries and EU customers; and one incident can run both clocks at
-once. The clocks start at *awareness* - a reasonable degree of
+opphold") - and, for providers of essential services, on the 24-hour /
+72-hour / one-month ladder that Norway's digitalsikkerhetsforskriften § 17
+already applies (notification within 24 hours, update within 72, incident
+report within a month) and that NIS2 generalises to every entity in scope
+(Chapter 5, @fig-clock, @exm-ddosclock) - which is why the ladder also
+applies today to EU subsidiaries and EU customers; and one incident can run
+both clocks at once. The clocks start at *awareness* - a reasonable degree of
 certainty that a breach has occurred (EDPB Guidelines 9/2022), which the first
 alert is not, so a short, documented triage between detection and awareness is
 defensible - but never when convenient, which is precisely why the reporting
