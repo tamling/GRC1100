@@ -133,7 +133,7 @@ serves. That two-way traceability is the hierarchy working.
   **Level**   **For FastGoods' access control**
   ----------- ----------------------------------------------------------
   Policy      "We protect access to customer data" (board-approved)
-  Standard    All logins require MFA; passwords at least 12 characters
+  Standard    All logins require MFA; passwords at least 15 characters
   Procedure   Step by step: How to onboard a user and grant access
   Guideline   Tips for choosing a strong passphrase
 
@@ -546,7 +546,7 @@ Place each document on its level of the hierarchy.
    "b": "pol"
   },
   {
-   "t": "Minimum password length of 12 characters",
+   "t": "Minimum password length of 15 characters",
    "b": "std"
   },
   {
