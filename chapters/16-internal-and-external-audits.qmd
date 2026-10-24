@@ -205,9 +205,11 @@ Is access authenticated and role-bound (MFA, named roles), and who holds a
 role today? Evidence: The permission list and the date of its last
 recertification. Each stop yields one control to test and one piece of
 evidence to request. PCI DSS
-Requirement 1.2.4 demands that the diagram exists and is current; the ISAE 3402
-report from the cloud host or the payment provider describes the controls on
-their side of TB1. Same picture, third use.
+Requirement 1.2.4 demands that the diagram exists and is current - for merchants
+assessed on the full standard; a SAQ A merchant like FastGoods is not asked for
+it, but the assessor and FastGoods' own auditor use the same diagram; the ISAE
+3402 report from the cloud host or the payment provider describes the controls
+on their side of TB1. Same picture, third use.
 
 ![The audit walkthrough: One order followed through the system in seven stops on Chapter 8's diagram. Every stop is a control to test and a piece of evidence to request.](figures/fig-fglevelaudit.svg){#fig-fglevelaudit}
 
