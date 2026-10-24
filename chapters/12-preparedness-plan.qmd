@@ -272,7 +272,10 @@ Chapter 11's standing structure, activated when the plan is invoked, and they
 are assigned *in advance*, by name, with deputies and contact points -
 Jøsang's practical demand that the plan and the contacts also exist on paper is
 not nostalgia but the lesson of incidents where the contact list lived inside
-the system that was down. The plan therefore needs a channel that does not
+the system that was down. In the CrowdStrike outage of July 2024 (about 8.5
+million Windows machines, by Microsoft's own count) some organisations could not
+recover devices because the BitLocker recovery keys sat on servers that were
+themselves affected - recovery information belongs out of band. The plan therefore needs a channel that does not
 depend on the systems it is for - a second phone, a messenger on private
 devices, a printed list - which MITRE ATT&CK lists as mitigation M1060,
 [Out-of-Band Communications Channel](https://attack.mitre.org/mitigations/M1060/).
