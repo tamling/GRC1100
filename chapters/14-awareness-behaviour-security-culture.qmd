@@ -27,8 +27,9 @@ hacker Kevin Mitnick in the 1990s, whose break-ins ran on telephones and trust
 more than on software, and whose *The Art of Deception* (2002) taught defenders
 how the con works. The psychology beneath it was mapped even earlier: Robert
 Cialdini's *Influence* (1984) named the handful of triggers that move people -
-authority, urgency and scarcity, social proof, reciprocity and liking,
-commitment - and social-engineering lures are those triggers weaponised, one
+authority, scarcity (in phishing usually as urgency, a scarcity of time),
+social proof, reciprocity and liking, commitment and consistency - and
+social-engineering lures are those triggers weaponised, one
 or two per email (@tbl-triggers). What it exploits is not a weakness but
 the trust people extend to one another, to institutions and to roles - the
 same trust that makes everyday work possible, which is why it cannot simply be
@@ -39,8 +40,8 @@ switched off (Jøsang, §13.4, pp. 283 ff.).
 
 Social engineering is the manipulation of people into performing actions or
 divulging information that compromises security, by exploiting predictable
-psychological triggers - for example authority, urgency, social proof,
-reciprocity and commitment - rather than technical weaknesses. Its techno-social form arrives by message or
+psychological triggers - for example authority, scarcity (urgency), social
+proof, reciprocity and commitment - rather than technical weaknesses. Its techno-social form arrives by message or
 call; its physical form arrives at the door.
 :::
 
@@ -48,14 +49,15 @@ call; its physical form arrives at the door.
   **Trigger**            **How it is used against us**
   ---------------------- --------------------------------------------------
   Authority              "This is the CEO - pay this invoice now"
-  Urgency / scarcity     "Your account closes in one hour"
+  Urgency (Cialdini: scarcity)   "Your account closes in one hour"
   Social proof           "Everyone in your team has already signed in"
   Reciprocity / liking   A friendly favour first, then the request
   Commitment             "You agreed to the audit - here is the portal"
 
-  : Cialdini's triggers (1984), as attackers use them. A lure rarely needs more
-  than one or two - authority plus urgency carries most CEO-fraud mail on its
-  own.
+  : Cialdini's triggers (1984), as attackers use them. Urgency is not one of
+  Cialdini's six but the everyday form of scarcity - scarcity of time - that
+  practitioners list beside them. A lure rarely needs more than one or two -
+  authority plus urgency carries most CEO-fraud mail on its own.
 :::
 
 The costliest single variant deserves its name: *Business email compromise*
@@ -376,8 +378,8 @@ books are available in the library and on the Canvas course page.
 
 Most breaches begin with a human action, which makes people central to risk
 rather than a footnote. Social engineering (@def-socialengineering)
-weaponises Cialdini's triggers - for example authority, urgency, social proof,
-reciprocity and commitment - with BEC as the costliest variant and phishing's family (spear, whaling,
+weaponises Cialdini's triggers - for example authority, scarcity as urgency,
+social proof, reciprocity and commitment - with BEC as the costliest variant and phishing's family (spear, whaling,
 vishing, smishing, quishing, and the physical forms) as the delivery channels;
 the Twitter case of 2020 shows a phone call opening a tech giant. The insider
 divides into malicious (met with access discipline and monitoring) and negligent
