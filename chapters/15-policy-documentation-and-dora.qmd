@@ -441,9 +441,9 @@ Order the four levels, top first.
   "Policy - what and why",
   "Standard - the measurable rules",
   "Procedure - how, step by step",
-  "Record - the evidence it happened"
+  "Guideline - how, advised"
  ],
- "explain": "Policy states what and why, standards make it measurable, procedures make it doable, records prove it happened.",
+ "explain": "Policy states what and why, standards make it measurable, procedures make it doable, guidelines advise where judgement beats a rule - and records, not a level of their own, prove it happened.",
  "ref": "sec-15-the-document-hierarchy",
  "reflabel": "The document hierarchy"
 }
@@ -537,8 +537,8 @@ Place each document on its level of the hierarchy.
    "label": "Procedure"
   },
   {
-   "id": "rec",
-   "label": "Record"
+   "id": "gl",
+   "label": "Guideline"
   }
  ],
  "chips": [
@@ -555,11 +555,11 @@ Place each document on its level of the hierarchy.
    "b": "proc"
   },
   {
-   "t": "The signed access review of March",
-   "b": "rec"
+   "t": "Tips for choosing a strong passphrase",
+   "b": "gl"
   }
  ],
- "explain": "Each document lives on one level - and an auditor will ask for the record, not the policy.",
+ "explain": "Each document lives on one level; the signed access review of March is a record, the evidence a level produced, not a level itself - and the auditor will ask for it, not for the policy.",
  "ref": "sec-15-the-document-hierarchy",
  "reflabel": "The document hierarchy"
 }
