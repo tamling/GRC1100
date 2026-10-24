@@ -497,12 +497,11 @@ Order the phases of an audit after ISO 19011.
 {
  "steps": [
   "Risk-based planning and scope",
-  "Opening meeting",
-  "Fieldwork - evidence and testing",
+  "Fieldwork begins: opening meeting, then evidence and testing",
   "Reporting the findings",
   "Follow-up on remediation"
  ],
- "explain": "An audit is a process, not a visit: Planned on risk, opened formally, evidenced, reported, and followed up.",
+ "explain": "An audit is a process, not a visit: Planned on risk, opened formally and evidenced in fieldwork, reported, and followed up - the four phases of Table 16.2.",
  "ref": "sec-16-how-an-audit-runs",
  "reflabel": "How an audit runs"
 }
