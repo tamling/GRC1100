@@ -332,6 +332,10 @@ unpatched". KPIs judge performance; KRIs warn early.
 They answer different questions, and a managed risk carries both.
 :::
 
+The same number can be either: As a target steered towards (MFA coverage
+100 %) it is a KPI; as a threshold that triggers action (accounts without
+MFA > 0) it is a KRI. What counts is the use, not the formula.
+
 Used together, the pair closes this chapter's loop, because the acceptance
 record's review trigger is only words until a metric watches it. FastGoods wires
 three indicators to the R1 decision: The share of accounts with MFA enabled (a
@@ -555,7 +559,7 @@ Sort the indicators.
    "b": "kpi"
   },
   {
-   "t": "MFA coverage of admin accounts",
+   "t": "MFA coverage of admin accounts, as a quarterly target",
    "b": "kpi"
   },
   {
