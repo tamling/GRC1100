@@ -1092,7 +1092,7 @@ beats a folder of documents.
   DFD (@sec-08-mapping-the-system-the-data-flow)           D1 Customer DB, data tier behind TB2                             Position; paths in
   Risk register (@sec-08-into-the-register)                R3 - breach of the customer database, high                       Rating, treatment
   Art. 30 record; DPIA (Ch. 7, 9)                          Customer data: Names, addresses, order history                   Purpose, basis, retention, recipients
-  SoA (Ch. 6, 10)                                          , 8.3, 8.15 - applicable because of R3                           Controls, justification
+  SoA (Ch. 6, 10)                                          8.24, 8.3, 8.15 - applicable because of R3                       Controls, justification
   EA repository                                            Data object realised by artifact *customer-db* on node *db-01*   The technology it lives on
 
   : One thing, six names: The customer database across the course's views. A
