@@ -176,7 +176,9 @@ full-population test tells you exactly which three exceptions exist, when, and
 to whom. Sampling remains for what leaves no machine record - was the visitor
 log actually completed, did the review meeting happen - and judgement remains
 throughout, because the analysis is only as good as the question asked of the
-data.
+data. A third layer exists: Systems that should leave a trace but have none -
+logging switched off, passwords in a spreadsheet; there neither a full-population
+test nor a sample helps, and the missing trace is the finding.
 
 One last piece of the machinery is the auditor. Independence is structural (the
 third line reports past the management it audits), but it is also personal:
