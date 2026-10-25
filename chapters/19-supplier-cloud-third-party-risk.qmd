@@ -110,7 +110,10 @@ basic check and no more. Record the decision, and any risks accepted with it -
 Chapter 17's register does not stop at the company boundary. Because scrutiny is
 finite, *tiering* rations it (@tbl-suppliertiers): Grade suppliers by
 the risk they carry, and let the tier set the depth of diligence, the strength
-of the contract, and the frequency of review. Onboarding then completes the
+of the contract, and the frequency of review. The tier follows what the
+data-flow diagram shows *can* land at the supplier, not what the contract
+provides for - a code repository in which customer data or secrets can end up
+is Critical even if the contract names only code. Onboarding then completes the
 entry: The contract signed with the clauses of
 @sec-19-contracts-and-assurance, access granted at Chapter 18's least
 privilege - a supplier account is an identity like any other - and a row
