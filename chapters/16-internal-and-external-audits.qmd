@@ -35,7 +35,10 @@ ticking compliance boxes (Ch. 19, pp. 333 ff.).
 
 An audit is an independent, evidence-based examination of whether controls
 exist, operate, and meet a defined standard. *Independent*: Carried out by
-someone not responsible for the controls examined. *Evidence-based*: Conclusions
+someone not responsible for the controls examined - and independent of the
+yardstick too: Whoever wrote the standard should not alone judge whether it is
+fit, which in small organisations without a third line is what external quality
+assurance resolves. *Evidence-based*: Conclusions
 rest on proof gathered and tested, not on assurances. *Against a standard*: ISO
 27001, the organisation's own policies, or a regulation - without an agreed
 yardstick the result is only opinion.
