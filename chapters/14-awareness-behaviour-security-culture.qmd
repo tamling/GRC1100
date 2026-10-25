@@ -242,7 +242,10 @@ Whether it works is measured in behaviour, not attendance
 into insight: A *rising reporting rate* tells you more than a falling click
 rate, because it shows people actively defending rather than merely avoiding.
 These numbers do double duty as the audit evidence of Chapter 16, and they are
-used to improve the programme, never to rank or shame the people in it.
+used to improve the programme, never to rank or shame the people in it. Below
+about 50 people, one click moves the rate by percentage points and a quarterly
+simulation yields noise; count instead of rating - genuine suspicious emails
+reported per month, and time to report per incident.
 
 ::: {#tbl-awmetrics}
   **Metric**            **What it tells you**
