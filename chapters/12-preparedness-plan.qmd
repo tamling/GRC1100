@@ -153,7 +153,10 @@ database it reads has four, because a component can never recover faster than
 what it depends on - which is why the database carries the checkout's
 one-hour target in @tbl-rtorpo; the alternative would be a fallback that
 lets the checkout work without it, such as queuing orders for later
-processing. An equal RTO is enough only where the dependent component is back
+processing. Where the fallback serves a copy - the dashboard reads from D2 while
+D1 is down - the BIA needs a third target beside RTO and RPO: How old the data
+the customer sees in the meantime may be, *data freshness*, in hours. The
+dashboard is up, but with yesterday's numbers. An equal RTO is enough only where the dependent component is back
 within negligible time once its dependency is; otherwise its RTO has to be the
 dependency's RTO plus its own restore time. Finding exactly these chains is
 what the dependency analysis in the BIA is for.
