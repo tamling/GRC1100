@@ -43,6 +43,14 @@ FastGoods remains the controller even when a processor causes the breach
 to a customer for an R3 incident - and regulators and customers apply the same
 logic beyond privacy: You chose the supplier, you answer for the choice.
 
+Many organisations stand in the middle of the chain: Processor for their
+customers, customer of AWS and Google, which thereby become sub-processors. Two
+more links then apply - the customers' written authorisation before a
+sub-processor is engaged (Article 28(2)), and full liability towards the customer
+for what the sub-processor does (Article 28(4)); and because nobody negotiates
+with a hyperscaler, the customer's notification deadline (12 hours, say) is kept
+by monitoring of your own, not by a clause.
+
 The threat side has escalated in a way the history makes vivid. Attackers
 discovered that breaching one trusted supplier reaches thousands of its
 customers at once - why attack a company when you can attack its software
