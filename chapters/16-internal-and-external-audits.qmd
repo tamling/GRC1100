@@ -250,7 +250,7 @@ own machinery. When operations run on a service provider - the cloud host, the
 payment processor - your auditor cannot audit their data centre; instead, the
 provider commissions one audit and hands the report to all its customers. Two
 report families do this, with the same two-type logic. **ISAE 3402** (IAASB,
-2011, successor to the American SAS 70; the American SOC 1 runs in parallel and
+issued 2009, effective 2011; successor to the American SAS 70; the American SOC 1 runs in parallel and
 IDW PS 951 is the German sibling) covers controls relevant to the *customers'
 financial reporting* - payroll, payment processing. **ISAE 3000**, and in the
 United States **SOC 2** against the AICPA Trust Services Criteria, covers
