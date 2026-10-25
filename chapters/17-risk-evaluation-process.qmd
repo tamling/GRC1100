@@ -88,16 +88,19 @@ record. The record itself is one row, but every field earns its place
 accepted and *when*, and - the field that separates a decision from a shrug
 - the *review trigger*: The condition or date on which the acceptance is
 re-examined. Owner, date, trigger: Without those three, an "acceptance" is just
-a risk nobody is watching.
+a risk nobody is watching. Where the acceptance rests on a condition - MFA
+landed and re-tested - the row says so and names the date from which it holds;
+until then the owner carries the risk at its current value.
 
 ::: {#tbl-acceptrow}
-  -------------------- -----------------------------------------------------------
-  **Risk**             R1 residual - account takeover, after the MFA rollout
-  **Residual level**   Low (likelihood unlikely after MFA; consequence minor after least privilege and segmentation)
-  **Decision**         Accept the residual risk
-  **Accepted by**      IT lead (risk owner), 15 Oct 2026
-  **Review trigger**   Revisit if login-fraud reports double, or after 12 months
-  -------------------- -----------------------------------------------------------
+  -------------------------- -----------------------------------------------------------
+  **Risk**                   R1 residual - account takeover, after the MFA rollout
+  **Residual level**         Low (likelihood unlikely after MFA; consequence minor after least privilege and segmentation)
+  **Decision**               Accept the residual risk
+  **Condition / valid from** MFA on 10/10 admin accounts, re-tested; until then the owner carries the risk at its current value
+  **Accepted by**            IT lead (risk owner), 15 Oct 2026
+  **Review trigger**         Revisit if login-fraud reports double, or after 12 months
+  -------------------------- -----------------------------------------------------------
 
   : The FastGoods acceptance record: One row, every field filled. This row is
   what the auditor asks to see - and the review trigger is what
