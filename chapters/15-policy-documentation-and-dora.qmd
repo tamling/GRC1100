@@ -126,7 +126,10 @@ checklist an admin actually follows on a Tuesday; the guideline helps staff pick
 passphrases they can live with. Read the table downwards and the same intent
 gains detail at every step - direction, rule, how, advice - and read it
 upwards and every step of the checklist can say which rule and which intent it
-serves. That two-way traceability is the hierarchy working.
+serves. That two-way traceability is the hierarchy working. The counter-example
+shows what "testable" means: "MFA where required" reads strict and cannot be
+tested, because no system is named and the auditor has nothing to tick off; it
+becomes testable with a list of systems and the MFA method for each.
 :::
 
 ::: {#tbl-fghierarchy}
