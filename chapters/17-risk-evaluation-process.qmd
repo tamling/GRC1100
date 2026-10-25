@@ -197,7 +197,9 @@ look for *aggregation*: Several medium risks sharing one cause are not several
 mediums but one larger risk wearing three rows, and the classic case is the
 shared dependency - if the cloud host, the mail service and the analytics tool
 are all one platform (Chapter 19), the register's three moderate availability
-risks are a single high one. Third, distinguish the *top of the list* from the
+risks are a single high one. Not by adding them up: The shared cause is rated as
+a scenario of its own - the likelihood of the platform failing times the impact
+on all three services together - and the three rows point to it. Third, distinguish the *top of the list* from the
 *whole of the list*: The board sees the top ten and the movement since last
 time; management works the rest.
 
