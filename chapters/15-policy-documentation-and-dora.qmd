@@ -336,8 +336,10 @@ customer of the payment service, not an ICT supplier to it. What arrives at
 FastGoods through the side door is therefore a revised set of terms the
 provider passes on of its own accord - incident-notification routes, cooperation
 in the provider's resilience testing - a consequence of the contract, not a DORA
-obligation on FastGoods. The side door becomes a DORA duty only if FastGoods
-itself provides ICT services to a financial entity. The pattern generalises, and it is the direction of travel
+obligation on FastGoods. The side door becomes a set of DORA requirements
+passed down by contract (Article 30) if FastGoods itself provides ICT services
+to a financial entity - direct supervision only if it were designated a critical
+provider (Article 31). The pattern generalises, and it is the direction of travel
 worth stating plainly: Resilience regulation propagates down supply chains,
 sector by sector - document it, test it, and be ready to prove it, whether or
 not the law names you yet.
