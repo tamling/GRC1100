@@ -143,7 +143,11 @@ The channels were restored and the channel's own video on the incident
 (*My Channel Was Deleted Last Night*, 24 March 2023) became a widely used
 training example. The lesson adds to Twitter's: Session theft is the way
 around MFA, and the defence is the same person who opens the attachment -
-plus short session lifetimes and alerts on new sessions.
+plus short session lifetimes and alerts on new sessions. Where customer files
+are the job - consultants, accounting, HR - "do not open it" is not an option;
+what is trained is the channel: An agreed sender, an agreed channel, an
+announced delivery. An unexpected file means a call back to the customer on a
+known number before it is opened.
 :::
 
 Not every threat rings from outside. The *insider* - a person with legitimate
